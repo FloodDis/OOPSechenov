@@ -1,4 +1,4 @@
-#include "2.2.1.1.h"
+ï»¿#include "2.2.1.1.h"
 #include "2.2.1.2.h"
 #include <iostream>
 using namespace std;
@@ -6,9 +6,9 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "ru");
-	cout << "Ðåçóëüòàò ðàáîòû ñîðòèðîâêè:\n";
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:\n";
 	DemoSort();
 	cout << "\n";
-	cout << "Ðåçóëüòàò ðàáîòû ñîðòèðîâêè ñ îáðàáîòêîé èñêëþ÷åíèé:\n";
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ñ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ð¹:\n";
 	DemoSortException();
 }

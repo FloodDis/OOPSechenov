@@ -1,17 +1,17 @@
-#pragma once
+п»ї#pragma once
 #include <exception>
 #include <iostream>
 using namespace std;
 
 ///<summary>
-///Функция сортировки массива с обработкой исключений
+///Р¤СѓРЅРєС†РёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё РјР°СЃСЃРёРІР° СЃ РѕР±СЂР°Р±РѕС‚РєРѕР№ РёСЃРєР»СЋС‡РµРЅРёР№
 ///</summary>
-///<param name ="values">массив чисел типа double</param>
-///<param name ="count">кол-во элементов в массиве</param>
+///<param name ="values">РјР°СЃСЃРёРІ С‡РёСЃРµР» С‚РёРїР° double</param>
+///<param name ="count">РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
 void SortException(double* values, int count);
 
 ///<summary>
-///Функция демонстрации работы функции сортировки
-///с обработкой исключений
+///Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё СЃРѕСЂС‚РёСЂРѕРІРєРё
+///СЃ РѕР±СЂР°Р±РѕС‚РєРѕР№ РёСЃРєР»СЋС‡РµРЅРёР№
 ///</summary>
 void DemoSortException();
