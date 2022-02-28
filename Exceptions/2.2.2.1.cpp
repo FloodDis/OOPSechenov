@@ -1,6 +1,6 @@
 #include "2.2.2.1.h"
 
-void DemoStructures()
+void DemoStructures1()
 {
 	Rectangle testRectangle;
 	Flight testFlight;

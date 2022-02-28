@@ -1,6 +1,7 @@
 ﻿#include "2.2.1.1.h"
 #include "2.2.1.2.h"
 #include "2.2.2.1.h"
+#include "2.2.2.2.h"
 #include <iostream>
 using namespace std;
 
@@ -13,5 +14,7 @@ void main()
 	cout << "Результат работы сортировки с обработкой исключений(2.2.1.2):\n";
 	DemoSortException();
 	cout << "\nЗадание 2.2.2.1:\n\n";
-	DemoStructures();
+	DemoStructures1();
+	cout << "\nЗадание 2.2.2.2:\n\n";
+	DemoStructures2();
 }

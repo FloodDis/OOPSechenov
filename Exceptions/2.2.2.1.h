@@ -94,4 +94,4 @@ struct Time
 ///<summary>
 ///Демонстрация работы структур
 ///</summary>
-void DemoStructures();
+void DemoStructures1();
