@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
-#include "2.2.2.1.h"
+#include "Rectangle.h"
+#include "Flight.h"
+#include "Film.h"
+#include "Time.h"
 using namespace std;
 
 void DemoRectangle();

@@ -2,27 +2,9 @@
 
 void SortException(double* values, int count)
 {
-	// TODO: если такая проверка повторяется - вынести в отдельную функцию AssertArrayCount
-	if (count < 0)
-	{
-		exception error;
-		throw error;
-	}
-
-	// TODO: дублирование с ранее реализованной сортировкой
-	double swap;
-	for (int i = 0; i < count; i++)
-	{
-		for (int j = 0; j < count; j++)
-		{
-			if (values[i] < values[j])
-			{
-				swap = values[i];
-				values[i] = values[j];
-				values[j] = swap;
-			}
-		}
-	}
+	// TODO: если такая проверка повторяется - вынести в отдельную функцию AssertArrayCount +
+	// TODO: дублирование с ранее реализованной сортировкой +
+	Sort(values, count);
 }
 
 void DemoSortException()

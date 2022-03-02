@@ -1,4 +1,5 @@
 #include "2.2.2.1.h"
+using namespace std;
 
 void DemoStructures1()
 {

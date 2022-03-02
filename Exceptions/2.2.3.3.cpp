@@ -77,6 +77,7 @@ void DemoStructures5()
 	cout << "\nEnter destination: ";
 	cin >> destination;
 	cout << "\nEnter size: ";
+	cin >> size;
 	DemoFlight(departurePoint, destination, size);
 
 	int year;

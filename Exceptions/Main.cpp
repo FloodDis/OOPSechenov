@@ -6,6 +6,7 @@
 #include "2.2.3.2.h"
 #include "2.2.3.3.h"
 #include "2.2.4.1.h"
+#include "2.2.4.2.h"
 #include <iostream>
 using namespace std;
 
@@ -36,4 +37,7 @@ void main()
 
 	cout << "\nЗадание 2.2.4.1:\n\n";
 	DemoRectanglePointer();
+
+	cout << "\nЗадание 2.2.4.2:\n\n";
+	DemoRectangleDoublePointer();
 }

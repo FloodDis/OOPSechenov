@@ -1,4 +1,5 @@
 #pragma once
-#include "2.2.3.1.h"
+#include <iostream>
+#include "Rectangle.h"
 
 void DemoRectanglePointer();

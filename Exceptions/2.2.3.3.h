@@ -1,5 +1,9 @@
 #pragma once
-#include "2.2.3.2.h"
+#include <iostream>
+#include "Rectangle.h"
+#include "Flight.h"
+#include "Film.h"
+#include "Time.h"
 
 void DemoRectangle(int width, int length, int size);
 
