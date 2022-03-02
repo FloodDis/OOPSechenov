@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+// TODO: каждая структура в своём файле
 /// <summary>
 /// Прямоугольник
 /// </summary>

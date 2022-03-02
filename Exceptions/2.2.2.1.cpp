@@ -16,6 +16,7 @@ void DemoStructures1()
 	testFlight.FlightTime = 60;
 
 	testFilm.Duration = 120;
+	// TODO: комедия?
 	testFilm.Genre = "Comedy";
 	testFilm.Name = "Scream";
 	testFilm.YearOfRelease = 2001;
