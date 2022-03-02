@@ -33,5 +33,5 @@ void DemoSort()
 	{
 		cout << values[i]<<"\n";
 	}
-	delete values;
+	delete[] (values);
 }
