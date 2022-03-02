@@ -11,6 +11,7 @@ void DemoRectangle(int width, int length, int size)
 			arrayRectangle[i].Length << "x" << arrayRectangle[i].Width
 			<< "\n";
 	}
+	delete[] arrayRectangle;
 }
 
 void DemoFlight(string departurePoint, string destination, int size)
@@ -24,6 +25,7 @@ void DemoFlight(string departurePoint, string destination, int size)
 			arrayFlight[i].DeparturePoint << " to "
 			<< arrayFlight[i].Destination << "\n";
 	}
+	delete[] arrayFlight;
 }
 
 void DemoMovie(int year, string name, int size)
@@ -37,6 +39,7 @@ void DemoMovie(int year, string name, int size)
 			arrayFilm[i].YearOfRelease << " has name "
 			<< arrayFilm[i].Name << "\n";
 	}
+	delete[] arrayFilm;
 }
 
 void DemoTime(int hours, int minutes, int seconds, int size)
@@ -51,6 +54,7 @@ void DemoTime(int hours, int minutes, int seconds, int size)
 			arrayTime[i].Hours << ":" <<
 			arrayTime[i].Minutes << ":" << arrayTime[i].Seconds << "\n";
 	}
+	delete[] arrayTime;
 }
 
 void DemoStructures5()

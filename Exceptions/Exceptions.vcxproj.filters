@@ -39,6 +39,9 @@
     <ClCompile Include="2.2.3.3.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="2.2.4.1.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2.2.1.1.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="2.2.3.3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2.2.4.1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
