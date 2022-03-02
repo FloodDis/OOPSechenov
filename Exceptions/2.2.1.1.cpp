@@ -25,7 +25,7 @@ void Sort(double* values, int count)
 
 void DemoSort()
 {
-	// TODO: массив динамический. √де освобождение пам€ти?
+	// TODO: массив динамический. √де освобождение пам€ти? +
 	int count = 5;
 	double* values = new double[count] {100.0, 249.0, 12.0, 45.0, 23.5};
 	Sort(values, count);
@@ -33,4 +33,5 @@ void DemoSort()
 	{
 		cout << values[i]<<"\n";
 	}
+	delete values;
 }
