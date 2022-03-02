@@ -6,8 +6,20 @@ void DemoRectanglePointer()
 	rectangle->Color = "Blue";
 	rectangle->Length = 12;
 	rectangle->Width = 10;
-	cout << "Color: " << rectangle->Color << "\n";
-	cout << "Length: " << rectangle->Length << "\n";
-	cout << "Width: " << rectangle->Width << "\n\n";
+
+	Rectangle* newRectangle = new Rectangle;
+	newRectangle = rectangle;
+	cout << "Color: " << newRectangle->Color << "\n";
+	cout << "Length: " << newRectangle->Length << "\n";
+	cout << "Width: " << newRectangle->Width << "\n\n";
+
+	newRectangle->Color = "Red";
+	newRectangle->Length = 6;
+	newRectangle->Width = 7;
+	cout << "Color: " << newRectangle->Color << "\n";
+	cout << "Length: " << newRectangle->Length << "\n";
+	cout << "Width: " << newRectangle->Width << "\n\n";
+
 	delete rectangle;
+	delete newRectangle;
 }
