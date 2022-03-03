@@ -4,6 +4,7 @@
 #include "Flight.h"
 #include "Film.h"
 #include "Time.h"
+using namespace std;
 
 void DemoRectangle(int width, int length, int size);
 

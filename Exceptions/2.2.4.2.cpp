@@ -2,17 +2,15 @@
 
 void DemoRectangleDoublePointer()
 {
-	Rectangle* rectangle = new Rectangle;
-	rectangle->Color = "Blue";
-	rectangle->Length = 12;
-	rectangle->Width = 10;
+	Rectangle* doublePointerRectangle = new Rectangle;
+	doublePointerRectangle->Color = "Blue";
+	doublePointerRectangle->Length = 12;
+	doublePointerRectangle->Width = 10;
 
-	Rectangle* newRectangle = new Rectangle;
-	newRectangle = rectangle;
+	Rectangle* newdoublePointerRectangle = doublePointerRectangle;
+	
+	cout << "Old rectangle: " << doublePointerRectangle << "\n";
+	cout << "New rectangle: " << newdoublePointerRectangle << "\n";
 
-	cout << "Old rectangle: " << rectangle << "\n";
-	cout << "New rectangle" << newRectangle << "\n";
-
-	delete rectangle;
-	delete newRectangle;
+	delete doublePointerRectangle;
 }

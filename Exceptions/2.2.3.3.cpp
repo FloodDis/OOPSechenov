@@ -61,38 +61,41 @@ void DemoStructures5()
 {
 	int width;
 	int length;
-	int size;
+	int rectangleSize;
 	cout << "\nEnter width: ";
 	cin >> width;
 	cout << "\nEnter length:";
 	cin >> length;
 	cout << "\nEnter size: ";
-	cin >> size;
-	DemoRectangle(width, length, size);
+	cin >> rectangleSize;
+	DemoRectangle(width, length, rectangleSize);
 
 	string departurePoint;
 	string destination;
+	int flightSize;
 	cout << "\nEnter departure point: ";
 	cin >> departurePoint;
 	cout << "\nEnter destination: ";
 	cin >> destination;
 	cout << "\nEnter size: ";
-	cin >> size;
-	DemoFlight(departurePoint, destination, size);
+	cin >> flightSize;
+	DemoFlight(departurePoint, destination, flightSize);
 
 	int year;
 	string name;
+	int filmSize;
 	cout << "\nEnter year: ";
 	cin >> year;
 	cout << "\nEnter name: ";
 	cin >> name;
 	cout << "\nEnter size: ";
-	cin >> size;
-	DemoMovie(year, name, size);
+	cin >> filmSize;
+	DemoMovie(year, name, filmSize);
 
 	int hours;
 	int minutes;
 	int seconds;
+	int timeSize;
 	cout << "\nEnter hours: ";
 	cin >> hours;
 	cout << "\nEnter minutes: ";
@@ -100,6 +103,6 @@ void DemoStructures5()
 	cout << "\nEnter seconds: ";
 	cin >> seconds;
 	cout << "\nEnter size: ";
-	cin >> size;
-	DemoTime(hours, minutes, seconds, size);
+	cin >> timeSize;
+	DemoTime(hours, minutes, seconds, timeSize);
 }
