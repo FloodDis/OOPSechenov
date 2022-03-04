@@ -9,6 +9,7 @@
 #include "2.2.4.2.h"
 #include "2.2.4.3.h"
 #include "2.2.5.1.h"
+#include "2.2.5.2.h"
 #include <iostream>
 using namespace std;
 
@@ -48,5 +49,10 @@ void main()
 
 	cout << "\nЗадание 2.2.5.1\n\n";
 	DemoWriteRectangle();
+
+	cout << "\nЗадание 2.2.5.2\n\n";
+	DemoReadRectangle();
+
+	cout << "\nЗадание 2.2.5.3\n\n";
 
 }

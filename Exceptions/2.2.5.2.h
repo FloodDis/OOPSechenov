@@ -1,17 +1,17 @@
 #pragma once
-#include <iostream>
 #include "Rectangle.h"
+#include <iostream>
 using namespace std;
 
 /// <summary>
 /// Функция вывода полей структуры
-/// Rectangle на экран
+/// Rectangle,введенных на экран
 /// </summary>
 /// <param name="rectangle">Экземпляр структуры Rectangle</param>
-void WriteRectangle(Rectangle& rectangle);
+void ReadRectangle(Rectangle& rectangle);
 
 /// <summary>
-/// Функция демонстрации работы
-/// функции WriteRectangle
+/// Функция демонстрации метода
+/// ReadRectangle
 /// </summary>
-void DemoWriteRectangle();
+void DemoReadRectangle();

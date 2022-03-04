@@ -24,6 +24,7 @@
     <ProjectGuid>{4c450bb0-09ff-4341-ad5c-8c1843a141bc}</ProjectGuid>
     <RootNamespace>Exceptions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>LAB1 Exceptions</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -151,6 +152,7 @@
     <ClCompile Include="2.2.4.3.cpp" />
     <ClCompile Include="2.2.4.4.cpp" />
     <ClCompile Include="2.2.5.1.cpp" />
+    <ClCompile Include="2.2.5.2.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +168,7 @@
     <ClInclude Include="2.2.4.3.h" />
     <ClInclude Include="2.2.4.4.h" />
     <ClInclude Include="2.2.5.1.h" />
+    <ClInclude Include="2.2.5.2.h" />
     <ClInclude Include="Film.h" />
     <ClInclude Include="Flight.h" />
     <ClInclude Include="PhoneContact.h" />
