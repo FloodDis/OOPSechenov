@@ -45,6 +45,7 @@ void main()
 	cout << "\nЗадание 2.2.4.3:\n\n";
 	DemoDoublePointer();
 
-	cout << "\nЗадание 2.2.4.4:\n\n";
+	cout << "\nЗадание 2.2.5.1\n\n";
+
 
 }
