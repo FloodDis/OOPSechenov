@@ -150,6 +150,7 @@
     <ClCompile Include="2.2.4.2.cpp" />
     <ClCompile Include="2.2.4.3.cpp" />
     <ClCompile Include="2.2.4.4.cpp" />
+    <ClCompile Include="2.2.5.1.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +165,7 @@
     <ClInclude Include="2.2.4.2.h" />
     <ClInclude Include="2.2.4.3.h" />
     <ClInclude Include="2.2.4.4.h" />
+    <ClInclude Include="2.2.5.1.h" />
     <ClInclude Include="Film.h" />
     <ClInclude Include="Flight.h" />
     <ClInclude Include="PhoneContact.h" />

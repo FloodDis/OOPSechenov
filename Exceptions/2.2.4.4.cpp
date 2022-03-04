@@ -8,6 +8,6 @@ void WrongPointers()
 	Flight* pointerFlight = &flight;
 	cout << "Pointer on film:\n" << pointerFilm << "\n";
 	cout << "Pointer on flight:\n" << pointerFlight << "\n";
-	pointerFlight = &film;
-	pointerFilm = &flight;
+	/*pointerFlight = &film;
+	pointerFilm = &flight;*/
 }
