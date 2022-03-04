@@ -11,6 +11,7 @@
 #include "2.2.5.1.h"
 #include "2.2.5.2.h"
 #include "2.2.5.3.h"
+#include "2.2.5.4.h"
 #include <iostream>
 using namespace std;
 
@@ -56,4 +57,7 @@ void main()
 
 	cout << "\nЗадание 2.2.5.3\n\n";
 	DemoReadAndWriteRectangles();
+
+	cout << "\nЗадание 2.2.5.4\n\n";
+	DemoExchange();
 }
