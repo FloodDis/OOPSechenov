@@ -14,6 +14,7 @@
 #include "2.2.5.4.h"
 #include "2.2.5.5.h"
 #include "2.5.5.6.h"
+#include "2.2.6.1.h"
 #include <iostream>
 using namespace std;
 
@@ -68,4 +69,7 @@ void main()
 
 	cout << "\nЗадание 2.2.5.6\n\n";
 	DemoFindMaxRectangle();
+
+	cout << "\nЗадание 2.2.6.1\n\n";
+	DemoDynamicFlight();
 }

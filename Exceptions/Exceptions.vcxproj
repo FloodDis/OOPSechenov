@@ -156,6 +156,7 @@
     <ClCompile Include="2.2.5.3.cpp" />
     <ClCompile Include="2.2.5.4.cpp" />
     <ClCompile Include="2.2.5.5.cpp" />
+    <ClCompile Include="2.2.6.1.cpp" />
     <ClCompile Include="2.5.5.6.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
@@ -176,6 +177,7 @@
     <ClInclude Include="2.2.5.3.h" />
     <ClInclude Include="2.2.5.4.h" />
     <ClInclude Include="2.2.5.5.h" />
+    <ClInclude Include="2.2.6.1.h" />
     <ClInclude Include="2.5.5.6.h" />
     <ClInclude Include="Film.h" />
     <ClInclude Include="Flight.h" />
