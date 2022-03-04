@@ -8,4 +8,4 @@ using namespace std;
 /// памятью и указателями на примере структуры
 /// Flight
 /// </summary>
-void DemoDynamicFlight();
+void DemoDynamicFlights();

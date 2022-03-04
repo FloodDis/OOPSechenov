@@ -1,6 +1,6 @@
 #include "2.2.6.1.h"
 
-void DemoDynamicFlight()
+void DemoDynamicFlights()
 {
 	Flight* pointer;
 	Flight* flight = new Flight;
@@ -11,4 +11,5 @@ void DemoDynamicFlight()
 	cout << "Flight " << pointer->DeparturePoint
 		<< " - " << pointer->Destination << " is in flight "
 		<< pointer->FlightTime << " minutes\n";
+	delete flight;
 }
