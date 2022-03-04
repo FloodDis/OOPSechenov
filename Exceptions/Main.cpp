@@ -13,6 +13,7 @@
 #include "2.2.5.3.h"
 #include "2.2.5.4.h"
 #include "2.2.5.5.h"
+#include "2.5.5.6.h"
 #include <iostream>
 using namespace std;
 
@@ -64,4 +65,7 @@ void main()
 
 	cout << "\nЗадание 2.2.5.5\n\n";
 	DemoFindRectangle();
+
+	cout << "\nЗадание 2.2.5.6\n\n";
+	DemoFindMaxRectangle();
 }
