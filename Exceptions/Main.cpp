@@ -17,6 +17,7 @@
 #include "2.2.6.1.h"
 #include "2.2.6.2.h"
 #include "2.2.6.3.h"
+#include "2.2.7.1.h"
 #include <iostream>
 using namespace std;
 
@@ -80,4 +81,8 @@ void main()
 
 	cout << "\nЗадание 2.2.6.3\n\n";
 	DemoFindShortest();
+
+	cout << "\nЗадание 2.2.7.1\n\n";
+	DemoCircle();
+
 }
