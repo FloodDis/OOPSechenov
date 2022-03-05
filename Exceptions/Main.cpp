@@ -19,6 +19,7 @@
 #include "2.2.6.3.h"
 #include "2.2.7.1.h"
 #include "2.2.7.2.h"
+#include "2.2.7.3.h"
 #include <iostream>
 using namespace std;
 
@@ -89,4 +90,7 @@ void main()
 
 	cout << "\nЗадание 2.2.7.2\n\n";
 	DemoMakeStructures();
+
+	cout << "\nЗадание 2.2.7.3\n\n";
+	DemoCopyStructures();
 }
