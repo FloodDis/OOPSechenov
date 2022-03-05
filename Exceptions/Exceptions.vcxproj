@@ -160,7 +160,7 @@
     <ClCompile Include="2.2.6.2.cpp" />
     <ClCompile Include="2.2.6.3.cpp" />
     <ClCompile Include="2.2.7.1.cpp" />
-    <ClCompile Include="2.5.5.6.cpp" />
+    <ClCompile Include="2.2.5.6.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -184,7 +184,7 @@
     <ClInclude Include="2.2.6.2.h" />
     <ClInclude Include="2.2.6.3.h" />
     <ClInclude Include="2.2.7.1.h" />
-    <ClInclude Include="2.5.5.6.h" />
+    <ClInclude Include="2.2.5.6.h" />
     <ClInclude Include="Film.h" />
     <ClInclude Include="Flight.h" />
     <ClInclude Include="PhoneContact.h" />
