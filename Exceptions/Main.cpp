@@ -18,12 +18,14 @@
 #include "2.2.6.2.h"
 #include "2.2.6.3.h"
 #include "2.2.7.1.h"
+#include "2.2.7.2.h"
 #include <iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "ru");
+
 	cout << "Результат работы сортировки(2.2.1.1):\n";
 	DemoSort();
 	cout << "\n";
@@ -85,5 +87,6 @@ void main()
 	cout << "\nЗадание 2.2.7.1\n\n";
 	DemoCircle();
 
-
+	cout << "\nЗадание 2.2.7.2\n\n";
+	DemoMakeStructures();
 }
