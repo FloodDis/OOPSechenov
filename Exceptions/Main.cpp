@@ -22,6 +22,7 @@
 #include "2.2.7.3.h"
 #include "2.2.8.1.h"
 #include "2.2.8.2.h"
+#include "2.2.8.3.h"
 #include <iostream>
 using namespace std;
 
@@ -101,6 +102,9 @@ void main()
 
 	cout << "\nЗадание 2.2.8.2\n\n";
 	DemoEnums2();
+
+	cout << "\nЗадание 2.2.8.3\n\n";
+	DemoEnums3();
 
 
 }
