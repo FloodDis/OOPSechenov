@@ -39,6 +39,10 @@ void WriteColor(Color color)
 			cout << "Purple color\n";
 			break;
 		}
+		default:
+		{
+			cout << "Try again\n";
+		}
 	}
 }
 
