@@ -27,6 +27,7 @@
 #include "2.2.8.5.h"
 #include "2.2.8.6.h"
 #include "2.2.8.7.h"
+#include "2.2.8.8.h"
 #include <iostream>
 using namespace std;
 
@@ -121,4 +122,7 @@ void main()
 
 	cout << "\nЗадание 2.2.8.7\n\n";
 	DemoCountRed();
+
+	cout << "\nЗадание 2.2.8.8\n\n";
+	DemoCountColor();
 }
