@@ -42,5 +42,19 @@ void DemoMovieWithGenre();
 /// Функция создания
 /// структуры FilmEnum
 /// </summary>
+/// <param name="name">Название фильма</param>
+/// <param name="duration">Продолжительность в минутах</param>
+/// <param name="yearOfRelease">Год выпуска</param>
+/// <param name="genre">Жанр</param>
+/// <returns>
+/// Экземпляр структуры FilmEnum
+/// </returns>
 FilmEnum* MakeMovieRemastered(string name,int duration,
 	int yearOfRelease, Genre genre);
+
+/// <summary>
+/// Функция подсчета кол-ва
+/// элементов FilmEnum определенного
+/// жанра
+/// </summary>
+int CountMoviesByGenre(FilmEnum* movies, int count, Genre findGenre);

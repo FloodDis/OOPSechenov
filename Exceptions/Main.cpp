@@ -127,6 +127,8 @@ void main()
 	cout << "\nЗадание 2.2.8.8\n\n";
 	DemoCountColor();
 
-	cout << "\nЗадание 2.2.9.1, 2.2.9.2 и 2.2.9.3\n\n";
+	cout << "\nЗадание 2.2.9.1, 2.2.9.2, 2.2.9.3, 2.2.9.4\n\n";
 	DemoMovieWithGenre();
+
+
 }
