@@ -26,4 +26,9 @@ struct Film
 	/// Жанр
 	/// </summary>
 	string Genre;
+	
+	/// <summary>
+	/// Рейтинг фильма
+	/// </summary>
+	double Rate;
 };

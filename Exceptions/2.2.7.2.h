@@ -26,7 +26,7 @@ Rectangle* MakeRectangle(int length, int width, string color);
 /// <returns>
 /// ”казатель на структуру Flight
 /// </returns>
-Flight* MakeFlight(string departurePoint, 
+Flight* MakeFlight(string departurePoint,
 	string destination, int flightTime);
 
 /// <summary>
@@ -39,8 +39,8 @@ Flight* MakeFlight(string departurePoint,
 /// <returns>
 /// ”казатель на структуру Film
 /// </returns>
-Film* MakeFilm(string name, 
-	int duration, int yearOfRelease, string genre);
+Film* MakeFilm(string name,
+	int duration, int yearOfRelease, string genre, double rate);
 
 /// <summary>
 /// ‘ункци€ создани€ структуры Time

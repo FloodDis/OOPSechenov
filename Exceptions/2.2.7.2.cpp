@@ -20,13 +20,14 @@ Flight* MakeFlight(string departurePoint,
 }
 
 Film* MakeFilm(string name,
-	int duration, int yearOfRelease, string genre)
+	int duration, int yearOfRelease, string genre, double rate)
 {
 	Film* newFilm = new Film;
 	newFilm->Duration = duration;
 	newFilm->Genre = genre;
 	newFilm->Name = name;
 	newFilm->YearOfRelease = yearOfRelease;
+	newFilm->Rate = rate;
 	return newFilm;
 }
 
@@ -48,7 +49,7 @@ void DemoMakeStructures()
 	flight = MakeFlight("Tomsk", "Moscow", 200);
 
 	Film* film = new Film;
-	film = MakeFilm("Tangled", 120, 2014, "Comedy");
+	film = MakeFilm("Tangled", 120, 2014, "Comedy", 8.0);
 
 	Time* time = new Time;
 	time = MakeTime(23, 56, 12);
@@ -67,7 +68,8 @@ void DemoMakeStructures()
 		<< "Name: " << film->Name << "\n"
 		<< "Duration: " << film->Duration << "\n"
 		<< "Year of release: " << film->YearOfRelease << "\n"
-		<< "Genre: " << film->Genre << "\n\n";
+		<< "Genre: " << film->Genre << "\n"
+		<< "Rate: " << film->Rate << "\n\n";
 
 	cout << "Time:\n"
 		<< "Hours: " << time->Hours << "\n"

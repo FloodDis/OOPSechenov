@@ -25,6 +25,7 @@ Film* CopyFilm(Film* film)
 	copiedFilm->Genre = film->Genre;
 	copiedFilm->Name = film->Name;
 	copiedFilm->YearOfRelease = film->YearOfRelease;
+	copiedFilm->Rate = film->Rate;
 	return copiedFilm;
 }
 
@@ -46,7 +47,7 @@ void DemoCopyStructures()
 	flight1 = MakeFlight("Tomsk", "Moscow", 200);
 
 	Film* film1 = new Film;
-	film1 = MakeFilm("Tangled", 120, 2014, "Comedy");
+	film1 = MakeFilm("Tangled", 120, 2014, "Comedy", 9.0);
 
 	Time* time1 = new Time;
 	time1 = MakeTime(23, 56, 12);
@@ -77,7 +78,8 @@ void DemoCopyStructures()
 		<< "Name: " << film2->Name << "\n"
 		<< "Duration: " << film2->Duration << "\n"
 		<< "Year of release: " << film2->YearOfRelease << "\n"
-		<< "Genre: " << film2->Genre << "\n\n";
+		<< "Genre: " << film2->Genre << "\n"
+		<< "Rate: " << film2->Rate;
 
 	cout << "time2:\n"
 		<< "Hours: " << time2->Hours << "\n"
