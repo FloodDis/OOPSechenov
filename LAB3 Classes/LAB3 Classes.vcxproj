@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4c450bb0-09ff-4341-ad5c-8c1843a141bc}</ProjectGuid>
-    <RootNamespace>Exceptions</RootNamespace>
+    <ProjectGuid>{0a386561-c6ca-4e19-96ee-991d68f21316}</ProjectGuid>
+    <RootNamespace>LAB3Classes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>LAB2 Exceptions</ProjectName>
+    <ProjectName>LAB3 Classes and Encapsulation</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,80 +140,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2.2.1.1.cpp" />
-    <ClCompile Include="2.2.1.2.cpp" />
-    <ClCompile Include="2.2.2.1.cpp" />
-    <ClCompile Include="2.2.2.2.cpp" />
-    <ClCompile Include="2.2.3.1.cpp" />
-    <ClCompile Include="2.2.3.2.cpp" />
-    <ClCompile Include="2.2.3.3.cpp" />
-    <ClCompile Include="2.2.4.1.cpp" />
-    <ClCompile Include="2.2.4.2.cpp" />
-    <ClCompile Include="2.2.4.3.cpp" />
-    <ClCompile Include="2.2.4.4.cpp" />
-    <ClCompile Include="2.2.5.1.cpp" />
-    <ClCompile Include="2.2.5.2.cpp" />
-    <ClCompile Include="2.2.5.3.cpp" />
-    <ClCompile Include="2.2.5.4.cpp" />
-    <ClCompile Include="2.2.5.5.cpp" />
-    <ClCompile Include="2.2.6.1.cpp" />
-    <ClCompile Include="2.2.6.2.cpp" />
-    <ClCompile Include="2.2.6.3.cpp" />
-    <ClCompile Include="2.2.7.1.cpp" />
-    <ClCompile Include="2.2.5.6.cpp" />
-    <ClCompile Include="2.2.7.2.cpp" />
-    <ClCompile Include="2.2.7.3.cpp" />
-    <ClCompile Include="2.2.8.1.cpp" />
-    <ClCompile Include="2.2.8.2.cpp" />
-    <ClCompile Include="2.2.8.3.cpp" />
-    <ClCompile Include="2.2.8.4.cpp" />
-    <ClCompile Include="2.2.8.5.cpp" />
-    <ClCompile Include="2.2.8.6.cpp" />
-    <ClCompile Include="2.2.8.7.cpp" />
-    <ClCompile Include="2.2.8.8.cpp" />
-    <ClCompile Include="2.2.9.cpp" />
-    <ClCompile Include="Main.cpp" />
+    <ClInclude Include="3.2.2.h" />
+    <ClInclude Include="Book.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="2.2.1.1.h" />
-    <ClInclude Include="2.2.1.2.h" />
-    <ClInclude Include="2.2.2.1.h" />
-    <ClInclude Include="2.2.2.2.h" />
-    <ClInclude Include="2.2.3.1.h" />
-    <ClInclude Include="2.2.3.2.h" />
-    <ClInclude Include="2.2.3.3.h" />
-    <ClInclude Include="2.2.4.1.h" />
-    <ClInclude Include="2.2.4.2.h" />
-    <ClInclude Include="2.2.4.3.h" />
-    <ClInclude Include="2.2.4.4.h" />
-    <ClInclude Include="2.2.5.1.h" />
-    <ClInclude Include="2.2.5.2.h" />
-    <ClInclude Include="2.2.5.3.h" />
-    <ClInclude Include="2.2.5.4.h" />
-    <ClInclude Include="2.2.5.5.h" />
-    <ClInclude Include="2.2.6.1.h" />
-    <ClInclude Include="2.2.6.2.h" />
-    <ClInclude Include="2.2.6.3.h" />
-    <ClInclude Include="2.2.7.1.h" />
-    <ClInclude Include="2.2.5.6.h" />
-    <ClInclude Include="2.2.7.2.h" />
-    <ClInclude Include="2.2.7.3.h" />
-    <ClInclude Include="2.2.8.1.h" />
-    <ClInclude Include="2.2.8.2.h" />
-    <ClInclude Include="2.2.8.3.h" />
-    <ClInclude Include="2.2.8.4.h" />
-    <ClInclude Include="2.2.8.5.h" />
-    <ClInclude Include="2.2.8.6.h" />
-    <ClInclude Include="2.2.8.7.h" />
-    <ClInclude Include="2.2.8.8.h" />
-    <ClInclude Include="2.2.9.h" />
-    <ClInclude Include="Film.h" />
-    <ClInclude Include="Flight.h" />
-    <ClInclude Include="PhoneContact.h" />
-    <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="Song.h" />
-    <ClInclude Include="Subject.h" />
-    <ClInclude Include="Time.h" />
+    <ClCompile Include="3.2.2.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
