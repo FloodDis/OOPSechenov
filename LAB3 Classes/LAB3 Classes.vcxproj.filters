@@ -30,6 +30,9 @@
     <ClInclude Include="3.2.3.h">
       <Filter>Header Files\StructuresArrayFields</Filter>
     </ClInclude>
+    <ClInclude Include="3.2.4.h">
+      <Filter>Header Files\StructuresArrayFields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3.2.2.cpp">
@@ -39,7 +42,10 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="3.2.3.cpp">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\StructuresArrayFields</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2.4.cpp">
+      <Filter>Resource Files\StructuresArrayFields</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

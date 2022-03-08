@@ -1,5 +1,6 @@
 #include "3.2.2.h"
 #include "3.2.3.h"
+#include "3.2.4.h"
 using namespace std;
 
 void main()
@@ -11,5 +12,6 @@ void main()
 	cout << "Задание 3.2.3:\n";
 	DemoReadBookFromConsole();
 
-
+	cout << "Задание 3.2.4:\n";
+	DemoWriteBook();
 }
