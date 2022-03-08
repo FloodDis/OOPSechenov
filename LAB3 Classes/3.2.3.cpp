@@ -16,7 +16,7 @@ void ReadBookFromConsole(Book& book)
 	book.ReleaseYear = releaseYear;
 	cout << "Enter page count: ";
 	cin >> pageCount;
-	if (pageCount < 0)
+	if (pageCount < 0 || pageCount > 2022)
 	{
 		throw exception("Wrong data!");
 	}

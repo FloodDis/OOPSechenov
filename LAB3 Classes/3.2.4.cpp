@@ -21,6 +21,19 @@ void WriteBookToConsole(Book& book)
 void DemoWriteBook()
 {
 	Book book;
-	ReadBookFromConsole(book);
+	bool tryAgain = true;
+	while (tryAgain)
+	{
+		try
+		{
+			ReadBookFromConsole(book);
+			tryAgain = false;
+		}
+		catch (exception error)
+		{
+			cout << "Wrong data!";
+		}
+	}
+	
 	WriteBookToConsole(book);
 }
