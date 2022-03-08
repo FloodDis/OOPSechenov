@@ -6,7 +6,7 @@ void WriteBookToConsole(Book& book)
 	{
 		if (i == book.AuthorCount)
 		{
-			cout << book.Authors[i]<<". ";
+			cout << book.Authors[i] << ". ";
 		}
 		else
 		{
@@ -15,18 +15,21 @@ void WriteBookToConsole(Book& book)
 	}
 	cout << book.Name << ". ";
 	cout << book.ReleaseYear << ". - ";
-	cout << book.PageCount << ".\n";
+	cout << book.PageCount << " ñ.\n";
 }
 
 void DemoWriteBook()
 {
-	Book book;
+	Book* book = new Book[3];
 	bool tryAgain = true;
 	while (tryAgain)
 	{
 		try
 		{
-			ReadBookFromConsole(book);
+			for (int i = 0; i < 3; i++)
+			{
+				ReadBookFromConsole(book[i]);
+			}
 			tryAgain = false;
 		}
 		catch (exception error)
@@ -34,6 +37,8 @@ void DemoWriteBook()
 			cout << "Wrong data!";
 		}
 	}
-	
-	WriteBookToConsole(book);
+	for (int i = 0; i < 3; i++)
+	{
+		WriteBookToConsole(book[i]);
+	}
 }
