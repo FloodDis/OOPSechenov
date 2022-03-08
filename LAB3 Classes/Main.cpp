@@ -1,6 +1,4 @@
-#include "3.2.2.h"
-#include "3.2.3.h"
-#include "3.2.4.h"
+#include "3.2.h"
 using namespace std;
 
 void main()
@@ -14,4 +12,7 @@ void main()
 
 	cout << "Задание 3.2.4:\n";
 	DemoWriteBook();
+
+	cout << "Задание 3.2.5:\n";
+	DemoFindBookByAuthor();
 }
