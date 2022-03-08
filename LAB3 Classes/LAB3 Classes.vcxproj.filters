@@ -27,12 +27,18 @@
     <ClInclude Include="3.2.2.h">
       <Filter>Header Files\StructuresArrayFields</Filter>
     </ClInclude>
+    <ClInclude Include="3.2.3.h">
+      <Filter>Header Files\StructuresArrayFields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3.2.2.cpp">
       <Filter>Resource Files\StructuresArrayFields</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2.3.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
