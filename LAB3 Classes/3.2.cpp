@@ -135,7 +135,7 @@ void DemoFindBookByAuthor()
 	{
 		try
 		{
-			for (int i = 0; i < 2; i++)
+			for (int i = 0; i < 3; i++)
 			{
 				ReadBookFromConsole(book[i]);
 			}
@@ -149,7 +149,7 @@ void DemoFindBookByAuthor()
 	string author;
 	cout << "Enter author: ";
 	cin >> author;
-	int index = FindBookByAuthor(book, 2, author);
+	int index = FindBookByAuthor(book, 3, author);
 	if (index == -1)
 	{
 		cout << "Element isn't found!\n";
@@ -159,4 +159,113 @@ void DemoFindBookByAuthor()
 		cout << "Author's book: ";
 		WriteBookToConsole(book[index]);
 	}
+}
+
+void ReadRouteFromConsole(Route& route)
+{
+	int number;
+	int averageDuration;
+	int frequency;
+	int stopsCount;
+
+	cout << "Enter number of route: ";
+	cin >> number;
+	if (number < 0)
+	{
+		throw exception("Wrong data!");
+	}
+	route.Number = number;
+
+	cout << "Enter average duration: ";
+	cin >> averageDuration;
+	if (averageDuration < 0)
+	{
+		throw exception("Wrong data!");
+	}
+	route.AverageDuration = averageDuration;
+
+	cout << "Enter frequency of route: ";
+	cin >> frequency;
+	if (frequency < 0)
+	{
+		throw exception("Wrong data!");
+	}
+	route.Frequency = frequency;
+
+	cout << "Enter stops count: ";
+	cin >> stopsCount;
+	if (stopsCount < 0)
+	{
+		throw exception("Wrong data!");
+	}
+	route.StopsCount = stopsCount;
+	route.Stops = new string[stopsCount];
+
+	for (int i = 0; i < route.StopsCount; i++)
+	{
+		cout << "Enter stop ¹" << i + 1 << ": ";
+		cin >> route.Stops[i];
+	}
+}
+
+void WriteRouteFromConsole(Route& route)
+{
+	cout << "Route " << route.Number << " has average duration "
+		<< route.AverageDuration << ", frequency " << route.Frequency
+		<< " and " << route.StopsCount << " stops:\n";
+	for (int i = 0; i < route.StopsCount; i++)
+	{
+		cout << " Stop " << i + 1 << ": " << route.Stops[i] << "\n";
+	}
+}
+
+int FindRouteTo(Route* routes, int routeCount, string stop)
+{
+	for (int i = 0; i < routeCount; i++)
+	{
+		for (int j = 0; j < routes[i].StopsCount; j++)
+		{
+			if (routes[i].Stops[j] == stop)
+			{
+				return i;
+			}
+		}
+	}
+	return -1;
+}
+
+void DemoRoute()
+{
+	Route* routes = new Route[3];
+	bool tryAgain = true;
+	while (tryAgain)
+	{
+		try
+		{
+			for (int i = 0; i < 3; i++)
+			{
+				ReadRouteFromConsole(routes[i]);
+			}
+			tryAgain = false;
+		}
+		catch (exception error)
+		{
+			cout << "Wrong data!";
+		}
+	}
+	string stop;
+	cout << "Enter stop: ";
+	cin >> stop;
+	int index = FindRouteTo(routes, 3, stop);
+	if (index == -1)
+	{
+		cout << "Element isn't found!\n";
+	}
+	else
+	{
+		cout << "Found route:\n";
+		WriteRouteFromConsole(routes[index]);
+	}
+	
+	delete[] routes;
 }

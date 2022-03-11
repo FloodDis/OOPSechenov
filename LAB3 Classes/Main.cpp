@@ -15,4 +15,8 @@ void main()
 
 	cout << "Задание 3.2.5:\n";
 	DemoFindBookByAuthor();
+
+	cout << "Задание 3.2.6:\n";
+	DemoRoute();
+
 }

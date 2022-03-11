@@ -1,5 +1,6 @@
 #pragma once
 #include "Book.h"
+#include "Route.h"
 #include <exception>
 using namespace std;
 
@@ -15,6 +16,7 @@ void DemoBook();
 /// ‘ункци€ чтени€ значений
 /// структуры Book с клавиатуры
 /// </summary>
+/// <param name="book">Ёкземпл€р структуры Book</param>
 void ReadBookFromConsole(Book& book);
 
 /// <summary>
@@ -29,6 +31,7 @@ void DemoReadBookFromConsole();
 /// ‘ункци€ вывода структуры
 /// Book на экран
 /// </summary>
+/// <param name="book">Ёкземпл€р структуры Book</param>
 void WriteBookToConsole(Book& book);
 
 /// <summary>
@@ -56,3 +59,39 @@ int FindBookByAuthor(Book* books, int booksCount, string author);
 /// FindBookByAuthor
 /// </summary>
 void DemoFindBookByAuthor();
+
+// «адание 3.2.6
+/// <summary>
+/// ‘ункци€ чтени€ значений
+/// структуры Route с клавиатуры
+/// </summary>
+/// <param name="route">Ёкземпл€р структуры Route</param>
+void ReadRouteFromConsole(Route& route);
+
+/// <summary>
+/// ‘ункци€ вывода
+/// структуры Route на экран
+/// </summary>
+/// <param name="route">Ёкземпл€р структуры Route</param>
+void WriteRouteFromConsole(Route& route);
+
+/// <summary>
+/// ‘ункци€ поиска маршрута по
+/// названию остановки
+/// </summary>
+/// <param name="routes">ћассив структур Route</param>
+/// <param name="routeCount"> ол-во элементов массива</param>
+/// <param name="stop">Ќазвание остановки</param>
+/// <returns>
+/// »ндекс найденного элемента, либо -1, если элемент
+/// не найден
+/// </returns>
+int FindRouteTo(Route* routes, int routeCount, string stop);
+
+/// <summary>
+/// ‘ункци€ демонстрации
+/// работы структуры Route 
+/// и методов дл€ работы с
+/// ней
+/// </summary>
+void DemoRoute();

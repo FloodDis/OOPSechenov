@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="3.2.h" />
     <ClInclude Include="Book.h" />
+    <ClInclude Include="Route.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
