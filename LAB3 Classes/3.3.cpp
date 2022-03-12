@@ -54,11 +54,6 @@ void SetLength(Rectangle& rectangle, double length)
 
 void SetCenter(Rectangle& rectangle, double x, double y)
 {
-	if (x < 0 || y < 0)
-	{
-		exception error;
-		throw error;
-	}
 	rectangle.Center = MakePoint(x, y);
 }
 
@@ -73,8 +68,8 @@ void DemoRectangleWithPoint()
 		SetWidth(array[i], width);
 		int length = rand() % 100;
 		SetLength(array[i], length);
-		int x = rand() % 100;
-		int y = rand() % 100;
+		int x = rand() % 100 - 50;
+		int y = rand() % 100 - 50;
 		SetCenter(array[i], x, y);
 		tryAgain = false;
 	}
@@ -82,6 +77,15 @@ void DemoRectangleWithPoint()
 	{
 		WriteRectangleWithPoint(array[i]);
 	}
+	int xCenter = 0;
+	int yCenter = 0;
+	for (int i = 0; i < 5; i++)
+	{
+		xCenter += array[i].Center->X;
+		yCenter += array[i].Center->Y;
+	}
+	cout << "Xcenter = " << xCenter / 5
+		<< "; Ycenter = " << yCenter / 5 << "\n";
 	delete[] array;
 }
 
