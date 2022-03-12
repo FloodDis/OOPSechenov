@@ -1,4 +1,5 @@
 #include "3.2.h"
+#include "3.3.h"
 using namespace std;
 
 void main()
@@ -19,4 +20,6 @@ void main()
 	cout << "Задание 3.2.6:\n";
 	DemoRoute();
 
+	cout << "Задание 3.3.1, 3.3.2, 3.3.3, 3.3.4:\n";
+	DemoRectangleWithPoint();
 }

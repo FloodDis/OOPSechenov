@@ -19,6 +19,12 @@
     <Filter Include="Resource Files\StructuresArrayFields">
       <UniqueIdentifier>{38783e55-68f3-4493-a513-e4bc17359019}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Aggregation">
+      <UniqueIdentifier>{3a66f4db-03f1-4a6f-9a1c-2678a0a6214c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Aggregation">
+      <UniqueIdentifier>{af83e663-fb5e-45c4-9d1f-845c62314faf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -30,6 +36,15 @@
     <ClInclude Include="Route.h">
       <Filter>Header Files\StructuresArrayFields</Filter>
     </ClInclude>
+    <ClInclude Include="3.3.h">
+      <Filter>Header Files\Aggregation</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files\Aggregation</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Aggregation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -37,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="3.2.cpp">
       <Filter>Resource Files\StructuresArrayFields</Filter>
+    </ClCompile>
+    <ClCompile Include="3.3.cpp">
+      <Filter>Resource Files\Aggregation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
