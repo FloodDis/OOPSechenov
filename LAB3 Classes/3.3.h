@@ -195,6 +195,7 @@ void SetDepartureTime(Flight*& flight, Time departureTime);
 /// <param name="arrivalTime">Время прибытия</param>
 void SetArrivalTime(Flight*& flight, Time arrivalTime);
 
+// Задание 3.3.9
 /// <summary>
 /// Функция демонстрации
 /// структуры Flight
@@ -213,9 +214,18 @@ void DemoFlightWithTime();
 /// </returns>
 bool IsArrivalTimeLater(Time arrivalTime, Time departureTime);
 
+// Задание 3.3.10
 /// <summary>
 /// Функция вывода структуры flight
 /// на экран
 /// </summary>
 /// <param name ="flight">Экземпляр структуры Flight</param>
 void WriteFlight(Flight& flight);
+
+// Задание 3.3.11
+/// <summary>
+/// Функция получения время полета
+/// в минутах
+/// </summary>
+/// <param name ="flight">Экземпляр структуры Flight</param>
+int GetFlightTimeMinutes(Flight& flight);

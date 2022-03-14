@@ -23,6 +23,8 @@ void main()
 	cout << "Задание 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5:\n";
 	DemoRectangleWithPoint();
 
-	cout << "Задание 3.3.7, 3.3.8:\n";
+	cout << "Задание 3.3.7, 3.3.8, 3.3.9, 3.3.10, 3.3.11:\n";
 	DemoFlightWithTime();
+
+
 }

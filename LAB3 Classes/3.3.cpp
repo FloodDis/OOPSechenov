@@ -213,6 +213,12 @@ void DemoFlightWithTime()
 	{
 		WriteFlight(array[i]);
 	}
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "Flight duration of " << i + 1 << " flight is "
+			<< GetFlightTimeMinutes(array[i])
+			<< " minutes\n";
+	}
 }
 
 bool IsArrivalTimeLater(Time arrivalTime, Time departureTime)
@@ -248,6 +254,26 @@ void WriteFlight(Flight& flight)
 		<< flight.DepartureTime.Day << " " << flight.DepartureTime.Hour
 		<< ":" << flight.DepartureTime.Minutes << " Arrival "
 		<< flight.ArrivalTime.Month << "."
-		<< flight.ArrivalTime.Day << " " << flight.ArrivalTime.Hour 
-		<< "\n";
+		<< flight.ArrivalTime.Day << " " << flight.ArrivalTime.Hour
+		<< ":" << flight.ArrivalTime.Minutes << "\n";
+}
+
+int GetFlightTimeMinutes(Flight& flight)
+{
+	long int arrivalTimeInMinutes = 0;
+	arrivalTimeInMinutes += flight.ArrivalTime.Year * 12 * 30 * 24 * 60;
+	arrivalTimeInMinutes += flight.ArrivalTime.Month * 30 * 24 * 60;
+	arrivalTimeInMinutes += flight.ArrivalTime.Day * 24 * 60;
+	arrivalTimeInMinutes += flight.ArrivalTime.Hour * 60;
+	arrivalTimeInMinutes += flight.ArrivalTime.Minutes;
+
+	long int departureTimeInMinutes = 0;
+	departureTimeInMinutes += flight.DepartureTime.Year * 12 * 30 * 24 * 60;
+	departureTimeInMinutes += flight.DepartureTime.Month * 30 * 24 * 60;
+	departureTimeInMinutes += flight.DepartureTime.Day * 24 * 60;
+	departureTimeInMinutes += flight.DepartureTime.Hour * 60;
+	departureTimeInMinutes += flight.DepartureTime.Minutes;
+
+	int flightDuration = arrivalTimeInMinutes - departureTimeInMinutes;
+	return flightDuration;
 }
