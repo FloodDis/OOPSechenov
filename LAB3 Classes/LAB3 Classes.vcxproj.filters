@@ -45,6 +45,12 @@
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files\Aggregation</Filter>
     </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Header Files\Aggregation</Filter>
+    </ClInclude>
+    <ClInclude Include="Flight.h">
+      <Filter>Header Files\Aggregation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
