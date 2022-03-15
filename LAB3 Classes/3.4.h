@@ -121,3 +121,11 @@ void SetAlbums(Band& band, Album* albums);
 /// <param name = "songTitle">Название песни</param>
 Song* FindSong(Band& band, string songTitle);
 
+// Задание 3.4.3
+/// <summary>
+/// Функция поиска альбома по песне
+/// группы из этого альбома
+/// </summary>
+/// <param name = "band">Музыкальная группа</param>
+/// <param name = "song">Экземпляр песни</param>
+Album* FindAlbum(Band& band, Song* song);

@@ -100,3 +100,17 @@ Song* FindSong(Band& band, string songTitle)
 	return nullptr;
 }
 
+Album* FindAlbum(Band& band, Song* song)
+{
+	for (int i = 0; i < band.AlbumsCount; i++)
+	{
+		for (int j = 0; j < band.Albums[i].SongsCount; j++)
+		{
+			if (&band.Albums[i].Songs[j] == song)
+			{
+				return &band.Albums[i];
+			}
+		}
+	}
+	return nullptr;
+}
