@@ -29,12 +29,13 @@ void SetGenre(Song& song, Genre genre)
 	song.Genre = genre;
 }
 
-Album* MakeAlbum(string name, int yearOfRelease, Song* songs)
+Album* MakeAlbum(string name, int yearOfRelease, Song* songs, int songsCount)
 {
 	Album* newAlbum = new Album;
 	newAlbum->Name = name;
 	newAlbum->Songs = songs;
 	newAlbum->YearOfRelease = yearOfRelease;
+	newAlbum->SongsCount = songsCount;
 	return newAlbum;
 }
 
@@ -58,12 +59,14 @@ void SetSongs(Album& album, Song* songs)
 	album.Songs = songs;
 }
 
-Band* MakeBand(string name, string information, Album* albums)
+Band* MakeBand(string name, string information,
+	Album* albums, int albumsCount)
 {
 	Band* newBand = new Band;
 	newBand->Albums = albums;
 	newBand->Information = information;
 	newBand->Name = name;
+	newBand->AlbumsCount = albumsCount;
 	return newBand;
 }
 
@@ -81,3 +84,19 @@ void SetAlbums(Band& band, Album* albums)
 {
 	band.Albums = albums;
 }
+
+Song* FindSong(Band& band, string songTitle)
+{
+	for (int i = 0; i < band.AlbumsCount; i++)
+	{
+		for (int j = 0; j < band.Albums[i].SongsCount; j++)
+		{
+			if (band.Albums[i].Songs[j].Name == songTitle)
+			{
+				return &band.Albums[i].Songs[j];
+			}
+		}
+	}
+	return nullptr;
+}
+

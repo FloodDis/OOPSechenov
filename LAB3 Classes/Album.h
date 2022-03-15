@@ -22,4 +22,10 @@ struct Album
 	/// Массив песен
 	/// </summary>
 	Song* Songs;
+
+	/// <summary>
+	/// Кол-во песен в
+	/// альбоме
+	/// </summary>
+	int SongsCount;
 };

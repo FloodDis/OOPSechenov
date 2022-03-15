@@ -22,4 +22,9 @@ struct Band
 	/// Массив альбомов
 	/// </summary>
 	Album* Albums;
+
+	/// <summary>
+	/// Кол-во альбомов
+	/// </summary>
+	int AlbumsCount;
 };

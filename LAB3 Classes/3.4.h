@@ -1,5 +1,6 @@
 #pragma once
 #include "Band.h"
+using namespace std;
 
 /// <summary>
 /// Функция создания структуры
@@ -47,7 +48,8 @@ void SetGenre(Song& song, Genre genre);
 /// <returns>
 /// Указатель на инициализированную структуру Album
 /// </returns>
-Album* MakeAlbum(string name, int yearOfRelease, Song* songs);
+Album* MakeAlbum(string name, int yearOfRelease, 
+	Song* songs, int songsCount);
 
 /// <summary>
 /// Сеттер поля Name
@@ -83,7 +85,8 @@ void SetSongs(Album& album, Song* songs);
 /// <returns>
 /// Указатель на инициализированную структуру Band
 /// </returns>
-Band* MakeBand(string name, string information, Album* albums);
+Band* MakeBand(string name, string information, 
+	Album* albums, int albumsCount);
 
 /// <summary>
 /// Сеттер поля Name
@@ -108,3 +111,13 @@ void SetInformation(Band& band, string information);
 /// <param name = "band">Экземпляр структуры Band</param>
 /// <param name = "albums">Массив альбомов</param>
 void SetAlbums(Band& band, Album* albums);
+
+// Задание 3.4.2
+/// <summary>
+/// Функция поиска песни среди всех песен
+/// группы
+/// </summary>
+/// <param name = "band">Музыкальная группа</param>
+/// <param name = "songTitle">Название песни</param>
+Song* FindSong(Band& band, string songTitle);
+
