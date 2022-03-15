@@ -1,5 +1,6 @@
 #include "3.2.h"
 #include "3.3.h"
+#include "3.4.h"
 using namespace std;
 
 void main()

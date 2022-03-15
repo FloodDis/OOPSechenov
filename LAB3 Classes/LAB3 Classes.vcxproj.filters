@@ -25,6 +25,12 @@
     <Filter Include="Resource Files\Aggregation">
       <UniqueIdentifier>{af83e663-fb5e-45c4-9d1f-845c62314faf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\OneToManyAggregation">
+      <UniqueIdentifier>{2074fd1c-ee86-4189-8763-7d98d2a98a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\OneToManyAggregation">
+      <UniqueIdentifier>{3e2520bf-f405-43d5-9fbe-272ed143de24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -51,6 +57,18 @@
     <ClInclude Include="Flight.h">
       <Filter>Header Files\Aggregation</Filter>
     </ClInclude>
+    <ClInclude Include="Song.h">
+      <Filter>Header Files\OneToManyAggregation</Filter>
+    </ClInclude>
+    <ClInclude Include="Album.h">
+      <Filter>Header Files\OneToManyAggregation</Filter>
+    </ClInclude>
+    <ClInclude Include="Band.h">
+      <Filter>Header Files\OneToManyAggregation</Filter>
+    </ClInclude>
+    <ClInclude Include="3.4.h">
+      <Filter>Header Files\OneToManyAggregation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -61,6 +79,9 @@
     </ClCompile>
     <ClCompile Include="3.3.cpp">
       <Filter>Resource Files\Aggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="3.4.cpp">
+      <Filter>Resource Files\OneToManyAggregation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
