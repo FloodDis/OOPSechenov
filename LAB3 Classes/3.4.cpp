@@ -114,3 +114,23 @@ Album* FindAlbum(Band& band, Song* song)
 	}
 	return nullptr;
 }
+
+Song* GetAllSongs(Band* band, int& allSongsCount)
+{
+	allSongsCount = 0;
+	for (int i = 0; i < band->AlbumsCount; i++)
+	{
+		allSongsCount += band->Albums[i].SongsCount;
+	}
+	Song* allSongs = new Song[allSongsCount];
+	int allSongsIndex = 0;
+	for (int i = 0; i < band->AlbumsCount; i++)
+	{
+		for (int j = 0; j < band->Albums[i].SongsCount; j++)
+		{
+			allSongs[allSongsIndex] = band->Albums[i].Songs[j];
+			allSongsIndex++;
+		}
+	}
+	return allSongs;
+}

@@ -119,6 +119,11 @@ void SetAlbums(Band& band, Album* albums);
 /// </summary>
 /// <param name = "band">Музыкальная группа</param>
 /// <param name = "songTitle">Название песни</param>
+/// <returns>
+/// Указатель на найденную песню, если такая есть в
+/// дискографии,
+/// nullptr - если элемент не найден
+/// </returns>
 Song* FindSong(Band& band, string songTitle);
 
 // Задание 3.4.3
@@ -129,3 +134,15 @@ Song* FindSong(Band& band, string songTitle);
 /// <param name = "band">Музыкальная группа</param>
 /// <param name = "song">Экземпляр песни</param>
 Album* FindAlbum(Band& band, Song* song);
+
+// Задание 3.4.4
+/// <summary>
+/// Функция получения массива
+/// всех песен из всех альбомов группы
+/// </summary>
+/// <param name = "band">Музыкальная группа</param>
+/// <param name = "allSongsCount">Кол-во всех песен</param>
+/// <returns>
+/// Указатель на массив со всеми песнями
+/// </returns>
+Song* GetAllSongs(Band* band, int& allSongsCount);
