@@ -154,3 +154,20 @@ Song* GetAllSongs(Band* band, int& allSongsCount);
 /// структуры Band
 /// </summary>
 void DemoBand();
+
+// Задание 3.4.6
+/// <summary>
+/// Функция получения массива всех
+/// песен группы определенного жанра
+/// </summary>
+/// <param name="band">Структура типа Band</param>
+/// <param name="findingGenre">Жанр искомых песен</param>
+/// <param name="allSongsCount">
+/// Кол-во всех песен определенного жанра
+/// </param>
+/// <returns>
+/// Массив всех песен группы определенного
+/// жанра
+/// </returns>
+Song* GetAllGenreSongs(Band* band, Genre
+	findingGenre, int& allSongsCount);

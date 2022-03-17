@@ -124,7 +124,7 @@ Song* GetAllSongs(Band* band, int& allSongsCount)
 	{
 		allSongsCount += band->Albums[i].SongsCount;
 	}
-	Song* allSongs = new Song[12];
+	Song* allSongs = new Song[allSongsCount];
 	int allSongsIndex = 0;
 	for (int i = 0; i < band->AlbumsCount; i++)
 	{
@@ -134,6 +134,31 @@ Song* GetAllSongs(Band* band, int& allSongsCount)
 			allSongsIndex++;
 		}
 	}
+	return allSongs;
+}
+
+Song* GetAllGenreSongs(Band* band, Genre
+	findingGenre, int& allSongsCount)
+{
+	allSongsCount = 0;
+	for (int i = 0; i < band->AlbumsCount; i++)
+	{
+		allSongsCount += band->Albums[i].SongsCount;
+	}
+	Song* allSongs = new Song[allSongsCount];
+	int allSongsIndex = 0;
+	for (int i = 0; i < band->AlbumsCount; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			if (band->Albums[i].Songs[j].Genre == findingGenre)
+			{
+				allSongs[allSongsIndex] = band->Albums[i].Songs[j];
+				allSongsIndex++;
+			}
+		}
+	}
+	allSongsCount = allSongsIndex;
 	return allSongs;
 }
 
@@ -175,7 +200,6 @@ void DemoBand()
 		cout << "Song " << songToFind->Name << " was found in album "
 			<< resultAlbum->Name;
 	}
-	
 
 	int allSongsCount = 0;
 	Song* arraySong = GetAllSongs(band, allSongsCount);
@@ -187,6 +211,16 @@ void DemoBand()
 			<< arraySong[i].Duration
 			<< " and genre " << arraySong[i].Genre << "\n";
 	}
+	Song* arrayGenre = GetAllGenreSongs(band, Pop, allSongsCount);
+	cout << "Band name: " << band->Name << "\n";
+	cout << "Count of all Pop songs: " << allSongsCount << "\n\n";
+	for (int i = 0; i < allSongsCount; i++)
+	{
+		cout << "Song " << arrayGenre[i].Name << " has duration "
+			<< arrayGenre[i].Duration
+			<< " and genre " << arrayGenre[i].Genre << "\n";
+	}
+	delete[] arrayGenre;
 	delete songToFind;
 	delete[] resultAlbum;
 	delete[] arraySong;
