@@ -106,7 +106,9 @@ Album* FindAlbum(Band& band, Song* song)
 	{
 		for (int j = 0; j < band.Albums[i].SongsCount; j++)
 		{
-			if (&band.Albums[i].Songs[j] == song)
+			if (band.Albums[i].Songs[j].Name == song->Name
+				&& band.Albums[i].Songs[j].Duration == song->Duration
+				&& band.Albums[i].Songs[j].Genre == song->Genre)
 			{
 				return &band.Albums[i];
 			}
@@ -122,15 +124,70 @@ Song* GetAllSongs(Band* band, int& allSongsCount)
 	{
 		allSongsCount += band->Albums[i].SongsCount;
 	}
-	Song* allSongs = new Song[allSongsCount];
+	Song* allSongs = new Song[12];
 	int allSongsIndex = 0;
 	for (int i = 0; i < band->AlbumsCount; i++)
 	{
-		for (int j = 0; j < band->Albums[i].SongsCount; j++)
+		for (int j = 0; j < 4; j++)
 		{
 			allSongs[allSongsIndex] = band->Albums[i].Songs[j];
 			allSongsIndex++;
 		}
 	}
 	return allSongs;
+}
+
+void DemoBand()
+{
+	Band* band = new Band;
+	Album* albums = new Album[3];
+	Song* songs = new Song[4];
+	songs[0] = *MakeSong("Come Together", 4, Rock);
+	songs[1] = *MakeSong("Octopus's Garden", 3, Pop);
+	songs[2] = *MakeSong("Something", 3, Folk);
+	songs[3] = *MakeSong("Oh! Darling", 3, Rock);
+	for (int i = 0; i < 3; i++)
+	{
+		albums[i] = *MakeAlbum("Abbey Road", 1969, songs, 4);
+	}
+	band = MakeBand("The Beatles",
+		"British rock-group from Liverpool, founded in 1960",
+		albums, 3);
+	Song* resultSong = FindSong(*band, "Something");
+	if (resultSong == nullptr)
+	{
+		cout << "Song isn't found\n";
+	}
+	else
+	{
+		cout << "Song " << resultSong->Name << " has duration "
+			<< resultSong->Duration
+			<< " and genre " << resultSong->Genre << "\n";
+	}
+	Song* songToFind = MakeSong("Something", 3, Folk);
+	Album* resultAlbum = FindAlbum(*band, songToFind);
+	if (resultAlbum == nullptr)
+	{
+		cout << "Album isn't found\n\n";
+	}
+	else
+	{
+		cout << "Song " << songToFind->Name << " was found in album "
+			<< resultAlbum->Name;
+	}
+	
+
+	int allSongsCount = 0;
+	Song* arraySong = GetAllSongs(band, allSongsCount);
+	cout << "Band name: " << band->Name << "\n";
+	cout << "Count of all songs: " << allSongsCount << "\n\n";
+	for (int i = 0; i < allSongsCount; i++)
+	{
+		cout << "Song " << arraySong[i].Name << " has duration "
+			<< arraySong[i].Duration
+			<< " and genre " << arraySong[i].Genre << "\n";
+	}
+	delete songToFind;
+	delete[] resultAlbum;
+	delete[] arraySong;
 }

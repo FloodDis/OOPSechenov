@@ -82,6 +82,7 @@ void SetSongs(Album& album, Song* songs);
 /// <param name = "name">Название группы</param>
 /// <param name = "information">Информация о группе</param>
 /// <param name = "albums">Массив альбомов</param>
+/// <param name = "albumsCount">Кол-во альбомов в массиве</param>
 /// <returns>
 /// Указатель на инициализированную структуру Band
 /// </returns>
@@ -146,3 +147,10 @@ Album* FindAlbum(Band& band, Song* song);
 /// Указатель на массив со всеми песнями
 /// </returns>
 Song* GetAllSongs(Band* band, int& allSongsCount);
+
+// Задание 3.4.5
+/// <summary>
+/// Функция демонстрации
+/// структуры Band
+/// </summary>
+void DemoBand();
