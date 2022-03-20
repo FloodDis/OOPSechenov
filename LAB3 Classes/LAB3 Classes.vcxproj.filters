@@ -31,6 +31,12 @@
     <Filter Include="Resource Files\OneToManyAggregation">
       <UniqueIdentifier>{3e2520bf-f405-43d5-9fbe-272ed143de24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Classes">
+      <UniqueIdentifier>{464ba2a7-74dc-4819-8cfc-e29b490b5c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Classes">
+      <UniqueIdentifier>{316ea0ac-68c8-4aed-9fcf-ab30a82d959b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -69,6 +75,33 @@
     <ClInclude Include="3.4.h">
       <Filter>Header Files\OneToManyAggregation</Filter>
     </ClInclude>
+    <ClInclude Include="3.5.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PointClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="FlightClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SongClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BandClass.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="GenreEnum.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -82,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="3.4.cpp">
       <Filter>Resource Files\OneToManyAggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="3.5.cpp">
+      <Filter>Resource Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

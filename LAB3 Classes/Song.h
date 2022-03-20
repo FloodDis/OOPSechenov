@@ -1,38 +1,9 @@
 #pragma once
 #include <iostream>
+#include "GenreEnum.h"
 using namespace std;
 
 //Задание 3.4.1
-/// <summary>
-/// Жанр песни
-/// </summary>
-enum Genre
-{
-	/// <summary>
-	/// Поп
-	/// </summary>
-	Pop=1,
-
-	/// <summary>
-	/// Рэп
-	/// </summary>
-	Rap,
-
-	/// <summary>
-	/// Рок
-	/// </summary>
-	Rock,
-
-	/// <summary>
-	/// Современный ритм-н-блюз
-	/// </summary>
-	RnB,
-
-	/// <summary>
-	/// Фолк
-	/// </summary>
-	Folk
-};
 
 /// <summary>
 /// Песня

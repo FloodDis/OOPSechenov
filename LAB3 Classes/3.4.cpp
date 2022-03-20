@@ -5,7 +5,7 @@ Song* MakeSong(string name, int duration, Genre genre)
 	Song* newSong = new Song;
 	newSong->Duration = duration;
 	newSong->Genre = genre;
-	newSong->Name = name;
+	newSong->Name = name; 
 	return newSong;
 }
 
@@ -134,6 +134,7 @@ Song* GetAllSongs(Band* band, int& allSongsCount)
 			allSongsIndex++;
 		}
 	}
+	allSongsCount = allSongsIndex;
 	return allSongs;
 }
 

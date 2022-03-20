@@ -143,19 +143,29 @@
     <ClInclude Include="3.2.h" />
     <ClInclude Include="3.3.h" />
     <ClInclude Include="3.4.h" />
+    <ClInclude Include="3.5.h" />
     <ClInclude Include="Album.h" />
+    <ClInclude Include="AlbumClass.h" />
     <ClInclude Include="Band.h" />
+    <ClInclude Include="BandClass.h" />
     <ClInclude Include="Book.h" />
     <ClInclude Include="Flight.h" />
+    <ClInclude Include="FlightClass.h" />
+    <ClInclude Include="GenreEnum.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="PointClass.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RectangleClass.h" />
     <ClInclude Include="Route.h" />
     <ClInclude Include="Song.h" />
+    <ClInclude Include="SongClass.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="TimeClass.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3.3.cpp" />
     <ClCompile Include="3.4.cpp" />
+    <ClCompile Include="3.5.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="3.2.cpp" />
   </ItemGroup>
