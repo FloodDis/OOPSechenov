@@ -1,4 +1,4 @@
-#include "3.2.h"
+ï»¿#include "3.2.h"
 #include "3.3.h"
 #include "3.4.h"
 #include "3.5.h"
@@ -7,30 +7,30 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "ru");
-	cout << "Çàäàíèå 3.2.2:\n";
+	cout << "Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.2.2:\n";
 	DemoBook();
 
-	cout << "\nÇàäàíèå 3.2.3:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.2.3:\n";
 	DemoReadBookFromConsole();
 
-	cout << "\nÇàäàíèå 3.2.4:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.2.4:\n";
 	DemoWriteBook();
 
-	cout << "\nÇàäàíèå 3.2.5:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.2.5:\n";
 	DemoFindBookByAuthor();
 
-	cout << "\nÇàäàíèå 3.2.6:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.2.6:\n";
 	DemoRoute();
 
-	cout << "\nÇàäàíèå 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5:\n";
 	DemoRectangleWithPoint();
 
-	cout << "\nÇàäàíèå 3.3.7, 3.3.8, 3.3.9, 3.3.10, 3.3.11:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.3.7, 3.3.8, 3.3.9, 3.3.10, 3.3.11:\n";
 	DemoFlightWithTime();
 
-	cout << "\nÇàäàíèå 3.4.1, 3.4.2, 3.4.3, 3.4.4, 3.4.5, 3.4.6:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3.4.1, 3.4.2, 3.4.3, 3.4.4, 3.4.5, 3.4.6:\n";
 	DemoBand();
 
-	cout << "\nÇàäàíèÿ 3.5.1-3.5.5:\n";
+	cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ñ 3.5.1-3.5.5:\n";
 	DemoBandClass();
 }
