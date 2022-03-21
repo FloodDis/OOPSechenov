@@ -1,35 +1,35 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
-// Задание 3.3.7 (1-ая часть)
+// Р—Р°РґР°РЅРёРµ 3.3.7 (1-Р°СЏ С‡Р°СЃС‚СЊ)
 /// <summary>
-/// Время
+/// Р’СЂРµРјСЏ
 /// </summary>
 struct Time
 {
 	/// <summary>
-	/// Год
+	/// Р“РѕРґ
 	/// </summary>
 	int Year;
 
 	/// <summary>
-	/// Месяц (не более 12)
+	/// РњРµСЃСЏС† (РЅРµ Р±РѕР»РµРµ 12)
 	/// </summary>
 	int Month;
 
 	/// <summary>
-	/// День (не более 30)
+	/// Р”РµРЅСЊ (РЅРµ Р±РѕР»РµРµ 30)
 	/// </summary>
 	int Day;
 
 	/// <summary>
-	/// Час (не более 24)
+	/// Р§Р°СЃ (РЅРµ Р±РѕР»РµРµ 24)
 	/// </summary>
 	int Hour;
 
 	/// <summary>
-	/// Минуты (не более 60)
+	/// РњРёРЅСѓС‚С‹ (РЅРµ Р±РѕР»РµРµ 60)
 	/// </summary>
 	int Minutes;
 };

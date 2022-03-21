@@ -1,14 +1,14 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "PhoneContact.h"
 #include "Song.h"
 #include "Subject.h"
 using namespace std;
 
-// TODO: каждая структура в своём файле +
+// TODO: РєР°Р¶РґР°СЏ СЃС‚СЂСѓРєС‚СѓСЂР° РІ СЃРІРѕС‘Рј С„Р°Р№Р»Рµ +
 
 /// <summary>
-/// Функция демонстрации
-/// работы структур
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЂР°Р±РѕС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂ
 /// </summary>
 void DemoStructures2();

@@ -1,86 +1,86 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "PointClass.h"
 using namespace std;
 
 /// <summary>
-/// Прямоугольник
+/// РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 /// </summary>
 class RectangleClass
 {
 private:
 	/// <summary>
-	/// Ширина прямоуголника
+	/// РЁРёСЂРёРЅР° РїСЂСЏРјРѕСѓРіРѕР»РЅРёРєР°
 	/// </summary>
 	double _width;
 
 	/// <summary>
-	/// Длина прямоуголника
+	/// Р”Р»РёРЅР° РїСЂСЏРјРѕСѓРіРѕР»РЅРёРєР°
 	/// </summary>
 	double _length;
 
 	/// <summary>
-	/// Точка центра
-	/// прямоугольника
+	/// РўРѕС‡РєР° С†РµРЅС‚СЂР°
+	/// РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
 	/// </summary>
 	PointClass* _center;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса RectangleClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° RectangleClass
 	/// </summary>
 	RectangleClass();
 
 	/// <summary>
-	/// Конструктор класса RectangleClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° RectangleClass
 	/// </summary>
-	/// <param name="width">Ширина</param>
-	/// <param name="length">Длина</param>
-	/// <param name="x">Координата центра X</param>
-	/// <param name="y">Координата центра Y</param>
+	/// <param name="width">РЁРёСЂРёРЅР°</param>
+	/// <param name="length">Р”Р»РёРЅР°</param>
+	/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+	/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 	RectangleClass(double width, double length, double x, double y);
 
 	/// <summary>
-	/// Сеттер поля _width
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _width
 	/// </summary>
-	/// <param name="width">Ширина</param>
+	/// <param name="width">РЁРёСЂРёРЅР°</param>
 	void SetWidth(double width);
 
 	/// <summary>
-	/// Сеттер поля _length
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _length
 	/// </summary>
-	/// <param name="length">Длина</param>
+	/// <param name="length">Р”Р»РёРЅР°</param>
 	void SetLength(double length);
 
 	/// <summary>
-	/// Сеттер поля _center
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _center
 	/// </summary>
-	/// <param name="x">Координата центра X</param>
-	/// <param name="y">Координата центра Y</param>
+	/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+	/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 	void SetCenter(double x, double y);
 
 	/// <summary>
-	/// Геттер поля _width
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _width
 	/// </summary>
 	/// <returns>
-	/// Ширина прямоугольника
+	/// РЁРёСЂРёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
 	/// </returns>
 	double GetWidth();
 
 	/// <summary>
-	/// Геттер поля _length
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _length
 	/// </summary>
 	/// <returns>
-	/// Длина прямоугольника
+	/// Р”Р»РёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
 	/// </returns>
 	double GetLength();
 
 	/// <summary>
-	/// Геттер поля _center
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _center
 	/// </summary>
 	/// <returns>
-	/// Центр прямоугольника
+	/// Р¦РµРЅС‚СЂ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
 	/// </returns>
 	PointClass* GetCenter();
 };

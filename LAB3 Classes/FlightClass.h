@@ -1,122 +1,122 @@
-#pragma once
+п»ї#pragma once
 #include "TimeClass.h"
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Рейс
+/// Р РµР№СЃ
 /// </summary>
 class FlightClass
 {
 private:
 
 	/// <summary>
-	/// Номер рейса
+	/// РќРѕРјРµСЂ СЂРµР№СЃР°
 	/// </summary>
 	int _number;
 
 	/// <summary>
-	/// Пункт отправления
+	/// РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 	/// </summary>
 	string _departurePoint;
 
 	/// <summary>
-	/// Пункт прибытия
+	/// РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ
 	/// </summary>
 	string _destinationPoint;
 
 	/// <summary>
-	/// Время отправления
+	/// Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 	/// </summary>
 	TimeClass _departureTime;
 
 	/// <summary>
-	/// Время прибытия
+	/// Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ
 	/// </summary>
 	TimeClass _arrivalTime;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса FlightClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° FlightClass
 	/// </summary>
-	/// <param name="number">Идентификационный номер</param>
-	/// <param name="departurePoint">Место отправления</param>
-	/// <param name="destinationPoint">Место прибытия</param>
-	/// <param name="departureTime">Время отправления</param>
-	/// <param name="arrivalTime">Время прибытия</param>
+	/// <param name="number">РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</param>
+	/// <param name="departurePoint">РњРµСЃС‚Рѕ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
+	/// <param name="destinationPoint">РњРµСЃС‚Рѕ РїСЂРёР±С‹С‚РёСЏ</param>
+	/// <param name="departureTime">Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
+	/// <param name="arrivalTime">Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ</param>
 	FlightClass(int number, string departurePoint, string destinationPoint,
 		TimeClass departureTime, TimeClass arrivalTime);
 
 	/// <summary>
-	/// Конструктор класса FlightClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° FlightClass
 	/// </summary>
 	FlightClass();
 
 	/// <summary>
-	/// Сеттер поля _number
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _number
 	/// </summary>
-	/// <param name="number">Идентификационный номер</param>
+	/// <param name="number">РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</param>
 	void SetNumber(int number);
 
 	/// <summary>
-	/// Сеттер поля _departurePoint
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _departurePoint
 	/// </summary>
-	/// <param name="departurePoint">Место отправления</param>
+	/// <param name="departurePoint">РњРµСЃС‚Рѕ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
 	void SetDeparturePoint(string departurePoint);
 
 	/// <summary>
-	/// Сеттер поля _destinationPoint
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _destinationPoint
 	/// </summary>
-	/// <param name="destinationPoint">Место прибытия</param>
+	/// <param name="destinationPoint">РњРµСЃС‚Рѕ РїСЂРёР±С‹С‚РёСЏ</param>
 	void SetDestinationPoint(string destinationPoint);
 
 	/// <summary>
-	/// Сеттер поля _departureTime
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _departureTime
 	/// </summary>
-	/// <param name="departureTime">Время отправления</param>
+	/// <param name="departureTime">Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
 	void SetDepartureTime(TimeClass departureTime);
 
 	/// <summary>
-	/// Сеттер поля _arrivalTime
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _arrivalTime
 	/// </summary>
 	/// <param name="arrivalTime"></param>
 	void SetArrivalTime(TimeClass arrivalTime);
 
 	/// <summary>
-	/// Геттер поля _number
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _number
 	/// </summary>
-	/// <returns>Номер рейса</returns>
+	/// <returns>РќРѕРјРµСЂ СЂРµР№СЃР°</returns>
 	int GetNumber();
 
 	/// <summary>
-	/// Геттер поля _departurePoint
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _departurePoint
 	/// </summary>
-	/// <returns>Пункт отправления</returns>
+	/// <returns>РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</returns>
 	string GetDeparturePoint();
 
 	/// <summary>
-	/// Геттер поля _destinationPoint
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _destinationPoint
 	/// </summary>
-	/// <returns>Пункт прибытия</returns>
+	/// <returns>РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ</returns>
 	string GetDestinationPoint();
 
 	/// <summary>
-	/// Геттер поля _departureTime
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _departureTime
 	/// </summary>
-	/// <returns>Время отправления</returns>
+	/// <returns>Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</returns>
 	TimeClass GetDepartureTime();
 
 	/// <summary>
-	/// Геттер поля _destinationTime
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _destinationTime
 	/// </summary>
-	/// <returns>Время прибытия</returns>
+	/// <returns>Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ</returns>
 	TimeClass GetArrivalTime();
 
 	/// <summary>
-	/// Функция подсчета времени
-	/// полета
+	/// Р¤СѓРЅРєС†РёСЏ РїРѕРґСЃС‡РµС‚Р° РІСЂРµРјРµРЅРё
+	/// РїРѕР»РµС‚Р°
 	/// </summary>
-	/// <returns>Время полета</returns>
+	/// <returns>Р’СЂРµРјСЏ РїРѕР»РµС‚Р°</returns>
 	int GetFlightTimeMinutes();
 };

@@ -1,21 +1,21 @@
-#pragma once
+п»ї#pragma once
 #include "Flight.h"
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Функция, показывающая работу с динамической
-/// памятью и указателями на примере массива структур
+/// Р¤СѓРЅРєС†РёСЏ, РїРѕРєР°Р·С‹РІР°СЋС‰Р°СЏ СЂР°Р±РѕС‚Сѓ СЃ РґРёРЅР°РјРёС‡РµСЃРєРѕР№
+/// РїР°РјСЏС‚СЊСЋ Рё СѓРєР°Р·Р°С‚РµР»СЏРјРё РЅР° РїСЂРёРјРµСЂРµ РјР°СЃСЃРёРІР° СЃС‚СЂСѓРєС‚СѓСЂ
 /// Flight
 /// </summary>
 void DemoDynamicFlight();
 
 /// <summary>
-/// Функция присваивания кажому полю
-/// структуры Flght значения
+/// Р¤СѓРЅРєС†РёСЏ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ РєР°Р¶РѕРјСѓ РїРѕР»СЋ
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flght Р·РЅР°С‡РµРЅРёСЏ
 /// </summary>
-/// <param name="departurePoint">Место отправления</param>
-/// <param name="destination">Место прибытия</param>
-/// <param name="flightTime">Время полета в минутах</param>
+/// <param name="departurePoint">РњРµСЃС‚Рѕ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
+/// <param name="destination">РњРµСЃС‚Рѕ РїСЂРёР±С‹С‚РёСЏ</param>
+/// <param name="flightTime">Р’СЂРµРјСЏ РїРѕР»РµС‚Р° РІ РјРёРЅСѓС‚Р°С…</param>
 Flight ReadFlight(string departurePoint, 
 	string destination, int flightTime);

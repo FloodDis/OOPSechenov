@@ -1,34 +1,34 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Фильм
+/// Р¤РёР»СЊРј
 /// </summary>
 struct Film
 {
 	/// <summary>
-	/// Название
+	/// РќР°Р·РІР°РЅРёРµ
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Продолжительность в минутах
+	/// РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…
 	/// </summary>
 	int Duration;
 
 	/// <summary>
-	/// Год выпуска
+	/// Р“РѕРґ РІС‹РїСѓСЃРєР°
 	/// </summary>
 	int YearOfRelease;
 
 	/// <summary>
-	/// Жанр
+	/// Р–Р°РЅСЂ
 	/// </summary>
 	string Genre;
 	
 	/// <summary>
-	/// Рейтинг фильма
+	/// Р РµР№С‚РёРЅРі С„РёР»СЊРјР°
 	/// </summary>
 	double Rate;
 };

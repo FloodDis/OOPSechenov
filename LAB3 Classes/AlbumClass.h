@@ -1,97 +1,97 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "SongClass.h"
 using namespace std;
 
 /// <summary>
-/// Альбом
+/// РђР»СЊР±РѕРј
 /// </summary>
 class AlbumClass
 {
 private:
 
 	/// <summary>
-	/// Название альбома
+	/// РќР°Р·РІР°РЅРёРµ Р°Р»СЊР±РѕРјР°
 	/// </summary>
 	string _name;
 
 	/// <summary>
-	/// Год выпуска
+	/// Р“РѕРґ РІС‹РїСѓСЃРєР°
 	/// </summary>
 	int _yearRelease;
 
 	/// <summary>
-	/// Массив песен в альбоме
+	/// РњР°СЃСЃРёРІ РїРµСЃРµРЅ РІ Р°Р»СЊР±РѕРјРµ
 	/// </summary>
 	SongClass* _songs;
 
 	/// <summary>
-	/// Кол-во песен в альбоме
+	/// РљРѕР»-РІРѕ РїРµСЃРµРЅ РІ Р°Р»СЊР±РѕРјРµ
 	/// </summary>
 	int _songsCount;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса AlbumClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° AlbumClass
 	/// </summary>
 	AlbumClass();
 
 	/// <summary>
-	/// Конструктор класса AlbumClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° AlbumClass
 	/// </summary>
-	/// <param name="name">Название альбома</param>
-	/// <param name="yearOfRelease">Год выпуска</param>
-	/// <param name="songs">Массив песен</param>
-	/// <param name="songsCount">Кол-во песен в альбоме</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ Р°Р»СЊР±РѕРјР°</param>
+	/// <param name="yearOfRelease">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
+	/// <param name="songs">РњР°СЃСЃРёРІ РїРµСЃРµРЅ</param>
+	/// <param name="songsCount">РљРѕР»-РІРѕ РїРµСЃРµРЅ РІ Р°Р»СЊР±РѕРјРµ</param>
 	AlbumClass(string name, int yearRelease, SongClass* songs, int songsCount);
 
 	/// <summary>
-	/// Сеттер поля _name
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
 	/// <param name="name"></param>
 	void SetName(string name);
 
 	/// <summary>
-	/// Сеттер поля _yearRelease
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _yearRelease
 	/// </summary>
-	/// <param name="yearRelease">Год выпуска</param>
+	/// <param name="yearRelease">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
 	void SetYearRelease(int yearRelease);
 
 	/// <summary>
-	/// Сеттер поля _songs
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _songs
 	/// </summary>
-	/// <param name="songs">Массив песен в албоме</param>
+	/// <param name="songs">РњР°СЃСЃРёРІ РїРµСЃРµРЅ РІ Р°Р»Р±РѕРјРµ</param>
 	void SetSongs(SongClass* songs);
 
 	/// <summary>
-	/// Сеттер поля _songsCount
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _songsCount
 	/// </summary>
-	/// <param name="songsCount">Кол-во песен в </param>
+	/// <param name="songsCount">РљРѕР»-РІРѕ РїРµСЃРµРЅ РІ </param>
 	void SetSongsCount(int songsCount);
 
 	/// <summary>
-	/// Геттер поля _name
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <returns>Название песни</returns>
+	/// <returns>РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё</returns>
 	string GetName();
 
 	/// <summary>
-	/// Геттер поля _yearRelease
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _yearRelease
 	/// </summary>
-	/// <returns>Год выпускс</returns>
+	/// <returns>Р“РѕРґ РІС‹РїСѓСЃРєСЃ</returns>
 	int GetYearRelease();
 
 	/// <summary>
-	/// Геттер поля _songs
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _songs
 	/// </summary>
-	/// <returns>Массив песен в альбоме</returns>
+	/// <returns>РњР°СЃСЃРёРІ РїРµСЃРµРЅ РІ Р°Р»СЊР±РѕРјРµ</returns>
 	SongClass* GetSongs();
 
 	/// <summary>
-	/// Геттер поля _songsCount
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _songsCount
 	/// </summary>
-	/// <returns>Кол-во песен в массиве</returns>
+	/// <returns>РљРѕР»-РІРѕ РїРµСЃРµРЅ РІ РјР°СЃСЃРёРІРµ</returns>
 	int GetSongsCount();
 
 };

@@ -1,24 +1,24 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Контакт в телефонной книге
+/// РљРѕРЅС‚Р°РєС‚ РІ С‚РµР»РµС„РѕРЅРЅРѕР№ РєРЅРёРіРµ
 /// </summary>
 struct PhoneContact
 {
 	/// <summary>
-	/// Имя
+	/// РРјСЏ
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Номер телефона
+	/// РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°
 	/// </summary>
 	string Number;
 
 	/// <summary>
-	/// Статус контакта(работа, семья)
+	/// РЎС‚Р°С‚СѓСЃ РєРѕРЅС‚Р°РєС‚Р°(СЂР°Р±РѕС‚Р°, СЃРµРјСЊСЏ)
 	/// </summary>
 	string Status;
 };

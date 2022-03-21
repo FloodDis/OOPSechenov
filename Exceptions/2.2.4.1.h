@@ -1,9 +1,9 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Rectangle.h"
 
 /// <summary>
-/// Функция демонстрации работы 
-/// присваивания указателей
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹ 
+/// РїСЂРёСЃРІР°РёРІР°РЅРёСЏ СѓРєР°Р·Р°С‚РµР»РµР№
 /// </summary>
 void DemoRectanglePointer();

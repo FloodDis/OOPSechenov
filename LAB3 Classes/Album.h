@@ -1,31 +1,31 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Song.h"
 using namespace std;
 
 /// <summary>
-/// Альбом
+/// РђР»СЊР±РѕРј
 /// </summary>
 struct Album
 {
 	/// <summary>
-	/// Название
+	/// РќР°Р·РІР°РЅРёРµ
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Год выпуска
+	/// Р“РѕРґ РІС‹РїСѓСЃРєР°
 	/// </summary>
 	int YearOfRelease;
 
 	/// <summary>
-	/// Массив песен
+	/// РњР°СЃСЃРёРІ РїРµСЃРµРЅ
 	/// </summary>
 	Song* Songs;
 
 	/// <summary>
-	/// Кол-во песен в
-	/// альбоме
+	/// РљРѕР»-РІРѕ РїРµСЃРµРЅ РІ
+	/// Р°Р»СЊР±РѕРјРµ
 	/// </summary>
 	int SongsCount;
 };

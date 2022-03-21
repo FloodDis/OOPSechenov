@@ -1,17 +1,17 @@
-#pragma once
+п»ї#pragma once
 #include "Flight.h"
 #include "2.2.6.2.h"
 
 /// <summary>
-/// Функция присваивания кажому полю
-/// структуры Flght значения
+/// Р¤СѓРЅРєС†РёСЏ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ РєР°Р¶РѕРјСѓ РїРѕР»СЋ
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flght Р·РЅР°С‡РµРЅРёСЏ
 /// </summary>
-/// <param name="flights">Массив структур Flight</param>
-/// <param name="count">Кол-во элементов в массиве</param>
+/// <param name="flights">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ Flight</param>
+/// <param name="count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
 void FindShortestFlight(Flight* flights, int count);
 
 /// <summary>
-/// Функция демонстрации работы
-/// метода FindShortestFlight
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹
+/// РјРµС‚РѕРґР° FindShortestFlight
 /// </summary>
 void DemoFindShortest();

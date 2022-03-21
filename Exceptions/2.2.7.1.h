@@ -1,59 +1,59 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Круг
+/// РљСЂСѓРі
 /// </summary>
 struct Circle 
 {
 	/// <summary>
-	/// X-координата центра круга
+	/// X-РєРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° РєСЂСѓРіР°
 	/// </summary>
 	double X; 
 
 	/// <summary>
-	/// Y-координата центра круга
+	/// Y-РєРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° РєСЂСѓРіР°
 	/// </summary>
 	double Y;
 
 	/// <summary>
-	/// Радиус
+	/// Р Р°РґРёСѓСЃ
 	/// </summary>
 	double Radius; 
 
 	/// <summary>
-	/// Цвет
+	/// Р¦РІРµС‚
 	/// </summary>
 	string Color; 
 };
 
 /// <summary>
-/// Функция создания структуры Circle
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Circle
 /// </summary>
-/// <param name="x">X-координата центра круга</param>
-/// <param name="y">Y-координата центра круга</param>
-/// <param name="radius">Радиус круга</param>
-/// <param name="color">Цвет круга</param>
+/// <param name="x">X-РєРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° РєСЂСѓРіР°</param>
+/// <param name="y">Y-РєРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° РєСЂСѓРіР°</param>
+/// <param name="radius">Р Р°РґРёСѓСЃ РєСЂСѓРіР°</param>
+/// <param name="color">Р¦РІРµС‚ РєСЂСѓРіР°</param>
 /// <returns>
-/// Указатель на структуру Circle
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ Circle
 /// </returns>
 Circle* MakeCircle(double x, double y, double radius, string color);
 
 /// <summary>
-/// Функция копирования структуры Circle
+/// Р¤СѓРЅРєС†РёСЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Circle
 /// </summary>
-/// <param name="circle">Копируемый экземпляр структуры Circle</param>
-/// <returns>Указатель на скопированную структуру Circle</returns>
+/// <param name="circle">РљРѕРїРёСЂСѓРµРјС‹Р№ СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Circle</param>
+/// <returns>РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃРєРѕРїРёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Circle</returns>
 Circle* CopyCircle(Circle& circle);
 
 /// <summary>
-/// Функция демонстрации работы структуры Circle
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂС‹ Circle
 /// </summary>
 void DemoCircle();
 
 /// <summary>
-/// Функция вывода структуры Circle на экран
+/// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° СЃС‚СЂСѓРєС‚СѓСЂС‹ Circle РЅР° СЌРєСЂР°РЅ
 /// </summary>
-/// <param name="circle">Выводимый экземпляр структуры Circle</param>
+/// <param name="circle">Р’С‹РІРѕРґРёРјС‹Р№ СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Circle</param>
 void WriteCircle(Circle* circle);

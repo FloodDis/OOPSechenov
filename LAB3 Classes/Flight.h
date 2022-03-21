@@ -1,36 +1,36 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Time.h"
 using namespace std;
 
-// Задание 3.3.8 (1-ая часть)
+// Р—Р°РґР°РЅРёРµ 3.3.8 (1-Р°СЏ С‡Р°СЃС‚СЊ)
 /// <summary>
-/// Авиарейс
+/// РђРІРёР°СЂРµР№СЃ
 /// </summary>
 struct Flight
 {
 	/// <summary>
-	/// Номер рейса
+	/// РќРѕРјРµСЂ СЂРµР№СЃР°
 	/// </summary>
 	int Number;
 
 	/// <summary>
-	/// Пункт отправления
+	/// РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 	/// </summary>
 	string DeparturePoint;
 
 	/// <summary>
-	/// Пункт прибытия
+	/// РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ
 	/// </summary>
 	string DestinationPoint;
 
 	/// <summary>
-	/// Время отправления
+	/// Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 	/// </summary>
 	Time DepartureTime;
 
 	/// <summary>
-	/// Время прибытия
+	/// Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ
 	/// </summary>
 	Time ArrivalTime;
 };

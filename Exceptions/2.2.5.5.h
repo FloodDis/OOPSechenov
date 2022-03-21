@@ -1,17 +1,17 @@
-#pragma once
+п»ї#pragma once
 #include "Rectangle.h"
 #include "2.2.5.1.h"
 
 /// <summary>
-/// Функция поиска Rectangle с
-/// наибольшей длиной
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРёСЃРєР° Rectangle СЃ
+/// РЅР°РёР±РѕР»СЊС€РµР№ РґР»РёРЅРѕР№
 /// </summary>
-/// <param name="rectangles">Массив структур Rectangle</param>
-/// <param name="count">Кол-во элементов</param>
+/// <param name="rectangles">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ Rectangle</param>
+/// <param name="count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ</param>
 void FindRectangle(Rectangle* rectangles, int count);
 
 /// <summary>
-/// Функция демонстрации метода
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјРµС‚РѕРґР°
 /// FindRectangle
 /// </summary>
 void DemoFindRectangle();

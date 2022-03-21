@@ -1,16 +1,16 @@
-#pragma once
+п»ї#pragma once
 #include "2.2.8.1.h"
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Функция вывода структуры Color
-/// на экран
+/// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° СЃС‚СЂСѓРєС‚СѓСЂС‹ Color
+/// РЅР° СЌРєСЂР°РЅ
 /// </summary>
 void WriteColor(Color color);
 
 /// <summary>
-/// Функция демонстрации
-/// работы метода WriteColor
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЂР°Р±РѕС‚С‹ РјРµС‚РѕРґР° WriteColor
 /// </summary>
 void DemoWriteColor();

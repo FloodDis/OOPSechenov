@@ -1,35 +1,35 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
-// Задание 3.2.1
+// Р—Р°РґР°РЅРёРµ 3.2.1
 /// <summary>
-/// Книга
+/// РљРЅРёРіР°
 /// </summary>
 struct Book
 {
 	/// <summary>
-	/// Название книги
+	/// РќР°Р·РІР°РЅРёРµ РєРЅРёРіРё
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Год издания
+	/// Р“РѕРґ РёР·РґР°РЅРёСЏ
 	/// </summary>
 	int ReleaseYear;
 
 	/// <summary>
-	/// Кол-во страниц
+	/// РљРѕР»-РІРѕ СЃС‚СЂР°РЅРёС†
 	/// </summary>
 	int PageCount;
 
 	/// <summary>
-	/// Авторы
+	/// РђРІС‚РѕСЂС‹
 	/// </summary>
 	string Authors[10];
 
 	/// <summary>
-	/// Кол-во авторов
+	/// РљРѕР»-РІРѕ Р°РІС‚РѕСЂРѕРІ
 	/// </summary>
 	int AuthorCount = 0;
 };

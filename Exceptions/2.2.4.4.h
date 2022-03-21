@@ -1,12 +1,12 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Flight.h"
 #include "Film.h"
 using namespace std;
 
 /// <summary>
-/// Функция демонстрации
-/// ошибок при работе 
-/// с указателями
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РѕС€РёР±РѕРє РїСЂРё СЂР°Р±РѕС‚Рµ 
+/// СЃ СѓРєР°Р·Р°С‚РµР»СЏРјРё
 /// </summary>
 void WrongPointers();

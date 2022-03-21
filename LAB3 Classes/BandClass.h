@@ -1,134 +1,134 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "AlbumClass.h"
 using namespace std;
 
 /// <summary>
-/// Музыкальная группа
+/// РњСѓР·С‹РєР°Р»СЊРЅР°СЏ РіСЂСѓРїРїР°
 /// </summary>
 class BandClass
 {
 private:
 
 	/// <summary>
-	/// Название группы
+	/// РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹
 	/// </summary>
 	string _name;
 
 	/// <summary>
-	/// Информация о группе
+	/// РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ
 	/// </summary>
 	string _information;
 
 	/// <summary>
-	/// Массив альбомов
+	/// РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ
 	/// </summary>
 	AlbumClass* _albums;
 
 	/// <summary>
-	/// Кол-во альбомов
+	/// РљРѕР»-РІРѕ Р°Р»СЊР±РѕРјРѕРІ
 	/// </summary>
 	int _albumsCount;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса BandClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° BandClass
 	/// </summary>
 	BandClass();
 
 	/// <summary>
-	/// Конструктор класса BandClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° BandClass
 	/// </summary>
-	/// <param name="name">Название группы</param>
-	/// <param name="information">Информация о группе</param>
-	/// <param name="albums">Массив альбомов</param>
-	/// <param name="albumsCount">Кол-во альбомов</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹</param>
+	/// <param name="information">РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ</param>
+	/// <param name="albums">РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ</param>
+	/// <param name="albumsCount">РљРѕР»-РІРѕ Р°Р»СЊР±РѕРјРѕРІ</param>
 	BandClass(string name, string information, AlbumClass* albums, int albumsCount);
 
 	/// <summary>
-	/// Сеттер поля _name
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <param name="name">Название группы</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹</param>
 	void SetName(string name);
 
 	/// <summary>
-	/// Сеттер поля _information
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _information
 	/// </summary>
-	/// <param name="information">Информация о группе</param>
+	/// <param name="information">РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ</param>
 	void SetInformation(string information);
 
 	/// <summary>
-	/// Сеттер поля _albums
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _albums
 	/// </summary>
-	/// <param name="albums">Массив альбомов группы</param>
+	/// <param name="albums">РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ РіСЂСѓРїРїС‹</param>
 	void SetAlbums(AlbumClass* albums);
 
 	/// <summary>
-	/// Сеттер поля _albumsCount
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _albumsCount
 	/// </summary>
-	/// <param name="albumsCount">Кол-во альбомов</param>
+	/// <param name="albumsCount">РљРѕР»-РІРѕ Р°Р»СЊР±РѕРјРѕРІ</param>
 	void SetAlbumsCount(int albumsCount);
 
 	/// <summary>
-	/// Геттер поля _name
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <returns>Название музыкальной группы</returns>
+	/// <returns>РќР°Р·РІР°РЅРёРµ РјСѓР·С‹РєР°Р»СЊРЅРѕР№ РіСЂСѓРїРїС‹</returns>
 	string GetName();
 
 	/// <summary>
-	/// Геттер поля _information
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _information
 	/// </summary>
-	/// <returns>Информация о группе</returns>
+	/// <returns>РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ</returns>
 	string GetInformation();
 
 	/// <summary>
-	/// Геттер поля _albums
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _albums
 	/// </summary>
-	/// <returns>Массив альбомов</returns>
+	/// <returns>РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ</returns>
 	AlbumClass* GetAlbums();
 
 	/// <summary>
-	/// Геттер поля _albumsCount
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _albumsCount
 	/// </summary>
 	/// <returns></returns>
 	int GetAlbumsCount();
 
 	/// <summary>
-	/// Метод поиска песни среди всех
-	/// альбомов группы
+	/// РњРµС‚РѕРґ РїРѕРёСЃРєР° РїРµСЃРЅРё СЃСЂРµРґРё РІСЃРµС…
+	/// Р°Р»СЊР±РѕРјРѕРІ РіСЂСѓРїРїС‹
 	/// </summary>
 	/// <param name="songTitle"></param>
 	/// <returns></returns>
 	SongClass* FindSong(string songTitle);
 
 	/// <summary>
-	/// Метод поиска альбома по песне
-	/// из этого альбома
+	/// РњРµС‚РѕРґ РїРѕРёСЃРєР° Р°Р»СЊР±РѕРјР° РїРѕ РїРµСЃРЅРµ
+	/// РёР· СЌС‚РѕРіРѕ Р°Р»СЊР±РѕРјР°
 	/// </summary>
 	/// <param name="song"></param>
 	/// <returns></returns>
 	AlbumClass* FindAlbum(SongClass* song);
 
 	/// <summary>
-	/// Метод получения массива всех песен
-	/// из всех альбомов группы
+	/// РњРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ РјР°СЃСЃРёРІР° РІСЃРµС… РїРµСЃРµРЅ
+	/// РёР· РІСЃРµС… Р°Р»СЊР±РѕРјРѕРІ РіСЂСѓРїРїС‹
 	/// </summary>
-	/// <param name="allSongsCount">Кол-во всех песен</param>
+	/// <param name="allSongsCount">РљРѕР»-РІРѕ РІСЃРµС… РїРµСЃРµРЅ</param>
 	/// <returns></returns>
 	SongClass* GetAllSongs(int& allSongsCount);
 
 	/// <summary>
-	/// Метод получения массива всех
-	/// песен группы определенного жанра
+	/// РњРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ РјР°СЃСЃРёРІР° РІСЃРµС…
+	/// РїРµСЃРµРЅ РіСЂСѓРїРїС‹ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р¶Р°РЅСЂР°
 	/// </summary>
-	/// <param name="findingGenre">Жанр искомых песен</param>
+	/// <param name="findingGenre">Р–Р°РЅСЂ РёСЃРєРѕРјС‹С… РїРµСЃРµРЅ</param>
 	/// <param name="allSongsCount">
-	/// Кол-во всех песен определенного жанра
+	/// РљРѕР»-РІРѕ РІСЃРµС… РїРµСЃРµРЅ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р¶Р°РЅСЂР°
 	/// </param>
 	/// <returns>
-	/// Массив всех песен группы определенного
-	/// жанра
+	/// РњР°СЃСЃРёРІ РІСЃРµС… РїРµСЃРµРЅ РіСЂСѓРїРїС‹ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ
+	/// Р¶Р°РЅСЂР°
 	/// </returns>
 	SongClass* GetAllGenreSongs(Genre findingGenre, int& allSongsCount);
 };

@@ -1,24 +1,24 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Время
+/// Р’СЂРµРјСЏ
 /// </summary>
 struct Time
 {
 	/// <summary>
-	/// Часы (от 0 до 23)
+	/// Р§Р°СЃС‹ (РѕС‚ 0 РґРѕ 23)
 	/// </summary>
 	int Hours;
 
 	/// <summary>
-	/// Минуты (от 0 до 60)
+	/// РњРёРЅСѓС‚С‹ (РѕС‚ 0 РґРѕ 60)
 	/// </summary>
 	int Minutes;
 
 	/// <summary>
-	/// Секунды (от 0 до 60)
+	/// РЎРµРєСѓРЅРґС‹ (РѕС‚ 0 РґРѕ 60)
 	/// </summary>
 	int Seconds;
 };

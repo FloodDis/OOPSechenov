@@ -1,34 +1,34 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Жанр песни
+/// Р–Р°РЅСЂ РїРµСЃРЅРё
 /// </summary>
 enum Genre
 {
 	/// <summary>
-	/// Поп
+	/// РџРѕРї
 	/// </summary>
 	Pop = 1,
 
 	/// <summary>
-	/// Рэп
+	/// Р СЌРї
 	/// </summary>
 	Rap,
 
 	/// <summary>
-	/// Рок
+	/// Р РѕРє
 	/// </summary>
 	Rock,
 
 	/// <summary>
-	/// Современный ритм-н-блюз
+	/// РЎРѕРІСЂРµРјРµРЅРЅС‹Р№ СЂРёС‚Рј-РЅ-Р±Р»СЋР·
 	/// </summary>
 	RnB,
 
 	/// <summary>
-	/// Фолк
+	/// Р¤РѕР»Рє
 	/// </summary>
 	Folk
 };

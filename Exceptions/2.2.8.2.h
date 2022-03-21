@@ -1,87 +1,87 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Форма обучения студента
+/// Р¤РѕСЂРјР° РѕР±СѓС‡РµРЅРёСЏ СЃС‚СѓРґРµРЅС‚Р°
 /// </summary>
 enum FormOfStudy
 {
 	/// <summary>
-	/// Очное
+	/// РћС‡РЅРѕРµ
 	/// </summary>
 	FullTime = 1,
 
 	/// <summary>
-	/// Заочное
+	/// Р—Р°РѕС‡РЅРѕРµ
 	/// </summary>
 	PartTime,
 
 	/// <summary>
-	/// Вечернее
+	/// Р’РµС‡РµСЂРЅРµРµ
 	/// </summary>
 	Evening,
 
 	/// <summary>
-	/// Дистанционное
+	/// Р”РёСЃС‚Р°РЅС†РёРѕРЅРЅРѕРµ
 	/// </summary>
 	Distant
 };
 
 /// <summary>
-/// Производители смартфонов
+/// РџСЂРѕРёР·РІРѕРґРёС‚РµР»Рё СЃРјР°СЂС‚С„РѕРЅРѕРІ
 /// </summary>
 enum SmartphoneManufacturers
 {
 	/// <summary>
-	/// Компания Apple
+	/// РљРѕРјРїР°РЅРёСЏ Apple
 	/// </summary>
 	Apple=1,
 
 	/// <summary>
-	/// Компания Samsung
+	/// РљРѕРјРїР°РЅРёСЏ Samsung
 	/// </summary>
 	Samsung,
 
 	/// <summary>
-	/// Компания Xiaomi
+	/// РљРѕРјРїР°РЅРёСЏ Xiaomi
 	/// </summary>
 	Xiaomi,
 
 	/// <summary>
-	/// Компания Oppo
+	/// РљРѕРјРїР°РЅРёСЏ Oppo
 	/// </summary>
 	Oppo
 };
 
 /// <summary>
-/// Время года
+/// Р’СЂРµРјСЏ РіРѕРґР°
 /// </summary>
 enum TimeOfTheYear
 {
 	/// <summary>
-	/// Зима
+	/// Р—РёРјР°
 	/// </summary>
 	Winter = 1,
 
 	/// <summary>
-	/// Весна
+	/// Р’РµСЃРЅР°
 	/// </summary>
 	Spring,
 
 	/// <summary>
-	/// Лето
+	/// Р›РµС‚Рѕ
 	/// </summary>
 	Summer,
 
 	/// <summary>
-	/// Осень
+	/// РћСЃРµРЅСЊ
 	/// </summary>
 	Autumn
 };
 
 /// <summary>
-/// Функция демонстрации
-/// работы пречеслительных типов
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЂР°Р±РѕС‚С‹ РїСЂРµС‡РµСЃР»РёС‚РµР»СЊРЅС‹С… С‚РёРїРѕРІ
 /// </summary>
 void DemoEnums2();

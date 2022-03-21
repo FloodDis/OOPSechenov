@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <exception>
 #include "Point.h"
@@ -7,225 +7,225 @@
 #include "Flight.h"
 using namespace std;
 
-// Задание 3.3.2
+// Р—Р°РґР°РЅРёРµ 3.3.2
 /// <summary>
-/// Конструктор структуры Point
+/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Point
 /// </summary>
-/// <param name="x">Координата X</param>
-/// <param name="y">Координата Y</param>
+/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° X</param>
+/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° Y</param>
 /// <returns>
-/// Указатель на экземпляр инициализированной
-/// структуры Point
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЌРєР·РµРјРїР»СЏСЂ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅРѕР№
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Point
 /// </returns>
 Point* MakePoint(double x, double y);
 
 /// <summary>
-/// Сеттер для координаты X
+/// РЎРµС‚С‚РµСЂ РґР»СЏ РєРѕРѕСЂРґРёРЅР°С‚С‹ X
 /// </summary>
-/// <param name="point">Экземпляр структуры Point</param>
-/// <param name="x">Координата X</param>
+/// <param name="point">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Point</param>
+/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° X</param>
 void SetX(Point*& point, double x);
 
 /// <summary>
-/// Сеттер для координаты Y
+/// РЎРµС‚С‚РµСЂ РґР»СЏ РєРѕРѕСЂРґРёРЅР°С‚С‹ Y
 /// </summary>
-/// <param name="point">Экземпляр структуры Point</param>
-/// <param name="y">Координата Y</param>
+/// <param name="point">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Point</param>
+/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° Y</param>
 void SetY(Point*& point, double y);
 
 /// <summary>
-/// Конструктор структуры Rectangle
+/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
-/// <param name="width">Ширина прямоугольника</param>
-/// <param name="length">Длина прямоугольника</param>
-/// <param name="x">Координата центра X</param>
-/// <param name="y">Координата центра Y</param>
+/// <param name="width">РЁРёСЂРёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
+/// <param name="length">Р”Р»РёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
+/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 /// <returns>
-/// Указатель на экземпляр инициализированной
-/// структуры Rectangle
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЌРєР·РµРјРїР»СЏСЂ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅРѕР№
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </returns>
 Rectangle* MakeRectangle(double width, double length, double x, double y);
 
 /// <summary>
-/// Сеттер поля width
-/// структуры Rectangle
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ width
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
-/// <param name="width">Ширина прямоугольника</param>
+/// <param name="width">РЁРёСЂРёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
 void SetWidth(Rectangle& rectangle, double width);
 
 /// <summary>
-/// Сеттер поля Length
-/// структуры Rectangle
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Length
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
-/// <param name="length">Длина прямоугольника</param>
+/// <param name="length">Р”Р»РёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
 void SetLength(Rectangle& rectangle, double length);
 
 /// <summary>
-/// Сеттер поля Center
-/// структуры Rectangle
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Center
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
-/// <param name="rectangle">Экземпляр структуры Rectangle</param>
-/// <param name="x">Координата центра X</param>
-/// <param name="y">Координата центра Y</param>
+/// <param name="rectangle">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle</param>
+/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 void SetCenter(Rectangle& rectangle, double x, double y);
 
-// Задание 3.3.3
+// Р—Р°РґР°РЅРёРµ 3.3.3
 /// <summary>
-/// Функция демонстрации 
-/// структуры Rectangle
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё 
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
 void DemoRectangleWithPoint();
 
-// Задание 3.3.4
+// Р—Р°РґР°РЅРёРµ 3.3.4
 /// <summary>
-/// Функция вывода полей структуры
-/// Rectangle на экран
+/// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РїРѕР»РµР№ СЃС‚СЂСѓРєС‚СѓСЂС‹
+/// Rectangle РЅР° СЌРєСЂР°РЅ
 /// </summary>
-/// <param name="rectangle">Экземпляр структуры Rectangle</param>
+/// <param name="rectangle">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle</param>
 void WriteRectangleWithPoint(Rectangle& rectangle);
 
-// Задание 3.3.7 (2-ая часть)
+// Р—Р°РґР°РЅРёРµ 3.3.7 (2-Р°СЏ С‡Р°СЃС‚СЊ)
 /// <summary>
-/// Конструктор структуры Time
+/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="year">Год</param>
-/// <param name="month">Месяц</param>
-/// <param name="day">День</param>
-/// <param name="hour">Час</param>
-/// <param name="minutes">Минуты</param>
+/// <param name="year">Р“РѕРґ</param>
+/// <param name="month">РњРµСЃСЏС†</param>
+/// <param name="day">Р”РµРЅСЊ</param>
+/// <param name="hour">Р§Р°СЃ</param>
+/// <param name="minutes">РњРёРЅСѓС‚С‹</param>
 /// <returns>
-/// Указатель на экземпляр инициализированной
-/// структуры Time
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЌРєР·РµРјРїР»СЏСЂ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅРѕР№
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </returns>
 Time* MakeTime(int year, int month, int day, int hour, int minutes);
 
 /// <summary>
-/// Сеттер поля Year
-/// структуры Time
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Year
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="time">Экземпляр структуры Time</param>
-/// <param name="year">Год</param>
+/// <param name="time">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time</param>
+/// <param name="year">Р“РѕРґ</param>
 void SetYear(Time*& time, int year);
 
 /// <summary>
-/// Сеттер поля Month
-/// структуры Time
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Month
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="time">Экземпляр структуры Time</param>
-/// <param name="month">Месяц</param>
+/// <param name="time">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time</param>
+/// <param name="month">РњРµСЃСЏС†</param>
 void SetMonth(Time*& time, int month);
 
 /// <summary>
-/// Сеттер поля Day
-/// структуры Time
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Day
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="time">Экземпляр структуры Time</param>
-/// <param name="day">День</param>
+/// <param name="time">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time</param>
+/// <param name="day">Р”РµРЅСЊ</param>
 void SetDay(Time*& time, int day);
 
 /// <summary>
-/// Сеттер поля Hour
-/// структуры Time
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Hour
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="time">Экземпляр структуры Time</param>
-/// <param name="hour">Часы</param>
+/// <param name="time">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time</param>
+/// <param name="hour">Р§Р°СЃС‹</param>
 void SetHour(Time*& time, int hour);
 
 /// <summary>
-/// Сеттер поля Minutes
-/// структуры Time
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Minutes
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="time">Экземпляр структуры Time</param>
-/// <param name="minutes">Минуты</param>
+/// <param name="time">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time</param>
+/// <param name="minutes">РњРёРЅСѓС‚С‹</param>
 void SetMinutes(Time*& time, int minutes);
 
-// Задание 3.3.8 (2-ая часть)
+// Р—Р°РґР°РЅРёРµ 3.3.8 (2-Р°СЏ С‡Р°СЃС‚СЊ)
 /// <summary>
-/// Конструктор структуры Flight
+/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="number">Номер рейса</param>
-/// <param name="departurePoint">Пункт отправления</param>
-/// <param name="destinationPoint">Пункт прибытия</param>
-/// <param name="departureTime">Время отправки</param>
-/// <param name="arrivalTime">Время прибытия</param>
+/// <param name="number">РќРѕРјРµСЂ СЂРµР№СЃР°</param>
+/// <param name="departurePoint">РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
+/// <param name="destinationPoint">РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ</param>
+/// <param name="departureTime">Р’СЂРµРјСЏ РѕС‚РїСЂР°РІРєРё</param>
+/// <param name="arrivalTime">Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ</param>
 /// <returns>
-/// Указатель на экземпляр инициализированной
-/// структуры Flight
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЌРєР·РµРјРїР»СЏСЂ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅРѕР№
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </returns>
 Flight* MakeFlight(int number, string departurePoint,
 	string destinationPoint, Time departureTime, Time arrivalTime);
 
 /// <summary>
-/// Сеттер поля Number
-/// структуры Flight
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Number
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="flight">Экземпляр структуры Flight</param>
-/// <param name="number">Номер рейса</param>
+/// <param name="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
+/// <param name="number">РќРѕРјРµСЂ СЂРµР№СЃР°</param>
 void SetNumber(Flight*& flight, int number);
 
 /// <summary>
-/// Сеттер поля DeparturePoint
-/// структуры Flight
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ DeparturePoint
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="flight">Экземпляр структуры Flight</param>
-/// <param name="departurePoint">Пункт отправления</param>
+/// <param name="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
+/// <param name="departurePoint">РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
 void SetDeparturePoint(Flight*& flight, string departurePoint);
 
 /// <summary>
-/// Сеттер поля DestinationPoint
-/// структуры Flight
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ DestinationPoint
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="flight">Экземпляр структуры Flight</param>
-/// <param name="destinationPoint">Пункт прибытия</param>
+/// <param name="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
+/// <param name="destinationPoint">РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ</param>
 void SetDestinationPoint(Flight*& flight, string destinationPoint);
 
 /// <summary>
-/// Сеттер поля DepartureTime
-/// структуры Flight
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ DepartureTime
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="flight">Экземпляр структуры Flight</param>
-/// <param name="departureTime">Время отправления</param>
+/// <param name="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
+/// <param name="departureTime">Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
 void SetDepartureTime(Flight*& flight, Time departureTime);
 
 /// <summary>
-/// Сеттер поля ArrivalTime
-/// структуры Flight
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ ArrivalTime
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="flight">Экземпляр структуры Flight</param>
-/// <param name="arrivalTime">Время прибытия</param>
+/// <param name="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
+/// <param name="arrivalTime">Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ</param>
 void SetArrivalTime(Flight*& flight, Time arrivalTime);
 
-// Задание 3.3.9
+// Р—Р°РґР°РЅРёРµ 3.3.9
 /// <summary>
-/// Функция демонстрации
-/// структуры Flight
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
 void DemoFlightWithTime();
 
 /// <summary>
-/// Функция проверки правильности
-/// введенных времени прибытия и отправления
+/// Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё РїСЂР°РІРёР»СЊРЅРѕСЃС‚Рё
+/// РІРІРµРґРµРЅРЅС‹С… РІСЂРµРјРµРЅРё РїСЂРёР±С‹С‚РёСЏ Рё РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 /// </summary>
-/// <param name ="arrivalTime">Время прибытия</param>
-/// <param name ="departureTime">Время отправления</param>
+/// <param name ="arrivalTime">Р’СЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ</param>
+/// <param name ="departureTime">Р’СЂРµРјСЏ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
 /// <returns>
-/// true - время прибытия больше времени отправления,
-/// false - время прибытия меньше времени отправления
+/// true - РІСЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ Р±РѕР»СЊС€Рµ РІСЂРµРјРµРЅРё РѕС‚РїСЂР°РІР»РµРЅРёСЏ,
+/// false - РІСЂРµРјСЏ РїСЂРёР±С‹С‚РёСЏ РјРµРЅСЊС€Рµ РІСЂРµРјРµРЅРё РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 /// </returns>
 bool IsArrivalTimeLater(Time arrivalTime, Time departureTime);
 
-// Задание 3.3.10
+// Р—Р°РґР°РЅРёРµ 3.3.10
 /// <summary>
-/// Функция вывода структуры flight
-/// на экран
+/// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° СЃС‚СЂСѓРєС‚СѓСЂС‹ flight
+/// РЅР° СЌРєСЂР°РЅ
 /// </summary>
-/// <param name ="flight">Экземпляр структуры Flight</param>
+/// <param name ="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
 void WriteFlight(Flight& flight);
 
-// Задание 3.3.11
+// Р—Р°РґР°РЅРёРµ 3.3.11
 /// <summary>
-/// Функция получения время полета
-/// в минутах
+/// Р¤СѓРЅРєС†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ РІСЂРµРјСЏ РїРѕР»РµС‚Р°
+/// РІ РјРёРЅСѓС‚Р°С…
 /// </summary>
-/// <param name ="flight">Экземпляр структуры Flight</param>
+/// <param name ="flight">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
 int GetFlightTimeMinutes(Flight& flight);

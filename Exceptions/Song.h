@@ -1,25 +1,25 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Песня в плеере
+/// РџРµСЃРЅСЏ РІ РїР»РµРµСЂРµ
 /// </summary>
 struct Song
 {
 	/// <summary>
-	/// Название песни
+	/// РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё
 	/// </summary>
 	string SongName;
 
 	/// <summary>
-	/// Длительность в минутах
+	/// Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…
 	/// </summary>
 	int Duration;
 
 	/// <summary>
-	/// Название плейлиста, в котором
-	/// находится песня
+	/// РќР°Р·РІР°РЅРёРµ РїР»РµР№Р»РёСЃС‚Р°, РІ РєРѕС‚РѕСЂРѕРј
+	/// РЅР°С…РѕРґРёС‚СЃСЏ РїРµСЃРЅСЏ
 	/// </summary>
 	string PlaylistName;
 };

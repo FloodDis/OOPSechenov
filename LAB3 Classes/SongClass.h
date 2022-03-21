@@ -1,78 +1,78 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "GenreEnum.h"
 using namespace std;
 
 /// <summary>
-/// Песня
+/// РџРµСЃРЅСЏ
 /// </summary>
 class SongClass
 {
 private:
 
 	/// <summary>
-	/// Название песни
+	/// РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё
 	/// </summary>
 	string _name;
 
 	/// <summary>
-	/// Длительность в минутах
+	/// Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…
 	/// </summary>
 	int _duration;
 
 	/// <summary>
-	/// Жанр песни
+	/// Р–Р°РЅСЂ РїРµСЃРЅРё
 	/// </summary>
 	Genre _genre;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса SongClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° SongClass
 	/// </summary>
 	SongClass();
 
 	/// <summary>
-	/// Конструктор класса SongClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° SongClass
 	/// </summary>
-	/// <param name="name">Название песни</param>
-	/// <param name="duration">Длительность в минутах</param>
-	/// <param name="genre">Жанр песни</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё</param>
+	/// <param name="duration">Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…</param>
+	/// <param name="genre">Р–Р°РЅСЂ РїРµСЃРЅРё</param>
 	SongClass(string name, int duration, Genre genre);
 
 	/// <summary>
-	/// Сеттер поля _name
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <param name="name">Название песни</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё</param>
 	void SetName(string name);
 
 	/// <summary>
-	/// Сеттер поля _duration
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _duration
 	/// </summary>
-	/// <param name="duration">Длительность в минутах</param>
+	/// <param name="duration">Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…</param>
 	void SetDuration(int duration);
 
 	/// <summary>
-	/// Сеттер поля _genre
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _genre
 	/// </summary>
-	/// <param name="genre">Жанр песни</param>
+	/// <param name="genre">Р–Р°РЅСЂ РїРµСЃРЅРё</param>
 	void SetGenre(Genre genre);
 
 	/// <summary>
-	/// Геттер поля _name
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <returns>Название песни</returns>
+	/// <returns>РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё</returns>
 	string GetName();
 
 	/// <summary>
-	/// Геттер поля _duration
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _duration
 	/// </summary>
-	/// <returns>Длительность в минутах</returns>
+	/// <returns>Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…</returns>
 	int GetDuration();
 
 	/// <summary>
-	/// Геттер поля _genre
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _genre
 	/// </summary>
-	/// <returns>Жанр песни</returns>
+	/// <returns>Р–Р°РЅСЂ РїРµСЃРЅРё</returns>
 	Genre GetGenre();
 };

@@ -1,11 +1,11 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "2.2.8.2.h"
 #include "2.2.8.1.h"
 using namespace std;
 
 /// <summary>
-/// Функция демонстрации 
-/// перечеслительных типов из
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё 
+/// РїРµСЂРµС‡РµСЃР»РёС‚РµР»СЊРЅС‹С… С‚РёРїРѕРІ РёР·
 /// </summary>
 void DemoEnums3();

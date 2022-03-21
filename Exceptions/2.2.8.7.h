@@ -1,20 +1,20 @@
-#pragma once
+п»ї#pragma once
 #include "2.2.8.1.h"
 using namespace std;
 
 /// <summary>
-/// Функция подсчета кол-ва
-/// Red в массиве
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРґСЃС‡РµС‚Р° РєРѕР»-РІР°
+/// Red РІ РјР°СЃСЃРёРІРµ
 /// </summary>
-/// <param name ="colors">Массив структур Color</param>
-/// <param name = "count">Кол-во элементов в массиве</param>
+/// <param name ="colors">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ Color</param>
+/// <param name = "count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
 /// <returns>
-/// Кол-во Red в массиве
+/// РљРѕР»-РІРѕ Red РІ РјР°СЃСЃРёРІРµ
 /// </returns>
 int CountRed(Color* colors, int count);
 
 /// <summary>
-/// Функция демонстрации
-/// метода CountRed
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјРµС‚РѕРґР° CountRed
 /// </summary>
 void DemoCountRed();

@@ -1,89 +1,89 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "2.2.8.1.h"
 using namespace std;
 
-//Задание 2.2.9.1
+//Р—Р°РґР°РЅРёРµ 2.2.9.1
 /// <summary>
-/// Фильм
+/// Р¤РёР»СЊРј
 /// </summary>
 struct FilmEnum
 {
 	/// <summary>
-	/// Название
+	/// РќР°Р·РІР°РЅРёРµ
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Продолжительность в минутах
+	/// РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…
 	/// </summary>
 	int Duration;
 
 	/// <summary>
-	/// Год выпуска
+	/// Р“РѕРґ РІС‹РїСѓСЃРєР°
 	/// </summary>
 	int YearOfRelease;
 
 	/// <summary>
-	/// Жанр
+	/// Р–Р°РЅСЂ
 	/// </summary>
 	Genre Genre;
 
 	/// <summary>
-	/// Рейтинг фильма
+	/// Р РµР№С‚РёРЅРі С„РёР»СЊРјР°
 	/// </summary>
 	double Rate;
 };
 
-//Задание 2.2.9.2
+//Р—Р°РґР°РЅРёРµ 2.2.9.2
 /// <summary>
-/// Функция демонстрации
-/// структуры FilmEnum
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ FilmEnum
 /// </summary>
 void DemoMovieWithGenre();
 
-//Задание 2.2.9.3
+//Р—Р°РґР°РЅРёРµ 2.2.9.3
 /// <summary>
-/// Функция создания
-/// структуры FilmEnum
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ FilmEnum
 /// </summary>
-/// <param name="name">Название фильма</param>
-/// <param name="duration">Продолжительность в минутах</param>
-/// <param name="yearOfRelease">Год выпуска</param>
-/// <param name="genre">Жанр</param>
+/// <param name="name">РќР°Р·РІР°РЅРёРµ С„РёР»СЊРјР°</param>
+/// <param name="duration">РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…</param>
+/// <param name="yearOfRelease">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
+/// <param name="genre">Р–Р°РЅСЂ</param>
 /// <returns>
-/// Экземпляр структуры FilmEnum
+/// Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ FilmEnum
 /// </returns>
 FilmEnum* MakeMovieRemastered(string name, int duration,
 	int yearOfRelease, Genre genre, double rate);
 
-//Задание 2.2.9.4
+//Р—Р°РґР°РЅРёРµ 2.2.9.4
 /// <summary>
-/// Функция подсчета кол-ва
-/// элементов FilmEnum определенного
-/// жанра
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРґСЃС‡РµС‚Р° РєРѕР»-РІР°
+/// СЌР»РµРјРµРЅС‚РѕРІ FilmEnum РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ
+/// Р¶Р°РЅСЂР°
 /// </summary>
-///	<param name="movies">Массив структур FilmEnum</param>
-/// <param name="count">Кол-во элементов массива</param>
-/// <param name="findGenre">Жанр искомых фильмов</param>
+///	<param name="movies">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ FilmEnum</param>
+/// <param name="count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°</param>
+/// <param name="findGenre">Р–Р°РЅСЂ РёСЃРєРѕРјС‹С… С„РёР»СЊРјРѕРІ</param>
 /// <returns>
-/// Кол-во фильмов определенного жанра
+/// РљРѕР»-РІРѕ С„РёР»СЊРјРѕРІ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р¶Р°РЅСЂР°
 /// </returns>
 int CountMoviesByGenre(FilmEnum* movies, int count, Genre findGenre);
 
-//Задание 2.2.9.5
+//Р—Р°РґР°РЅРёРµ 2.2.9.5
 /// <summary>
-/// Функция нахождения
-/// структуры определенного
-/// жанра FilmEnum с наибольшим рейтингом 
+/// Р¤СѓРЅРєС†РёСЏ РЅР°С…РѕР¶РґРµРЅРёСЏ
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ
+/// Р¶Р°РЅСЂР° FilmEnum СЃ РЅР°РёР±РѕР»СЊС€РёРј СЂРµР№С‚РёРЅРіРѕРј 
 /// </summary>
-///	<param name="movies">Массив структур FilmEnum</param>
-/// <param name="count">Кол-во элементов массива</param>
-/// <param name="findGenre">Жанр искомых фильмов</param>
+///	<param name="movies">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ FilmEnum</param>
+/// <param name="count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°</param>
+/// <param name="findGenre">Р–Р°РЅСЂ РёСЃРєРѕРјС‹С… С„РёР»СЊРјРѕРІ</param>
 /// <returns>
-/// Экземпляр FilmEnum определенного жанра
-///  с наибольшим рейтингом
-/// или nullptr, если элемента с таким жанром
-/// не найдено
+/// Р­РєР·РµРјРїР»СЏСЂ FilmEnum РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р¶Р°РЅСЂР°
+///  СЃ РЅР°РёР±РѕР»СЊС€РёРј СЂРµР№С‚РёРЅРіРѕРј
+/// РёР»Рё nullptr, РµСЃР»Рё СЌР»РµРјРµРЅС‚Р° СЃ С‚Р°РєРёРј Р¶Р°РЅСЂРѕРј
+/// РЅРµ РЅР°Р№РґРµРЅРѕ
 /// </returns>
 FilmEnum* FindBestGenreMovie(FilmEnum* movies, int count, Genre findGenre);

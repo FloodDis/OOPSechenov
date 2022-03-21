@@ -1,113 +1,113 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Время
+/// Р’СЂРµРјСЏ
 /// </summary>
 class TimeClass
 {
 private:
 
 	/// <summary>
-	/// Год
+	/// Р“РѕРґ
 	/// </summary>
 	int _year;
 
 	/// <summary>
-	/// Месяц (от 1 до 12)
+	/// РњРµСЃСЏС† (РѕС‚ 1 РґРѕ 12)
 	/// </summary>
 	int _month;
 
 	/// <summary>
-	/// День (от 1 до 30)
+	/// Р”РµРЅСЊ (РѕС‚ 1 РґРѕ 30)
 	/// </summary>
 	int _day;
 
 	/// <summary>
-	/// Час (от 0 до 24)
+	/// Р§Р°СЃ (РѕС‚ 0 РґРѕ 24)
 	/// </summary>
 	int _hour;
 
 	/// <summary>
-	/// Минуты (от 0 до 60)
+	/// РњРёРЅСѓС‚С‹ (РѕС‚ 0 РґРѕ 60)
 	/// </summary>
 	int _minutes;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса TimeClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° TimeClass
 	/// </summary>
-	/// <param name="year">Год</param>
-	/// <param name="month">Месяц</param>
-	/// <param name="day">День</param>
-	/// <param name="hour">Час</param>
-	/// <param name="minutes">Минуты</param>
+	/// <param name="year">Р“РѕРґ</param>
+	/// <param name="month">РњРµСЃСЏС†</param>
+	/// <param name="day">Р”РµРЅСЊ</param>
+	/// <param name="hour">Р§Р°СЃ</param>
+	/// <param name="minutes">РњРёРЅСѓС‚С‹</param>
 	TimeClass(int year, int month, int day, int hour, int minutes);
 
 	/// <summary>
-	/// Конструктор класса TimeClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° TimeClass
 	/// </summary>
 	TimeClass();
 
 	/// <summary>
-	/// Сеттер поля _year
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _year
 	/// </summary>
-	/// <param name="year">Год</param>
+	/// <param name="year">Р“РѕРґ</param>
 	void SetYear(int year);
 
 	/// <summary>
-	/// Сеттер поля _month
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _month
 	/// </summary>
-	/// <param name="month">Месяц</param>
+	/// <param name="month">РњРµСЃСЏС†</param>
 	void SetMonth(int month);
 
 	/// <summary>
-	/// Сеттер поля _day
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _day
 	/// </summary>
-	/// <param name="day">День</param>
+	/// <param name="day">Р”РµРЅСЊ</param>
 	void SetDay(int day);
 
 	/// <summary>
-	/// Сеттер поля _hour
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _hour
 	/// </summary>
-	/// <param name="hour">Час</param>
+	/// <param name="hour">Р§Р°СЃ</param>
 	void SetHour(int hour);
 
 	/// <summary>
-	/// Сеттер поля _minutes
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _minutes
 	/// </summary>
-	/// <param name="minutes">Минуты</param>
+	/// <param name="minutes">РњРёРЅСѓС‚С‹</param>
 	void SetMinutes(int minutes);
 
 	/// <summary>
-	/// Геттер поля _year
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _year
 	/// </summary>
-	/// <returns>Год</returns>
+	/// <returns>Р“РѕРґ</returns>
 	int GetYear();
 
 	/// <summary>
-	/// Геттер поля _month
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _month
 	/// </summary>
-	/// <returns>Месяц</returns>
+	/// <returns>РњРµСЃСЏС†</returns>
 	int GetMonth();
 
 	/// <summary>
-	/// Геттер поля _day
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _day
 	/// </summary>
-	/// <returns>День</returns>
+	/// <returns>Р”РµРЅСЊ</returns>
 	int GetDay();
 
 	/// <summary>
-	/// Геттер поля _hour
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _hour
 	/// </summary>
-	/// <returns>Час</returns>
+	/// <returns>Р§Р°СЃ</returns>
 	int GetHour();
 
 	/// <summary>
-	/// Геттер поля _minutes
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _minutes
 	/// </summary>
-	/// <returns>Минуты</returns>
+	/// <returns>РњРёРЅСѓС‚С‹</returns>
 	int GetMinutes();
 };

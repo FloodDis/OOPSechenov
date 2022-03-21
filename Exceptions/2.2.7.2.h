@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Rectangle.h"
 #include "Flight.h"
@@ -7,54 +7,54 @@
 using namespace std;
 
 /// <summary>
-/// Функция создания структуры Rectangle
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
-/// <param name="length">Длина прямоугольника</param>
-/// <param name="width">Ширина прямоугольника</param>
-/// <param name="color">Цвет прямоугольника</param>
+/// <param name="length">Р”Р»РёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
+/// <param name="width">РЁРёСЂРёРЅР° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
+/// <param name="color">Р¦РІРµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°</param>
 /// <returns>
-/// Указатель на структуру Rectangle
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ Rectangle
 /// </returns>
 Rectangle* MakeRectangle(int length, int width, string color);
 
 /// <summary>
-/// Функция создания структуры Flight
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="departurePoint">Пункт отправления</param>
-/// <param name="destination">Пункт прибытия</param>
-/// <param name="flightTime">Время полета в минутах</param>
+/// <param name="departurePoint">РџСѓРЅРєС‚ РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
+/// <param name="destination">РџСѓРЅРєС‚ РїСЂРёР±С‹С‚РёСЏ</param>
+/// <param name="flightTime">Р’СЂРµРјСЏ РїРѕР»РµС‚Р° РІ РјРёРЅСѓС‚Р°С…</param>
 /// <returns>
-/// Указатель на структуру Flight
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ Flight
 /// </returns>
 Flight* MakeFlight(string departurePoint,
 	string destination, int flightTime);
 
 /// <summary>
-/// Функция создания структуры Film
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Film
 /// </summary>
-/// <param name="name">Название фильма</param>
-/// <param name="duration">Длительность в минутах</param>
-/// <param name="yearOfRelease">Год выпуска</param>
-/// <param name="genre">Жанр фильма</param>
+/// <param name="name">РќР°Р·РІР°РЅРёРµ С„РёР»СЊРјР°</param>
+/// <param name="duration">Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…</param>
+/// <param name="yearOfRelease">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
+/// <param name="genre">Р–Р°РЅСЂ С„РёР»СЊРјР°</param>
 /// <returns>
-/// Указатель на структуру Film
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ Film
 /// </returns>
 Film* MakeFilm(string name,
 	int duration, int yearOfRelease, string genre, double rate);
 
 /// <summary>
-/// Функция создания структуры Time
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="hours">Часы</param>
-/// <param name="minutes">Минуты</param>
-/// <param name="seconds">Секунды</param>
+/// <param name="hours">Р§Р°СЃС‹</param>
+/// <param name="minutes">РњРёРЅСѓС‚С‹</param>
+/// <param name="seconds">РЎРµРєСѓРЅРґС‹</param>
 /// <returns>
-/// Указатель на структуру Time
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ Time
 /// </returns>
 Time* MakeTime(int hours, int minutes, int seconds);
 
 /// <summary>
-/// Функция демонстрации работы
-/// методов создания структур
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹
+/// РјРµС‚РѕРґРѕРІ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂ
 /// </summary>
 void DemoMakeStructures();

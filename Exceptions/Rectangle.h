@@ -1,24 +1,24 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Прямоугольник
+/// РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 /// </summary>
 struct Rectangle
 {
 	/// <summary>
-	/// Длина
+	/// Р”Р»РёРЅР°
 	/// </summary>
 	double Length;
 
 	/// <summary>
-	/// Ширина
+	/// РЁРёСЂРёРЅР°
 	/// </summary>
 	double Width;
 
 	/// <summary>
-	/// Цвет
+	/// Р¦РІРµС‚
 	/// </summary>
 	string Color;
 };

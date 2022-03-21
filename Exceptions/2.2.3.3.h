@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Rectangle.h"
 #include "Flight.h"
@@ -7,44 +7,44 @@
 using namespace std;
 
 /// <summary>
-/// Функция демонстрации
-/// массива структур Rectangle
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјР°СЃСЃРёРІР° СЃС‚СЂСѓРєС‚СѓСЂ Rectangle
 /// </summary>
-/// <param name="width">Ширина</param>
-/// <param name="length">Длина</param>
-/// <param name="size">Размер массива</param>
+/// <param name="width">РЁРёСЂРёРЅР°</param>
+/// <param name="length">Р”Р»РёРЅР°</param>
+/// <param name="size">Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°</param>
 void DemoRectangle(int width, int length, int size);
 
 /// <summary>
-/// Функция демонстрации
-/// массива структур Flight
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјР°СЃСЃРёРІР° СЃС‚СЂСѓРєС‚СѓСЂ Flight
 /// </summary>
-/// <param name="departurePoint">Название пункта отправления</param>
-/// <param name="destination">Название пункта назначения</param>
-/// <param name="size">Размер массива</param>
+/// <param name="departurePoint">РќР°Р·РІР°РЅРёРµ РїСѓРЅРєС‚Р° РѕС‚РїСЂР°РІР»РµРЅРёСЏ</param>
+/// <param name="destination">РќР°Р·РІР°РЅРёРµ РїСѓРЅРєС‚Р° РЅР°Р·РЅР°С‡РµРЅРёСЏ</param>
+/// <param name="size">Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°</param>
 void DemoFlight(string departurePoint, string destination, int size);
 
 /// <summary>
-/// Функция демонстрации
-/// массива структур Film
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјР°СЃСЃРёРІР° СЃС‚СЂСѓРєС‚СѓСЂ Film
 /// </summary>
-/// <param name="year">Год выпуска</param>
-/// <param name="name">Название фильма</param>
-/// <param name="size">Размер массива</param>
+/// <param name="year">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
+/// <param name="name">РќР°Р·РІР°РЅРёРµ С„РёР»СЊРјР°</param>
+/// <param name="size">Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°</param>
 void DemoMovie(int year, string name, int size);
 
 /// <summary>
-/// Функция демонстрации
-/// массива структур Time
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјР°СЃСЃРёРІР° СЃС‚СЂСѓРєС‚СѓСЂ Time
 /// </summary>
-/// <param name="hours">Часы</param>
-/// <param name="minutes">Минуты</param>
-/// <param name="seconds">Секунды</param>
-/// <param name="size">Размер массива</param>
+/// <param name="hours">Р§Р°СЃС‹</param>
+/// <param name="minutes">РњРёРЅСѓС‚С‹</param>
+/// <param name="seconds">РЎРµРєСѓРЅРґС‹</param>
+/// <param name="size">Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°</param>
 void DemoTime(int hours, int minutes, int seconds, int size);
 
 /// <summary>
-/// Функция демонстрации методов
-/// демонстрации массивов структур
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјРµС‚РѕРґРѕРІ
+/// РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјР°СЃСЃРёРІРѕРІ СЃС‚СЂСѓРєС‚СѓСЂ
 /// </summary>
 void DemoStructures5();

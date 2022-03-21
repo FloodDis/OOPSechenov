@@ -1,17 +1,17 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "2.2.5.1.h"
 #include "Rectangle.h"
 using namespace std;
 
 /// <summary>
-/// Функция перестановки значений
-/// 2-х структур Rectangle
+/// Р¤СѓРЅРєС†РёСЏ РїРµСЂРµСЃС‚Р°РЅРѕРІРєРё Р·РЅР°С‡РµРЅРёР№
+/// 2-С… СЃС‚СЂСѓРєС‚СѓСЂ Rectangle
 /// </summary>
 void Exchange(Rectangle& rectangle1, Rectangle& rectangle2);
 
 /// <summary>
-/// Функция демонстрации метода
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјРµС‚РѕРґР°
 /// Exchange
 /// </summary>
 void DemoExchange();

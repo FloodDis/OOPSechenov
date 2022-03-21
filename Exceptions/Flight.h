@@ -1,24 +1,24 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Рейс
+/// Р РµР№СЃ
 /// </summary>
 struct Flight
 {
 	/// <summary>
-	/// Пункт вылета
+	/// РџСѓРЅРєС‚ РІС‹Р»РµС‚Р°
 	/// </summary>
 	string DeparturePoint;
 
 	/// <summary>
-	/// Пункт назначения
+	/// РџСѓРЅРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ
 	/// </summary>
 	string Destination;
 
 	/// <summary>
-	/// Время полета в минутах
+	/// Р’СЂРµРјСЏ РїРѕР»РµС‚Р° РІ РјРёРЅСѓС‚Р°С…
 	/// </summary>
 	int FlightTime;
 };

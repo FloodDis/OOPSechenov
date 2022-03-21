@@ -1,27 +1,27 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Point.h"
 using namespace std;
 
-// Задание 3.3.2
+// Р—Р°РґР°РЅРёРµ 3.3.2
 /// <summary>
-/// Прямоугольник
+/// РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 /// </summary>
 struct Rectangle
 {
 	/// <summary>
-	/// Ширина прямоуголника
+	/// РЁРёСЂРёРЅР° РїСЂСЏРјРѕСѓРіРѕР»РЅРёРєР°
 	/// </summary>
 	double Width;
 
 	/// <summary>
-	/// Длина прямоуголника
+	/// Р”Р»РёРЅР° РїСЂСЏРјРѕСѓРіРѕР»РЅРёРєР°
 	/// </summary>
 	double Length;
 
 	/// <summary>
-	/// Точка центра
-	/// прямоугольника
+	/// РўРѕС‡РєР° С†РµРЅС‚СЂР°
+	/// РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
 	/// </summary>
 	Point* Center;
 };

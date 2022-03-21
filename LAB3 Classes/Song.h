@@ -1,27 +1,27 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "GenreEnum.h"
 using namespace std;
 
-//Задание 3.4.1
+//Р—Р°РґР°РЅРёРµ 3.4.1
 
 /// <summary>
-/// Песня
+/// РџРµСЃРЅСЏ
 /// </summary>
 struct Song
 {
 	/// <summary>
-	/// Название
+	/// РќР°Р·РІР°РЅРёРµ
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Длительность в минутах
+	/// Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…
 	/// </summary>
 	int Duration;
 
 	/// <summary>
-	/// Жанр
+	/// Р–Р°РЅСЂ
 	/// </summary>
 	Genre Genre;
 };

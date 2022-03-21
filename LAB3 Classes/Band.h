@@ -1,30 +1,30 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Album.h"
 using namespace std;
 
 /// <summary>
-/// Музыкальная группа
+/// РњСѓР·С‹РєР°Р»СЊРЅР°СЏ РіСЂСѓРїРїР°
 /// </summary>
 struct Band
 {
 	/// <summary>
-	/// Название группы
+	/// РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹
 	/// </summary>
 	string Name;
 
 	/// <summary>
-	/// Информация о группе
+	/// РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ
 	/// </summary>
 	string Information;
 
 	/// <summary>
-	/// Массив альбомов
+	/// РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ
 	/// </summary>
 	Album* Albums;
 
 	/// <summary>
-	/// Кол-во альбомов
+	/// РљРѕР»-РІРѕ Р°Р»СЊР±РѕРјРѕРІ
 	/// </summary>
 	int AlbumsCount;
 };

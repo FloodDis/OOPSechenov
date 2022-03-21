@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "2.2.5.2.h"
 #include "2.2.5.1.h"
@@ -6,7 +6,7 @@
 using namespace std;
 
 /// <summary>
-/// Функция демонстрации работы 
-/// методов WriteRectangle и ReadRectangle
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹ 
+/// РјРµС‚РѕРґРѕРІ WriteRectangle Рё ReadRectangle
 /// </summary>
 void DemoReadAndWriteRectangles();

@@ -1,173 +1,173 @@
-#pragma once
+п»ї#pragma once
 #include "Band.h"
 using namespace std;
 
 /// <summary>
-/// Функция создания структуры
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹
 /// Song
 /// </summary>
-/// <param name = "name">Название песни</param>
-/// <param name = "duration">Длительность в минутах</param>
-/// <param name = "genre">Жанр песни</param>
+/// <param name = "name">РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё</param>
+/// <param name = "duration">Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІ РјРёРЅСѓС‚Р°С…</param>
+/// <param name = "genre">Р–Р°РЅСЂ РїРµСЃРЅРё</param>
 /// <returns>
-/// Указатель на инициализированную структуру Song
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Song
 /// </returns>
 Song* MakeSong(string name, int duration, Genre genre);
 
 /// <summary>
-/// Сеттер поля Name
-/// структуры Song
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Name
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Song
 /// </summary>
-/// <param name = "song">Экземпляр структуры Song</param>
-/// <param name = "name">Название</param>
+/// <param name = "song">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Song</param>
+/// <param name = "name">РќР°Р·РІР°РЅРёРµ</param>
 void SetNameSong(Song& song, string name);
 
 /// <summary>
-/// Сеттер поля Duration
-/// структуры Song
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Duration
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Song
 /// </summary>
-/// <param name = "song">Экземпляр структуры Song</param>
-/// <param name = "duration">Длительность песни в минутах</param>
+/// <param name = "song">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Song</param>
+/// <param name = "duration">Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РїРµСЃРЅРё РІ РјРёРЅСѓС‚Р°С…</param>
 void SetDuration(Song& song, int duration);
 
 /// <summary>
-/// Сеттер поля Genre
-/// структуры Song
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Genre
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Song
 /// </summary>
-/// <param name = "song">Экземпляр структуры Song</param>
-/// <param name = "genre">Жанр песни</param>
+/// <param name = "song">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Song</param>
+/// <param name = "genre">Р–Р°РЅСЂ РїРµСЃРЅРё</param>
 void SetGenre(Song& song, Genre genre);
 
 /// <summary>
-/// Функция создания структуры
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹
 /// Album
 /// </summary>
-/// <param name = "name">Название альбома</param>
-/// <param name = "yearOfRelease">Год выпуска</param>
-/// <param name = "songs">Массив песен</param>
+/// <param name = "name">РќР°Р·РІР°РЅРёРµ Р°Р»СЊР±РѕРјР°</param>
+/// <param name = "yearOfRelease">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
+/// <param name = "songs">РњР°СЃСЃРёРІ РїРµСЃРµРЅ</param>
 /// <returns>
-/// Указатель на инициализированную структуру Album
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Album
 /// </returns>
 Album* MakeAlbum(string name, int yearOfRelease, 
 	Song* songs, int songsCount);
 
 /// <summary>
-/// Сеттер поля Name
-/// структуры Album
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Name
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Album
 /// </summary>
-/// <param name = "album">Экземпляр структуры Album</param>
-/// <param name = "name">Название альбома</param>
+/// <param name = "album">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Album</param>
+/// <param name = "name">РќР°Р·РІР°РЅРёРµ Р°Р»СЊР±РѕРјР°</param>
 void SetNameAlbum(Album& album, string name);
 
 /// <summary>
-/// Сеттер поля YearOfRelease
-/// структуры Album
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ YearOfRelease
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Album
 /// </summary>
-/// <param name = "album">Экземпляр структуры Album</param>
-/// <param name = "yearOfRelease">Год выпуска</param>
+/// <param name = "album">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Album</param>
+/// <param name = "yearOfRelease">Р“РѕРґ РІС‹РїСѓСЃРєР°</param>
 void SetYearOfRelease(Album& album, int yearOfRelease);
 
 /// <summary>
-/// Сеттер поля Songs
-/// структуры Album
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Songs
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Album
 /// </summary>
-/// <param name = "album">Экземпляр структуры Album</param>
-/// <param name = "songs">Массив песен</param>
+/// <param name = "album">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Album</param>
+/// <param name = "songs">РњР°СЃСЃРёРІ РїРµСЃРµРЅ</param>
 void SetSongs(Album& album, Song* songs);
 
 /// <summary>
-/// Функция создания структуры
+/// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹
 /// Band
 /// </summary>
-/// <param name = "name">Название группы</param>
-/// <param name = "information">Информация о группе</param>
-/// <param name = "albums">Массив альбомов</param>
-/// <param name = "albumsCount">Кол-во альбомов в массиве</param>
+/// <param name = "name">РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹</param>
+/// <param name = "information">РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ</param>
+/// <param name = "albums">РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ</param>
+/// <param name = "albumsCount">РљРѕР»-РІРѕ Р°Р»СЊР±РѕРјРѕРІ РІ РјР°СЃСЃРёРІРµ</param>
 /// <returns>
-/// Указатель на инициализированную структуру Band
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Band
 /// </returns>
 Band* MakeBand(string name, string information, 
 	Album* albums, int albumsCount);
 
 /// <summary>
-/// Сеттер поля Name
-/// структуры Band
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Name
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Band
 /// </summary>
-/// <param name = "band">Экземпляр структуры Band</param>
-/// <param name = "name">Название группы</param>
+/// <param name = "band">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Band</param>
+/// <param name = "name">РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹</param>
 void SetNameBand(Band& band, string name);
 
 /// <summary>
-/// Сеттер поля Information
-/// структуры Band
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Information
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Band
 /// </summary>
-/// <param name = "band">Экземпляр структуры Band</param>
-/// <param name = "information">Информация о группе</param>
+/// <param name = "band">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Band</param>
+/// <param name = "information">РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РіСЂСѓРїРїРµ</param>
 void SetInformation(Band& band, string information);
 
 /// <summary>
-/// Сеттер поля Albums
-/// структуры Band
+/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Albums
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Band
 /// </summary>
-/// <param name = "band">Экземпляр структуры Band</param>
-/// <param name = "albums">Массив альбомов</param>
+/// <param name = "band">Р­РєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Band</param>
+/// <param name = "albums">РњР°СЃСЃРёРІ Р°Р»СЊР±РѕРјРѕРІ</param>
 void SetAlbums(Band& band, Album* albums);
 
-// Задание 3.4.2
+// Р—Р°РґР°РЅРёРµ 3.4.2
 /// <summary>
-/// Функция поиска песни среди всех песен
-/// группы
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРёСЃРєР° РїРµСЃРЅРё СЃСЂРµРґРё РІСЃРµС… РїРµСЃРµРЅ
+/// РіСЂСѓРїРїС‹
 /// </summary>
-/// <param name = "band">Музыкальная группа</param>
-/// <param name = "songTitle">Название песни</param>
+/// <param name = "band">РњСѓР·С‹РєР°Р»СЊРЅР°СЏ РіСЂСѓРїРїР°</param>
+/// <param name = "songTitle">РќР°Р·РІР°РЅРёРµ РїРµСЃРЅРё</param>
 /// <returns>
-/// Указатель на найденную песню, если такая есть в
-/// дискографии,
-/// nullptr - если элемент не найден
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РЅР°Р№РґРµРЅРЅСѓСЋ РїРµСЃРЅСЋ, РµСЃР»Рё С‚Р°РєР°СЏ РµСЃС‚СЊ РІ
+/// РґРёСЃРєРѕРіСЂР°С„РёРё,
+/// nullptr - РµСЃР»Рё СЌР»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ
 /// </returns>
 Song* FindSong(Band& band, string songTitle);
 
-// Задание 3.4.3
+// Р—Р°РґР°РЅРёРµ 3.4.3
 /// <summary>
-/// Функция поиска альбома по песне
-/// группы из этого альбома
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРёСЃРєР° Р°Р»СЊР±РѕРјР° РїРѕ РїРµСЃРЅРµ
+/// РіСЂСѓРїРїС‹ РёР· СЌС‚РѕРіРѕ Р°Р»СЊР±РѕРјР°
 /// </summary>
-/// <param name = "band">Музыкальная группа</param>
-/// <param name = "song">Экземпляр песни</param>
+/// <param name = "band">РњСѓР·С‹РєР°Р»СЊРЅР°СЏ РіСЂСѓРїРїР°</param>
+/// <param name = "song">Р­РєР·РµРјРїР»СЏСЂ РїРµСЃРЅРё</param>
 Album* FindAlbum(Band& band, Song* song);
 
-// Задание 3.4.4
+// Р—Р°РґР°РЅРёРµ 3.4.4
 /// <summary>
-/// Функция получения массива
-/// всех песен из всех альбомов группы
+/// Р¤СѓРЅРєС†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ РјР°СЃСЃРёРІР°
+/// РІСЃРµС… РїРµСЃРµРЅ РёР· РІСЃРµС… Р°Р»СЊР±РѕРјРѕРІ РіСЂСѓРїРїС‹
 /// </summary>
-/// <param name = "band">Музыкальная группа</param>
-/// <param name = "allSongsCount">Кол-во всех песен</param>
+/// <param name = "band">РњСѓР·С‹РєР°Р»СЊРЅР°СЏ РіСЂСѓРїРїР°</param>
+/// <param name = "allSongsCount">РљРѕР»-РІРѕ РІСЃРµС… РїРµСЃРµРЅ</param>
 /// <returns>
-/// Указатель на массив со всеми песнями
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ СЃРѕ РІСЃРµРјРё РїРµСЃРЅСЏРјРё
 /// </returns>
 Song* GetAllSongs(Band* band, int& allSongsCount);
 
-// Задание 3.4.5
+// Р—Р°РґР°РЅРёРµ 3.4.5
 /// <summary>
-/// Функция демонстрации
-/// структуры Band
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЃС‚СЂСѓРєС‚СѓСЂС‹ Band
 /// </summary>
 void DemoBand();
 
-// Задание 3.4.6
+// Р—Р°РґР°РЅРёРµ 3.4.6
 /// <summary>
-/// Функция получения массива всех
-/// песен группы определенного жанра
+/// Р¤СѓРЅРєС†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ РјР°СЃСЃРёРІР° РІСЃРµС…
+/// РїРµСЃРµРЅ РіСЂСѓРїРїС‹ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р¶Р°РЅСЂР°
 /// </summary>
-/// <param name="band">Структура типа Band</param>
-/// <param name="findingGenre">Жанр искомых песен</param>
+/// <param name="band">РЎС‚СЂСѓРєС‚СѓСЂР° С‚РёРїР° Band</param>
+/// <param name="findingGenre">Р–Р°РЅСЂ РёСЃРєРѕРјС‹С… РїРµСЃРµРЅ</param>
 /// <param name="allSongsCount">
-/// Кол-во всех песен определенного жанра
+/// РљРѕР»-РІРѕ РІСЃРµС… РїРµСЃРµРЅ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р¶Р°РЅСЂР°
 /// </param>
 /// <returns>
-/// Массив всех песен группы определенного
-/// жанра
+/// РњР°СЃСЃРёРІ РІСЃРµС… РїРµСЃРµРЅ РіСЂСѓРїРїС‹ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ
+/// Р¶Р°РЅСЂР°
 /// </returns>
 Song* GetAllGenreSongs(Band* band, Genre
 	findingGenre, int& allSongsCount);

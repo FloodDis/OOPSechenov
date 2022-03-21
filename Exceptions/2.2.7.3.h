@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Rectangle.h"
 #include "Flight.h"
@@ -8,37 +8,37 @@
 using namespace std;
 
 /// <summary>
-/// Функция копирования структуры Rectangle
+/// Р¤СѓРЅРєС†РёСЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </summary>
 /// <param name="rectangle">
-/// Копируемый экземпляр структуры Rectangle
+/// РљРѕРїРёСЂСѓРµРјС‹Р№ СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 /// </param>
-/// <returns>Указатель на скопированную структуру Rectangle</returns>
+/// <returns>РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃРєРѕРїРёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Rectangle</returns>
 Rectangle* CopyRectangle(Rectangle* rectangle);
 
 /// <summary>
-/// Функция копирования структуры Flight
+/// Р¤СѓРЅРєС†РёСЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight
 /// </summary>
-/// <param name="flight">Копируемый экземпляр структуры Flight</param>
-/// <returns>Указатель на скопированную структуру Flight</returns>
+/// <param name="flight">РљРѕРїРёСЂСѓРµРјС‹Р№ СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Flight</param>
+/// <returns>РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃРєРѕРїРёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Flight</returns>
 Flight* CopyFlight(Flight* flight);
 
 /// <summary>
-/// Функция копирования структуры Film
+/// Р¤СѓРЅРєС†РёСЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Film
 /// </summary>
-/// <param name="flight">Копируемый экземпляр структуры Film</param>
-/// <returns>Указатель на скопированную структуру Film</returns>
+/// <param name="flight">РљРѕРїРёСЂСѓРµРјС‹Р№ СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Film</param>
+/// <returns>РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃРєРѕРїРёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Film</returns>
 Film* CopyFilm(Film* film);
 
 /// <summary>
-/// Функция копирования структуры Time
+/// Р¤СѓРЅРєС†РёСЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time
 /// </summary>
-/// <param name="flight">Копируемый экземпляр структуры Time</param>
-/// <returns>Указатель на скопированную структуру Time</returns>
+/// <param name="flight">РљРѕРїРёСЂСѓРµРјС‹Р№ СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ Time</param>
+/// <returns>РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃРєРѕРїРёСЂРѕРІР°РЅРЅСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ Time</returns>
 Time* CopyTime(Time* time);
 
 /// <summary>
-/// Функция демонстрации методов
-/// копирования структур
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјРµС‚РѕРґРѕРІ
+/// РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂ
 /// </summary>
 void DemoCopyStructures();

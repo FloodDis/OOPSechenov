@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "PointClass.h"
 #include "RectangleClass.h"
 #include "TimeClass.h"
@@ -8,28 +8,28 @@
 #include "BandClass.h"
 using namespace std;
 
-// Задание 3.5.2
+// Р—Р°РґР°РЅРёРµ 3.5.2
 /// <summary>
-///	Функция демонстрации класса RectangleClass
+///	Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РєР»Р°СЃСЃР° RectangleClass
 /// </summary>
 void DemoRectangleWithPointClass();
 
 /// <summary>
-///	Функция вывода класса RectangleClass на экран
+///	Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РєР»Р°СЃСЃР° RectangleClass РЅР° СЌРєСЂР°РЅ
 /// </summary>
 void WriteRectangleWithPointClass(RectangleClass rectangle);
 
 /// <summary>
-///	Функция демонстрации класса FlightClass и TimeClass
+///	Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РєР»Р°СЃСЃР° FlightClass Рё TimeClass
 /// </summary>
 void DemoFlightWithTimeClass();
 
 /// <summary>
-///	Функция демонстрации вывода класса FlightClass на экран
+///	Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РІС‹РІРѕРґР° РєР»Р°СЃСЃР° FlightClass РЅР° СЌРєСЂР°РЅ
 /// </summary>
 void WriteFlightClass(FlightClass& flight);
 
 /// <summary>
-///	Функция демонстрации класса BandClass
+///	Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РєР»Р°СЃСЃР° BandClass
 /// </summary>
 void DemoBandClass();

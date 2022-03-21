@@ -1,18 +1,18 @@
-#pragma once
+п»ї#pragma once
 
-//Задание 3.3.1
+//Р—Р°РґР°РЅРёРµ 3.3.1
 /// <summary>
-/// Точка
+/// РўРѕС‡РєР°
 /// </summary>
 struct Point
 {
 	/// <summary>
-	/// Координата X
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° X
 	/// </summary>
 	double X;
 
 	/// <summary>
-	/// Координата Y
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° Y
 	/// </summary>
 	double Y;
 };

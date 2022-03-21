@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Rectangle.h"
 #include "Flight.h"
@@ -6,9 +6,9 @@
 #include "Time.h"
 using namespace std;
 
-// TODO: каждая структура в своём файле +
+// TODO: РєР°Р¶РґР°СЏ СЃС‚СЂСѓРєС‚СѓСЂР° РІ СЃРІРѕС‘Рј С„Р°Р№Р»Рµ +
 
 ///<summary>
-///Демонстрация работы структур
+///Р”РµРјРѕРЅСЃС‚СЂР°С†РёСЏ СЂР°Р±РѕС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂ
 ///</summary>
 void DemoStructures1();

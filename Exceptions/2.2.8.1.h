@@ -1,127 +1,127 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Цвет
+/// Р¦РІРµС‚
 /// </summary>
 enum Color
 {
 	/// <summary>
-	/// Красный
+	/// РљСЂР°СЃРЅС‹Р№
 	/// </summary>
 	Red = 1,
 
 	/// <summary>
-	/// Оранжевый
+	/// РћСЂР°РЅР¶РµРІС‹Р№
 	/// </summary>
 	Orange,
 
 	/// <summary>
-	/// Желтый
+	/// Р–РµР»С‚С‹Р№
 	/// </summary>
 	Yellow,
 
 	/// <summary>
-	/// Зеленый
+	/// Р—РµР»РµРЅС‹Р№
 	/// </summary>
 	Green,
 
 	/// <summary>
-	/// Голубой
+	/// Р“РѕР»СѓР±РѕР№
 	/// </summary>
 	Blue,
 
 	/// <summary>
-	/// Синий
+	/// РЎРёРЅРёР№
 	/// </summary>
 	DarkBlue,
 
 	/// <summary>
-	/// Фиолетовый
+	/// Р¤РёРѕР»РµС‚РѕРІС‹Р№
 	/// </summary>
 	Purple
 };
 
 /// <summary>
-/// День недели
+/// Р”РµРЅСЊ РЅРµРґРµР»Рё
 /// </summary>
 enum DayOfTheWeek
 {
 	/// <summary>
-	/// Понедельник
+	/// РџРѕРЅРµРґРµР»СЊРЅРёРє
 	/// </summary>
 	Monday = 1,
 
 	/// <summary>
-	/// Вторник
+	/// Р’С‚РѕСЂРЅРёРє
 	/// </summary>
 	Tuesday,
 
 	/// <summary>
-	/// Среда
+	/// РЎСЂРµРґР°
 	/// </summary>
 	Wednesday,
 
 	/// <summary>
-	/// Четверг
+	/// Р§РµС‚РІРµСЂРі
 	/// </summary>
 	Thursday,
 
 	/// <summary>
-	/// Пятница
+	/// РџСЏС‚РЅРёС†Р°
 	/// </summary>
 	Friday,
 
 	/// <summary>
-	/// Суббота
+	/// РЎСѓР±Р±РѕС‚Р°
 	/// </summary>
 	Saturday,
 
 	/// <summary>
-	/// Воскресенье
+	/// Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ
 	/// </summary>
 	Sunday
 };
 
 /// <summary>
-/// Жанр
+/// Р–Р°РЅСЂ
 /// </summary>
 enum Genre
 {
 	/// <summary>
-	/// Комедия
+	/// РљРѕРјРµРґРёСЏ
 	/// </summary>
 	Comedy = 1,
 
 	/// <summary>
-	/// Драма
+	/// Р”СЂР°РјР°
 	/// </summary>
 	Drama,
 
 	/// <summary>
-	/// Триллер
+	/// РўСЂРёР»Р»РµСЂ
 	/// </summary>
 	Triller,
 
 	/// <summary>
-	/// Боевик
+	/// Р‘РѕРµРІРёРє
 	/// </summary>
 	Action,
 
 	/// <summary>
-	/// Ужасы
+	/// РЈР¶Р°СЃС‹
 	/// </summary>
 	Horror,
 
 	/// <summary>
-	/// Блокбастер
+	/// Р‘Р»РѕРєР±Р°СЃС‚РµСЂ
 	/// </summary>
 	Blockbuster,
 };
 
 /// <summary>
-/// Функция демонстрации перечислительных
-/// типов
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РїРµСЂРµС‡РёСЃР»РёС‚РµР»СЊРЅС‹С…
+/// С‚РёРїРѕРІ
 /// </summary>
 void DemoEnums1();

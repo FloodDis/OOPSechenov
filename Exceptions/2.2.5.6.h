@@ -1,19 +1,19 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Rectangle.h"
 #include "2.2.5.1.h"
 using namespace std;
 
 /// <summary>
-/// Функция поиска Rectangle с
-/// наибольшей площадью
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРёСЃРєР° Rectangle СЃ
+/// РЅР°РёР±РѕР»СЊС€РµР№ РїР»РѕС‰Р°РґСЊСЋ
 /// </summary>
-/// <param name="rectangles">Массив структур Rectangle</param>
-/// <param name="count">Кол-во элементов</param>
+/// <param name="rectangles">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ Rectangle</param>
+/// <param name="count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ</param>
 void FindMaxRectangle(Rectangle* rectangles, int count);
 
 /// <summary>
-/// Функция демонстрации
-/// метода DemoFindMaxRectangle
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјРµС‚РѕРґР° DemoFindMaxRectangle
 /// </summary>
 void DemoFindMaxRectangle();

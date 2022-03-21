@@ -1,21 +1,21 @@
-#pragma once
+п»ї#pragma once
 #include "2.2.8.1.h"
 using namespace std;
 
 /// <summary>
-/// Функция подсчета кол-ва элементов
-/// массива определенного цвета
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРґСЃС‡РµС‚Р° РєРѕР»-РІР° СЌР»РµРјРµРЅС‚РѕРІ
+/// РјР°СЃСЃРёРІР° РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ С†РІРµС‚Р°
 /// </summary>
-/// <param name ="colors">Массив структур Color</param>
-/// <param name = "count">Кол-во элементов в массиве</param>
-/// <param name = "findedColor">Цвет искомых элементов</param>
+/// <param name ="colors">РњР°СЃСЃРёРІ СЃС‚СЂСѓРєС‚СѓСЂ Color</param>
+/// <param name = "count">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
+/// <param name = "findedColor">Р¦РІРµС‚ РёСЃРєРѕРјС‹С… СЌР»РµРјРµРЅС‚РѕРІ</param>
 /// <returns>
-/// Кол-во элементов массива определенного цвета 
+/// РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ С†РІРµС‚Р° 
 /// </returns>
 int CountColor(Color* colors, int count, Color findedColor);
 
 /// <summary>
-/// Функция демонстрации
-/// метода CountColor
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// РјРµС‚РѕРґР° CountColor
 /// </summary>
 void DemoCountColor();

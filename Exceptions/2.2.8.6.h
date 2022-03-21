@@ -1,20 +1,20 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "2.2.8.1.h"
 #include "2.2.8.5.h"
 using namespace std;
 
 /// <summary>
-/// Функция ввода цвета
-/// с клавиатуры
+/// Р¤СѓРЅРєС†РёСЏ РІРІРѕРґР° С†РІРµС‚Р°
+/// СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
 /// </summary>
 /// <returns>
-/// Введенный цвет
+/// Р’РІРµРґРµРЅРЅС‹Р№ С†РІРµС‚
 /// </returns>
 Color ReadColor();
 
 /// <summary>
-/// Функция демонстрации метода
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РјРµС‚РѕРґР°
 /// ReadColor
 /// </summary>
 void DemoReadColor();
