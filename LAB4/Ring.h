@@ -70,4 +70,10 @@ public:
 	/// </summary>
 	/// <returns>Центр кольца</returns>
 	PointClass GetCenter();
+
+	/// <summary>
+	/// Функция подсчета площади кольца
+	/// </summary>
+	/// <returns>Площадь кольца</returns>
+	double GetArea();
 };

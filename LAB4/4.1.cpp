@@ -365,3 +365,10 @@ PointClass Ring::GetCenter()
 {
 	return _center;
 }
+
+double Ring::GetArea()
+{
+	double outerArea = 3.14 * _outerRadius * _outerRadius;
+	double innerArea = 3.14 * _innerRadius * _innerRadius;
+	return outerArea - innerArea;
+}
