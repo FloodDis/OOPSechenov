@@ -82,14 +82,31 @@ PointClass* RectangleClass::GetCenter()
 
 TimeClass::TimeClass(int year, int month, int day, int hour, int minutes)
 {
-	/*	if (year < 0 || (month < 1 || month>12)
-			|| (day < 1 || day > 30) || (hour < 0 || hour > 23)
-			|| (minutes < 0 || minutes > 59))
-		{
-			exception error;
-			throw error;
-		}
-		*/
+	if (year < 0)
+	{
+		exception error;
+		throw error;
+	}
+	if (month < 1 || month>12)
+	{
+		exception error;
+		throw error;
+	}
+	if (day < 1 || day>30)
+	{
+		exception error;
+		throw error;
+	}
+	if (hour < 0 || hour>23)
+	{
+		exception error;
+		throw error;
+	}
+	if (minutes < 0 || minutes>59)
+	{
+		exception error;
+		throw error;
+	}
 	_year = year;
 	_month = month;
 	_day = day;
@@ -195,7 +212,7 @@ FlightClass::FlightClass(int number, string departurePoint, string destinationPo
 
 FlightClass::FlightClass()
 {
-	TimeClass();
+
 }
 
 void FlightClass::SetNumber(int number)
@@ -327,6 +344,16 @@ AlbumClass::AlbumClass()
 
 AlbumClass::AlbumClass(string name, int yearRelease, SongClass* songs, int songsCount)
 {
+	if (yearRelease < 0)
+	{
+		exception error;
+		throw error;
+	}
+	if (songsCount < 0)
+	{
+		exception error;
+		throw error;
+	}
 	_name = name;
 	_yearRelease = yearRelease;
 	_songs = songs;
@@ -345,6 +372,7 @@ void AlbumClass::SetYearRelease(int yearRelease)
 		exception error;
 		throw error;
 	}
+
 	_yearRelease = yearRelease;
 }
 
@@ -390,6 +418,11 @@ BandClass::BandClass()
 
 BandClass::BandClass(string name, string information, AlbumClass* albums, int albumsCount)
 {
+	if (albumsCount < 0)
+	{
+		exception error;
+		throw error;
+	}
 	_name = name;
 	_information = information;
 	_albums = albums;
