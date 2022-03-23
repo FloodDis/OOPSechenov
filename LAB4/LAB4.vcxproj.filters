@@ -36,6 +36,9 @@
     <ClInclude Include="4.1.h">
       <Filter>Header Files\DependentFields</Filter>
     </ClInclude>
+    <ClInclude Include="Ring.h">
+      <Filter>Header Files\DependentFields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="4.1.cpp">

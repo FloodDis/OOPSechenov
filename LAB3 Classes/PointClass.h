@@ -19,6 +19,12 @@ private:
 	double _y;
 
 public:
+
+	/// <summary>
+	/// Конструктор класса PointClass
+	/// </summary>
+	PointClass();
+
 	/// <summary>
 	/// Конструктор класса PointClass
 	/// </summary>

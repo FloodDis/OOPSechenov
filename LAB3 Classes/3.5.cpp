@@ -6,6 +6,11 @@ PointClass::PointClass(double x, double y)
 	_y = y;
 }
 
+PointClass::PointClass()
+{
+	
+}
+
 void PointClass::SetX(double x)
 {
 	_x = x;
