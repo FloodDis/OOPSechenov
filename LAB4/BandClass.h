@@ -33,12 +33,12 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса BandClass
+	/// Конструктор класса BandClassFix
 	/// </summary>
 	BandClassFix();
 
 	/// <summary>
-	/// Конструктор класса BandClass
+	/// Конструктор класса BandClassFix
 	/// </summary>
 	/// <param name="name">Название группы</param>
 	/// <param name="information">Информация о группе</param>

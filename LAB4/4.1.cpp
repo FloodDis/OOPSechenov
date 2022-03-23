@@ -71,6 +71,7 @@ AlbumClassFix::AlbumClassFix(string name, int yearRelease,
 	_name = name;
 	_yearRelease = yearRelease;
 	_songs = songs;
+	_songsCount = songsCount;
 }
 
 void AlbumClassFix::SetName(string name)
@@ -311,7 +312,7 @@ void DemoBandClassFix()
 			<< arrayGenre[i].GetDuration()
 			<< " and genre " << arrayGenre[i].GetGenre() << "\n";
 	}
-	delete[] arrayGenre;
-	delete[] resultAlbum;
 	delete[] arraySong;
+	delete[] resultAlbum;
+	delete[] arrayGenre;
 }

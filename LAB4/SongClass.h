@@ -28,12 +28,12 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса SongClass
+	/// Конструктор класса SongClassFix
 	/// </summary>
 	SongClassFix();
 
 	/// <summary>
-	/// Конструктор класса SongClass
+	/// Конструктор класса SongClassFix
 	/// </summary>
 	/// <param name="name">Название песни</param>
 	/// <param name="duration">Длительность в минутах</param>

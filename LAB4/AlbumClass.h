@@ -33,12 +33,12 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса AlbumClass
+	/// Конструктор класса AlbumClassFix
 	/// </summary>
 	AlbumClassFix();
 
 	/// <summary>
-	/// Конструктор класса AlbumClass
+	/// Конструктор класса AlbumClassFix
 	/// </summary>
 	/// <param name="name">Название альбома</param>
 	/// <param name="yearOfRelease">Год выпуска</param>
