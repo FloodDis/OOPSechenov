@@ -15,41 +15,6 @@ void DemoBook()
 		<< book.Authors[0] << ", " << book.Authors[1] << "\n\n";
 }
 
-void ReadBookFromConsole(Book& book)
-{
-	int releaseYear;
-	int pageCount;
-	int authorsCount;
-	cout << "Enter name of the book: ";
-	cin >> book.Name;
-	cout << "Enter year of the release: ";
-	cin >> releaseYear;
-	if (releaseYear < 0)
-	{
-		throw exception("Wrong data!");
-	}
-	book.ReleaseYear = releaseYear;
-	cout << "Enter page count: ";
-	cin >> pageCount;
-	if (pageCount < 0 || pageCount > 2022)
-	{
-		throw exception("Wrong data!");
-	}
-	book.PageCount = pageCount;
-	cout << "Enter authors count: ";
-	cin >> authorsCount;
-	if (authorsCount < 0)
-	{
-		throw exception("Wrong data!");
-	}
-	book.AuthorCount = authorsCount;
-	for (int i = 0; i < book.AuthorCount; i++)
-	{
-		cout << "Enter author ¹" << i + 1 << ": ";
-		cin >> book.Authors[i];
-	}
-}
-
 void DemoReadBookFromConsole()
 {
 	Book book;
@@ -66,24 +31,6 @@ void DemoReadBookFromConsole()
 			cout << "Wrong data!";
 		}
 	}
-}
-
-void WriteBookToConsole(Book& book)
-{
-	for (int i = 0; i < book.AuthorCount; i++)
-	{
-		if (i == book.AuthorCount)
-		{
-			cout << book.Authors[i] << ". ";
-		}
-		else
-		{
-			cout << book.Authors[i] << ", ";
-		}
-	}
-	cout << book.Name << ". ";
-	cout << book.ReleaseYear << ". - ";
-	cout << book.PageCount << " ñ.\n";
 }
 
 void DemoWriteBook()
@@ -109,22 +56,6 @@ void DemoWriteBook()
 	{
 		WriteBookToConsole(book[i]);
 	}
-}
-
-int FindBookByAuthor(Book* books, int booksCount, string author)
-{
-	for (int i = 0; i < booksCount; i++)
-	{
-		for (int j = 0; j < books->AuthorCount; j++)
-		{
-			if (books[i].Authors[j] == author)
-			{
-				return i;
-			}
-		}
-
-	}
-	return -1;
 }
 
 void DemoFindBookByAuthor()
@@ -159,79 +90,6 @@ void DemoFindBookByAuthor()
 		cout << "Author's book: ";
 		WriteBookToConsole(book[index]);
 	}
-}
-
-void ReadRouteFromConsole(Route& route)
-{
-	int number;
-	int averageDuration;
-	int frequency;
-	int stopsCount;
-
-	cout << "Enter number of route: ";
-	cin >> number;
-	if (number < 0)
-	{
-		throw exception("Wrong data!");
-	}
-	route.Number = number;
-
-	cout << "Enter average duration: ";
-	cin >> averageDuration;
-	if (averageDuration < 0)
-	{
-		throw exception("Wrong data!");
-	}
-	route.AverageDuration = averageDuration;
-
-	cout << "Enter frequency of route: ";
-	cin >> frequency;
-	if (frequency < 0)
-	{
-		throw exception("Wrong data!");
-	}
-	route.Frequency = frequency;
-
-	cout << "Enter stops count: ";
-	cin >> stopsCount;
-	if (stopsCount < 0)
-	{
-		throw exception("Wrong data!");
-	}
-	route.StopsCount = stopsCount;
-	route.Stops = new string[stopsCount];
-
-	for (int i = 0; i < route.StopsCount; i++)
-	{
-		cout << "Enter stop ¹" << i + 1 << ": ";
-		cin >> route.Stops[i];
-	}
-}
-
-void WriteRouteFromConsole(Route& route)
-{
-	cout << "Route " << route.Number << " has average duration "
-		<< route.AverageDuration << ", frequency " << route.Frequency
-		<< " and " << route.StopsCount << " stops:\n";
-	for (int i = 0; i < route.StopsCount; i++)
-	{
-		cout << " Stop " << i + 1 << ": " << route.Stops[i] << "\n";
-	}
-}
-
-int FindRouteTo(Route* routes, int routeCount, string stop)
-{
-	for (int i = 0; i < routeCount; i++)
-	{
-		for (int j = 0; j < routes[i].StopsCount; j++)
-		{
-			if (routes[i].Stops[j] == stop)
-			{
-				return i;
-			}
-		}
-	}
-	return -1;
 }
 
 void DemoRoute()

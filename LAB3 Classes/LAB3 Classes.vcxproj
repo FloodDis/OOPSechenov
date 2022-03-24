@@ -166,8 +166,11 @@
     <ClCompile Include="3.3.cpp" />
     <ClCompile Include="3.4.cpp" />
     <ClCompile Include="3.5.cpp" />
+    <ClCompile Include="Album.cpp" />
     <ClCompile Include="AlbumClass.cpp" />
+    <ClCompile Include="Band.cpp" />
     <ClCompile Include="BandClass.cpp" />
+    <ClCompile Include="Book.cpp" />
     <ClCompile Include="Flight.cpp" />
     <ClCompile Include="FlightClass.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -176,6 +179,8 @@
     <ClCompile Include="PointClass.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleClass.cpp" />
+    <ClCompile Include="Route.cpp" />
+    <ClCompile Include="Song.cpp" />
     <ClCompile Include="SongClass.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="TimeClass.cpp" />

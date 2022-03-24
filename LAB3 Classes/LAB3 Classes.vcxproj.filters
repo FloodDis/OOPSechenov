@@ -152,5 +152,20 @@
     <ClCompile Include="TimeClass.cpp">
       <Filter>Resource Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Album.cpp">
+      <Filter>Resource Files\OneToManyAggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="Band.cpp">
+      <Filter>Resource Files\OneToManyAggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="Song.cpp">
+      <Filter>Resource Files\OneToManyAggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="Book.cpp">
+      <Filter>Resource Files\StructuresArrayFields</Filter>
+    </ClCompile>
+    <ClCompile Include="Route.cpp">
+      <Filter>Resource Files\StructuresArrayFields</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
