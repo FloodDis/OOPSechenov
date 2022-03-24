@@ -166,12 +166,19 @@
     <ClCompile Include="3.3.cpp" />
     <ClCompile Include="3.4.cpp" />
     <ClCompile Include="3.5.cpp" />
+    <ClCompile Include="AlbumClass.cpp" />
+    <ClCompile Include="BandClass.cpp" />
     <ClCompile Include="Flight.cpp" />
+    <ClCompile Include="FlightClass.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="3.2.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PointClass.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RectangleClass.cpp" />
+    <ClCompile Include="SongClass.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TimeClass.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

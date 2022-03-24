@@ -131,5 +131,26 @@
     <ClCompile Include="Flight.cpp">
       <Filter>Resource Files\Aggregation</Filter>
     </ClCompile>
+    <ClCompile Include="AlbumClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="BandClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="FlightClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PointClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SongClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeClass.cpp">
+      <Filter>Resource Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
