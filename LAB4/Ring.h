@@ -9,6 +9,7 @@ using namespace std;
 class Ring
 {
 private:
+
 	/// <summary>
 	/// Внутренний радиус
 	/// </summary>
@@ -23,7 +24,9 @@ private:
 	/// Центр кольца
 	/// </summary>
 	PointClass _center;
+
 public:
+
 	/// <summary>
 	/// Конструктор класса Ring
 	/// </summary>
@@ -76,4 +79,5 @@ public:
 	/// </summary>
 	/// <returns>Площадь кольца</returns>
 	double GetArea();
+
 };

@@ -372,3 +372,24 @@ double Ring::GetArea()
 	double innerArea = 3.14 * _innerRadius * _innerRadius;
 	return outerArea - innerArea;
 }
+
+void DemoRing()
+{
+	Ring ring1(5.0, 13.0, 2.0, -1.0);
+	Ring ring2(3.0, 8.0, 1.0, 4.5);
+	Ring ring3(4.0, 16.5, 3.75, 9.0);
+
+	cout << "Ring 1 area: " << ring1.GetArea() << "\n";
+	cout << "Ring 2 area: " << ring2.GetArea() << "\n";
+	cout << "Ring 3 area: " << ring3.GetArea() << "\n";
+
+	try
+	{
+		Ring ring4(14.0, 9.0, 3.24, 1.26);
+		Ring ring5(-2.8, -1.3, 2.5, 3.47);
+	}
+	catch (const char* error)
+	{
+		cout << error;
+	}
+}

@@ -8,4 +8,7 @@ void main()
 
 	cout << "Задания 4.1.1-4.1.3:\n";
 	DemoBandClassFix();
+
+	cout << "Задание 4.1.6:\n";
+	DemoRing();
 }

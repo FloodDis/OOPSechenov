@@ -119,5 +119,17 @@
     <ClCompile Include="3.5.cpp">
       <Filter>Resource Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Resource Files\Aggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Resource Files\Aggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Resource Files\Aggregation</Filter>
+    </ClCompile>
+    <ClCompile Include="Flight.cpp">
+      <Filter>Resource Files\Aggregation</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

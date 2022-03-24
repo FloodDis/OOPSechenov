@@ -5,6 +5,12 @@
 
 /// <summary>
 ///	Функция демонстрации
-/// работы структуры BandClassFix
+/// работы класса BandClassFix
 /// </summary>
 void DemoBandClassFix();
+
+/// <summary>
+///	Функция демонстрации
+/// работы класса Ring
+/// </summary>
+void DemoRing();
