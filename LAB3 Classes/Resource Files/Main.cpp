@@ -1,7 +1,7 @@
-﻿#include "3.2.h"
-#include "3.3.h"
-#include "3.4.h"
-#include "3.5.h"
+﻿#include "../Header Files/OneToManyAggregation/3.4.h"
+#include "../Header Files/StructureArrayFields/3.2.h"
+#include "../Header Files/Agregation/3.3.h"
+#include "../Header Files/Classes/3.5.h"
 using namespace std;
 
 void main()

@@ -1,4 +1,4 @@
-#include "Flight.h"
+#include "../../Header Files/Agregation/Flight.h"
 
 Flight* MakeFlight(int number, string departurePoint,
 	string destinationPoint, Time departureTime, Time arrivalTime)

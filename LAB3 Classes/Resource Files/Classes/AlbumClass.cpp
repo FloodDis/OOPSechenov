@@ -1,4 +1,4 @@
-#include "AlbumClass.h"
+#include "../../Header Files/Classes/AlbumClass.h"
 
 AlbumClass::AlbumClass()
 {

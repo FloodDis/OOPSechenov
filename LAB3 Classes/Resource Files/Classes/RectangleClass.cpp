@@ -1,11 +1,12 @@
-#include "RectangleClass.h"
+#include "../../Header Files/Classes/RectangleClass.h"
 
 RectangleClass::RectangleClass()
 {
 
 }
 
-RectangleClass::RectangleClass(double width, double length, double x, double y)
+RectangleClass::RectangleClass(double width, 
+	double length, double x, double y)
 {
 	_width = width;
 	_length = length;

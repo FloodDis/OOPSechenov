@@ -1,4 +1,4 @@
-#include "TimeClass.h"
+#include "../../Header Files/Classes/TimeClass.h"
 
 TimeClass::TimeClass(int year, int month, int day, int hour, int minutes)
 {

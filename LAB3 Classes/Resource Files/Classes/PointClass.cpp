@@ -1,4 +1,4 @@
-#include "PointClass.h"
+#include "../../Header Files/Classes/PointClass.h"
 
 PointClass::PointClass(double x, double y)
 {

@@ -1,4 +1,4 @@
-#include "SongClass.h"
+#include "../../Header Files/Classes/SongClass.h"
 
 SongClass::SongClass()
 {

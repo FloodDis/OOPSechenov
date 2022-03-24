@@ -1,4 +1,4 @@
-#include "3.5.h"
+#include "../../Header Files/Classes/3.5.h"
 
 void WriteRectangleWithPointClass(RectangleClass rectangle)
 {

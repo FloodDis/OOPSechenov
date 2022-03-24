@@ -1,4 +1,4 @@
-#include "Band.h"
+#include "../../Header Files/OneToManyAggregation/Band.h"
 
 Band* MakeBand(string name, string information,
 	Album* albums, int albumsCount)

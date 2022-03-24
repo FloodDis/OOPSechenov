@@ -1,4 +1,4 @@
-#include "FlightClass.h"
+#include "../../Header Files/Classes/FlightClass.h"
 
 FlightClass::FlightClass(int number, string departurePoint,
 	string destinationPoint, TimeClass departureTime,

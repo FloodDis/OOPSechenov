@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include <iostream>
-#include "GenreEnum.h"
+#include "../../Header Files/Classes/GenreEnum.h"
 using namespace std;
 
 //Задание 3.4.1

@@ -1,4 +1,4 @@
-#include "Album.h"
+#include "../../Header Files/OneToManyAggregation/Album.h"
 
 Album* MakeAlbum(string name, int yearOfRelease, Song* songs, int songsCount)
 {

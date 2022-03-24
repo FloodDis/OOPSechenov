@@ -1,4 +1,4 @@
-#include "BandClass.h"
+#include "../../Header Files/Classes/BandClass.h"
 
 BandClass::BandClass()
 {
