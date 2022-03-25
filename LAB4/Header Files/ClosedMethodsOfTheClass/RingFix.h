@@ -1,12 +1,12 @@
 #pragma once
+#include "PointClassFix2.h"
 #include <iostream>
-#include "PointClassFix1.h"
 using namespace std;
 
 /// <summary>
 /// Кольцо
 /// </summary>
-class Ring
+class RingFix
 {
 private:
 
@@ -23,14 +23,29 @@ private:
 	/// <summary>
 	/// Центр кольца
 	/// </summary>
-	PointClassFix1 _center;
+	PointClassFix2 _center;
+
+	/// <summary>
+	/// Функция проверки значения на
+	/// неотрицательность
+	/// </summary>
+	/// <param name="value">Проверяемое значение</param>
+	void AssertOnPositiveValue(double value);
+
+	/// <summary>
+	/// Функция проверки значений радиусов
+	/// (внутренний должен быть меньше внешнего)
+	/// </summary>
+	/// <param name="innerRadius">Внутренний радиус</param>
+	/// <param name="outerRadius">Внешний радиус</param>
+	void AssertOnRightRadii(double innerRadius, double outerRadius);
 
 public:
 
 	/// <summary>
 	/// Конструктор класса Ring
 	/// </summary>
-	Ring();
+	RingFix();
 
 	/// <summary>
 	/// Конструктор класса Ring
@@ -39,7 +54,7 @@ public:
 	/// <param name="outerRadius">Внешний радиус</param>
 	/// <param name="xCenter">Координата центра X</param>
 	/// <param name="yCenter">Координата центра Y</param>
-	Ring(double innerRadius, double outerRadius, 
+	RingFix(double innerRadius, double outerRadius,
 		double xCenter, double yCenter);
 
 	/// <summary>
@@ -72,7 +87,7 @@ public:
 	/// Геттер поля _center
 	/// </summary>
 	/// <returns>Центр кольца</returns>
-	PointClassFix1 GetCenter();
+	PointClassFix2 GetCenter();
 
 	/// <summary>
 	/// Функция подсчета площади кольца

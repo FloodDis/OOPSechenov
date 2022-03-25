@@ -39,7 +39,16 @@
     <ClInclude Include="Header Files\DependentFields\SongClassFix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\PointClassFix.h">
+    <ClInclude Include="Header Files\DependentFields\PointClassFix1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\ClosedMethodsOfTheClass\RingFix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\ClosedMethodsOfTheClass\PointClassFix2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\ClosedMethodsOfTheClass\4.2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,7 +71,16 @@
     <ClCompile Include="Resource Files\Dependent Fields\Ring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Dependent Fields\PointClassFix.cpp">
+    <ClCompile Include="Resource Files\Dependent Fields\PointClassFix1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\PointClassFix2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\RingFix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\4.2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

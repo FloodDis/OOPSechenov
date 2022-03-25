@@ -12,6 +12,10 @@ Ring::Ring(double innerRadius, double outerRadius,
 	{
 		throw "Outer radius must be greater than inner radius\n";
 	}
+	if (innerRadius < 0 || outerRadius < 0)
+	{
+		throw "Radii should be greater than 0\n";
+	}
 	_innerRadius = innerRadius;
 	_outerRadius = outerRadius;
 	_center.SetX(xCenter);
@@ -23,6 +27,10 @@ void Ring::SetRadii(double innerRadius, double outerRadius)
 	if (innerRadius > outerRadius)
 	{
 		throw "Outer radius must be greater than inner radius\n";
+	}
+	if (innerRadius < 0 || outerRadius < 0)
+	{
+		throw "Radii should be greater than 0\n";
 	}
 	_innerRadius = innerRadius;
 	_outerRadius = outerRadius;
@@ -44,7 +52,7 @@ double Ring::GetOuterRadius()
 	return _outerRadius;
 }
 
-PointClassFix Ring::GetCenter()
+PointClassFix1 Ring::GetCenter()
 {
 	return _center;
 }
