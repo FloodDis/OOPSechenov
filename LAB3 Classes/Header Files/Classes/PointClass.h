@@ -47,10 +47,16 @@ public:
 	/// <summary>
 	/// Геттер поля _x
 	/// </summary>
+	/// <returns>
+	/// Координата X
+	/// </returns>
 	double GetX();
 
 	/// <summary>
 	/// Геттер поля _y
 	/// </summary>
+	/// <returns>
+	/// Координата Y
+	/// </returns>
 	double GetY();
 };

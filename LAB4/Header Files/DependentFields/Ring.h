@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "../LAB3 Classes/PointClass.h"
+#include "PointClassFix.h"
 using namespace std;
 
 /// <summary>
@@ -23,7 +23,7 @@ private:
 	/// <summary>
 	/// Центр кольца
 	/// </summary>
-	PointClass _center;
+	PointClassFix _center;
 
 public:
 
@@ -72,7 +72,7 @@ public:
 	/// Геттер поля _center
 	/// </summary>
 	/// <returns>Центр кольца</returns>
-	PointClass GetCenter();
+	PointClassFix GetCenter();
 
 	/// <summary>
 	/// Функция подсчета площади кольца

@@ -91,22 +91,25 @@ public:
 	/// <summary>
 	/// Геттер поля _albumsCount
 	/// </summary>
-	/// <returns></returns>
+	/// <returns>Кол-во альбомов</returns>
 	int GetAlbumsCount();
 
 	/// <summary>
 	/// Метод поиска песни среди всех
 	/// альбомов группы
 	/// </summary>
-	/// <param name="songTitle"></param>
-	/// <returns></returns>
+	/// <param name="songTitle">Название песни</param>
+	/// <returns>
+	/// Указатель на найденную песню или
+	/// nullptr, если песня не найдена
+	/// </returns>
 	SongClass* FindSong(string songTitle);
 
 	/// <summary>
 	/// Метод поиска альбома по песне
 	/// из этого альбома
 	/// </summary>
-	/// <param name="song"></param>
+	/// <param name="song">Экземпляр класса SongClass</param>
 	/// <returns></returns>
 	AlbumClass* FindAlbum(SongClass* song);
 
@@ -115,7 +118,7 @@ public:
 	/// из всех альбомов группы
 	/// </summary>
 	/// <param name="allSongsCount">Кол-во всех песен</param>
-	/// <returns></returns>
+	/// <returns>Массив всех песен из всех альбомов</returns>
 	SongClass* GetAllSongs(int& allSongsCount);
 
 	/// <summary>

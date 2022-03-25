@@ -17,6 +17,7 @@ void DemoRectangleWithPointClass();
 /// <summary>
 ///	Функция вывода класса RectangleClass на экран
 /// </summary>
+/// <param name = "rectangle">Экземпляр класса RectangleClass</param>
 void WriteRectangleWithPointClass(RectangleClass rectangle);
 
 /// <summary>
@@ -27,6 +28,7 @@ void DemoFlightWithTimeClass();
 /// <summary>
 ///	Функция демонстрации вывода класса FlightClass на экран
 /// </summary>
+/// <param name = "flight">Экземпляр класса FlightClass</param>
 void WriteFlightClass(FlightClass& flight);
 
 /// <summary>

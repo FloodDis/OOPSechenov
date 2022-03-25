@@ -21,31 +21,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AlbumClass.h">
-      <Filter>Header Files\DependentFields</Filter>
+    <ClInclude Include="Header Files\DependentFields\4.1.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BandClass.h">
-      <Filter>Header Files\DependentFields</Filter>
+    <ClInclude Include="Header Files\DependentFields\AlbumClassFix.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GenreEnum.h">
-      <Filter>Header Files\DependentFields</Filter>
+    <ClInclude Include="Header Files\DependentFields\BandClassFix.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SongClass.h">
-      <Filter>Header Files\DependentFields</Filter>
+    <ClInclude Include="Header Files\DependentFields\GenreEnum.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="4.1.h">
-      <Filter>Header Files\DependentFields</Filter>
+    <ClInclude Include="Header Files\DependentFields\Ring.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ring.h">
-      <Filter>Header Files\DependentFields</Filter>
+    <ClInclude Include="Header Files\DependentFields\SongClassFix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\DependentFields\PointClassFix.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4.1.cpp">
-      <Filter>Resource Files\DependentFields</Filter>
+    <ClCompile Include="Resource Files\Dependent Fields\4.1.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="Resource Files\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Dependent Fields\AlbumClassFix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Dependent Fields\SongClassFix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Dependent Fields\BandClassFix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Dependent Fields\Ring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Dependent Fields\PointClassFix.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -18,6 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header Files\DependentFields\4.1.h" />
+    <ClInclude Include="Header Files\DependentFields\AlbumClassFix.h" />
+    <ClInclude Include="Header Files\DependentFields\BandClassFix.h" />
+    <ClInclude Include="Header Files\DependentFields\GenreEnum.h" />
+    <ClInclude Include="Header Files\DependentFields\PointClassFix.h" />
+    <ClInclude Include="Header Files\DependentFields\Ring.h" />
+    <ClInclude Include="Header Files\DependentFields\SongClassFix.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Resource Files\Dependent Fields\4.1.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\AlbumClassFix.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\BandClassFix.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\PointClassFix.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\Ring.cpp" />
+    <ClCompile Include="Resource Files\Main.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\SongClassFix.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,18 +156,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="4.1.h" />
-    <ClInclude Include="AlbumClass.h" />
-    <ClInclude Include="BandClass.h" />
-    <ClInclude Include="GenreEnum.h" />
-    <ClInclude Include="Ring.h" />
-    <ClInclude Include="SongClass.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="4.1.cpp" />
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -49,7 +49,7 @@ public:
 	/// <summary>
 	/// Сеттер поля _name
 	/// </summary>
-	/// <param name="name"></param>
+	/// <param name="name">Название альбома</param>
 	void SetName(string name);
 
 	/// <summary>
@@ -67,7 +67,7 @@ public:
 	/// <summary>
 	/// Сеттер поля _songsCount
 	/// </summary>
-	/// <param name="songsCount">Кол-во песен в </param>
+	/// <param name="songsCount">Кол-во песен в альбоме</param>
 	void SetSongsCount(int songsCount);
 
 	/// <summary>
@@ -79,7 +79,7 @@ public:
 	/// <summary>
 	/// Геттер поля _yearRelease
 	/// </summary>
-	/// <returns>Год выпускс</returns>
+	/// <returns>Год выпуска</returns>
 	int GetYearRelease();
 
 	/// <summary>

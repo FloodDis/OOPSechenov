@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include <iostream>
-#include "AlbumClass.h"
+#include "AlbumClassFix.h"
 using namespace std;
 
 /// <summary>

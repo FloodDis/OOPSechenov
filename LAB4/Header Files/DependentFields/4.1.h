@@ -1,6 +1,7 @@
 #pragma once
-#include "BandClass.h"
+#include "BandClassFix.h"
 #include "Ring.h"
+#include "../../Header Files/DependentFields/GenreEnum.h"
 #include <iostream>
 
 /// <summary>
