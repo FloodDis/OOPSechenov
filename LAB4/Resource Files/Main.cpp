@@ -15,4 +15,6 @@ void main()
 
 	cout << "Задания 4.2.1 - 4.2.3:\n";
 	DemoRingFix();
+
+
 }

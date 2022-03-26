@@ -60,8 +60,8 @@ public:
 	/// <summary>
 	/// Сеттер полей _innerRadius и _outerRadius
 	/// </summary>
-	/// <param name="innerRadius"></param>
-	/// <param name="outerRadius"></param>
+	/// <param name="innerRadius">Внутренний радиус</param>
+	/// <param name="outerRadius">Внешний радиус</param>
 	void SetRadii(double innerRadius, double outerRadius);
 
 	/// <summary>

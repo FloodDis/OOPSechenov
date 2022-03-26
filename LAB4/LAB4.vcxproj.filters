@@ -51,6 +51,9 @@
     <ClInclude Include="Header Files\ClosedMethodsOfTheClass\4.2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\ReadOnlyFields\PointClassFix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Dependent Fields\4.1.cpp">
@@ -81,6 +84,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\4.2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\ReadOnlyFields\PointClassFix3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

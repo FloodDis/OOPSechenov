@@ -29,6 +29,7 @@
     <ClInclude Include="Header Files\DependentFields\PointClassFix1.h" />
     <ClInclude Include="Header Files\DependentFields\Ring.h" />
     <ClInclude Include="Header Files\DependentFields\SongClassFix.h" />
+    <ClInclude Include="Header Files\ReadOnlyFields\PointClassFix3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\4.2.cpp" />
@@ -41,6 +42,7 @@
     <ClCompile Include="Resource Files\Dependent Fields\Ring.cpp" />
     <ClCompile Include="Resource Files\Main.cpp" />
     <ClCompile Include="Resource Files\Dependent Fields\SongClassFix.cpp" />
+    <ClCompile Include="Resource Files\ReadOnlyFields\PointClassFix3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
