@@ -12,15 +12,18 @@ void main()
 	cout << "Задания 4.1.1 - 4.1.3:\n";
 	DemoBandClassFix();
 
-	cout << "Задание 4.1.4 - 4.1.6:\n";
+	cout << "\nЗадание 4.1.4 - 4.1.6:\n";
 	DemoRing();
 
-	cout << "Задания 4.2.1 - 4.2.3:\n";
+	cout << "\nЗадания 4.2.1 - 4.2.3:\n";
 	DemoRingFix1();
 
-	cout << "Задания 4.4.1 - 4.4.7:\n";
+	cout << "\nЗадания 4.4.1 - 4.4.7:\n";
 	DemoRingFix2();
 
-	cout << "Задания 4.5.1 - 4.5.3:\n";
+	cout << "\nЗадания 4.5.1 - 4.5.3:\n";
 	DemoRingFix3();
+
+	cout << "\nЗадания 4.5.4, 4.5.5:\n";
+	DemoCollision();
 }

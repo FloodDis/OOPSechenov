@@ -40,3 +40,63 @@ void DemoRingFix3()
 	cout << "Number of rings after calling the destructor: " <<
 		RingFix3::GetAllRingsCount() << "\n";
 }
+
+void DemoCollision()
+{
+	Rectangle* rectangle1 = new Rectangle(6.0, 7.0, 2.0, 3.0);
+	Rectangle* rectangle2 = new Rectangle(8.0, 4.0, 3.2, 3.9);
+	bool result = CollisionManager::IsCollision(*rectangle1, *rectangle2);
+	if (result)
+	{
+		cout << "The rectangles intersect\n";
+	}
+	else
+	{
+		cout << "The rectangles don't intersect\n";
+	}
+
+	Rectangle* rectangle3 = new Rectangle(6.0, 7.0, 2.0, 3.0);
+	Rectangle* rectangle4 = new Rectangle(1.0, 3.0, 100.2, 200.9);
+	result = CollisionManager::IsCollision(*rectangle3, *rectangle4);
+	if (result)
+	{
+		cout << "The rectangles intersect\n";
+	}
+	else
+	{
+		cout << "The rectangles don't intersect\n";
+	}
+
+	delete rectangle1;
+	delete rectangle2;
+	delete rectangle3;
+	delete rectangle4;
+
+	RingFix3* ring1 = new RingFix3(6.0, 8.0, 5.0, -1.0);
+	RingFix3* ring2 = new RingFix3(5.0, 7.0, 6.0, 1.0);
+	result = CollisionManager::IsCollision(*ring1, *ring2);
+	if (result)
+	{
+		cout << "The rings intersect\n";
+	}
+	else
+	{
+		cout << "The rings don't intersect\n";
+	}
+	RingFix3* ring3 = new RingFix3(6.0, 8.0, 5.0, -1.0);
+	RingFix3* ring4 = new RingFix3(2.5, 4.0, 17.0, 12.0);
+	result = CollisionManager::IsCollision(*ring3, *ring4);
+	if (result)
+	{
+		cout << "The rings intersect\n";
+	}
+	else
+	{
+		cout << "The rings don't intersect\n";
+	}
+
+	delete ring1;
+	delete ring2;
+	delete ring3;
+	delete ring4;
+}

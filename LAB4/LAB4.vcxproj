@@ -31,6 +31,7 @@
     <ClInclude Include="Header Files\DependentFields\SongClassFix.h" />
     <ClInclude Include="Header Files\ReadOnlyFields\PointClassFix3.h" />
     <ClInclude Include="Header Files\ServiceClasses\4.5.h" />
+    <ClInclude Include="Header Files\ServiceClasses\CollisionManager.h" />
     <ClInclude Include="Header Files\ServiceClasses\DoubleValidator.h" />
     <ClInclude Include="Header Files\ServiceClasses\Rectangle.h" />
     <ClInclude Include="Header Files\ServiceClasses\RingFix3.h" />
@@ -50,6 +51,7 @@
     <ClCompile Include="Resource Files\Dependent Fields\SongClassFix.cpp" />
     <ClCompile Include="Resource Files\ReadOnlyFields\PointClassFix3.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\4.5.cpp" />
+    <ClCompile Include="Resource Files\ServiceClasses\CollisionManager.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\DoubleValidator.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\Rectangle.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\RingFix3.cpp" />
