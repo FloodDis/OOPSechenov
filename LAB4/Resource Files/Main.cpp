@@ -2,6 +2,7 @@
 #include "../Header Files/DependentFields/4.1.h"
 #include "../Header Files/ClosedMethodsOfTheClass/4.2.h"
 #include "../Header Files/StaticFieldsAndMethodsOfTheClass/4.4.h"
+#include "../Header Files/ServiceClasses/4.5.h"
 using namespace std;
 
 void main()
@@ -19,4 +20,7 @@ void main()
 
 	cout << "Задания 4.4.1 - 4.4.7:\n";
 	DemoRingFix2();
+
+	cout << "Задания 4.5.1 - 4.5.3:\n";
+	DemoRingFix3();
 }
