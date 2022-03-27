@@ -42,7 +42,7 @@
     <ClInclude Include="Header Files\DependentFields\PointClassFix1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\ClosedMethodsOfTheClass\RingFix.h">
+    <ClInclude Include="Header Files\ClosedMethodsOfTheClass\RingFix1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header Files\ClosedMethodsOfTheClass\PointClassFix2.h">
@@ -52,6 +52,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header Files\ReadOnlyFields\PointClassFix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\StaticFieldsAndMethodsOfTheClass\RingFix2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\StaticFieldsAndMethodsOfTheClass\4.4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -80,13 +86,19 @@
     <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\PointClassFix2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\RingFix.cpp">
+    <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\RingFix1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\ClosedMethodsOfTheClass\4.2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\ReadOnlyFields\PointClassFix3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\StaticFieldsAndMethodsOfTheClass\RingFix2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\StaticFieldsAndMethodsOfTheClass\4.4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

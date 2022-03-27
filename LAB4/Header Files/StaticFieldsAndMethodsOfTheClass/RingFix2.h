@@ -1,12 +1,12 @@
 #pragma once
-#include "PointClassFix2.h"
 #include <iostream>
+#include "../../Header Files/ClosedMethodsOfTheClass/PointClassFix2.h"
 using namespace std;
 
 /// <summary>
 /// Кольцо
 /// </summary>
-class RingFix
+class RingFix2
 {
 private:
 
@@ -26,6 +26,11 @@ private:
 	PointClassFix2 _center;
 
 	/// <summary>
+	/// Кол-во созданных объектов RingFix2
+	/// </summary>
+	static int _allRingsCount;
+
+	/// <summary>
 	/// Функция проверки значения на
 	/// неотрицательность
 	/// </summary>
@@ -43,19 +48,24 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// Конструктор класса RingFix2
 	/// </summary>
-	RingFix();
+	RingFix2();
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// Конструктор класса RingFix2
 	/// </summary>
 	/// <param name="innerRadius">Внутрений радиус</param>
 	/// <param name="outerRadius">Внешний радиус</param>
 	/// <param name="xCenter">Координата центра X</param>
 	/// <param name="yCenter">Координата центра Y</param>
-	RingFix(double innerRadius, double outerRadius,
+	RingFix2(double innerRadius, double outerRadius,
 		double xCenter, double yCenter);
+
+	/// <summary>
+	/// Деструктор класса RingFix2
+	/// </summary>
+	~RingFix2();
 
 	/// <summary>
 	/// Сеттер полей _innerRadius и _outerRadius
@@ -95,4 +105,9 @@ public:
 	/// <returns>Площадь кольца</returns>
 	double GetArea();
 
+	/// <summary>
+	/// Геттер поля _allRingsCount
+	/// </summary>
+	/// <returns>Кол-во созданных</returns>
+	static int GetAllRingsCount();
 };

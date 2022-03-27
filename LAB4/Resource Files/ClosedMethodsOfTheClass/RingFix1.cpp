@@ -1,11 +1,11 @@
-#include "../../Header Files/ClosedMethodsOfTheClass/RingFix.h"
+#include "../../Header Files/ClosedMethodsOfTheClass/RingFix1.h"
 
-RingFix::RingFix()
+RingFix1::RingFix1()
 {
 
 }
 
-RingFix::RingFix(double innerRadius, double outerRadius,
+RingFix1::RingFix1(double innerRadius, double outerRadius,
 	double xCenter, double yCenter)
 {
 	AssertOnRightRadii(innerRadius, outerRadius);
@@ -17,7 +17,7 @@ RingFix::RingFix(double innerRadius, double outerRadius,
 	_center.SetY(yCenter);
 }
 
-void RingFix::SetRadii(double innerRadius, double outerRadius)
+void RingFix1::SetRadii(double innerRadius, double outerRadius)
 {
 	AssertOnRightRadii(innerRadius, outerRadius);
 	AssertOnPositiveValue(innerRadius);
@@ -26,35 +26,35 @@ void RingFix::SetRadii(double innerRadius, double outerRadius)
 	_outerRadius = outerRadius;
 }
 
-void RingFix::SetCenter(double xCenter, double yCenter)
+void RingFix1::SetCenter(double xCenter, double yCenter)
 {
 	_center.SetX(xCenter);
 	_center.SetY(yCenter);
 }
 
-double RingFix::GetInnerRadius()
+double RingFix1::GetInnerRadius()
 {
 	return _innerRadius;
 }
 
-double RingFix::GetOuterRadius()
+double RingFix1::GetOuterRadius()
 {
 	return _outerRadius;
 }
 
-PointClassFix2 RingFix::GetCenter()
+PointClassFix2 RingFix1::GetCenter()
 {
 	return _center;
 }
 
-double RingFix::GetArea()
+double RingFix1::GetArea()
 {
 	double outerArea = 3.14 * _outerRadius * _outerRadius;
 	double innerArea = 3.14 * _innerRadius * _innerRadius;
 	return outerArea - innerArea;
 }
 
-void RingFix::AssertOnPositiveValue(double value)
+void RingFix1::AssertOnPositiveValue(double value)
 {
 	if (value < 0)
 	{
@@ -62,7 +62,7 @@ void RingFix::AssertOnPositiveValue(double value)
 	}
 }
 
-void RingFix::AssertOnRightRadii(double innerRadius, double outerRadius)
+void RingFix1::AssertOnRightRadii(double innerRadius, double outerRadius)
 {
 	if (innerRadius > outerRadius)
 	{
