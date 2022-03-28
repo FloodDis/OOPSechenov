@@ -75,6 +75,9 @@
     <ClInclude Include="Header Files\ServiceClasses\CollisionManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\ServiceClasses\GeometricProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Dependent Fields\4.1.cpp">
@@ -129,6 +132,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\ServiceClasses\CollisionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\ServiceClasses\GeometricProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

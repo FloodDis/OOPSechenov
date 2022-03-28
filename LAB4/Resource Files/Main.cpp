@@ -22,8 +22,12 @@ void main()
 	DemoRingFix2();
 
 	cout << "\nЗадания 4.5.1 - 4.5.3:\n";
-	DemoRingFix3();
+	GeometricProgram geometricProgram;
+	geometricProgram.DemoRingFix3();
 
 	cout << "\nЗадания 4.5.4, 4.5.5:\n";
-	DemoCollision();
+	geometricProgram.DemoCollision();
+
+	cout << "\n Задание 4.5.6, 4.5.7:\n";
+	DemoGeometricProgram();
 }

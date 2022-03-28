@@ -1,16 +1,9 @@
 #pragma once
-#include "RingFix3.h"
-#include "Rectangle.h"
-#include "CollisionManager.h"
+#include "GeometricProgram.h"
+#include <iostream>
 
-///	<summary>
-/// Функция демонстрации работы
-/// структуры RingFix3
+/// <summary>
+/// Функция демонстрации класса
+/// GeometricProgram
 /// </summary>
-void DemoRingFix3();
-
-///	<summary>
-/// Функция демонстрации работы
-/// класса CollisionManager
-/// </summary>
-void DemoCollision();
+void DemoGeometricProgram();
