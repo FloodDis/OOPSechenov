@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClInclude Include="Header Files\Inheritance\Person.h" />
     <ClInclude Include="Header Files\Inheritance\Student.h" />
+    <ClInclude Include="Header Files\Inheritance\Teacher.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\Person.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Student.cpp" />
+    <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

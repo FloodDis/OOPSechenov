@@ -21,12 +21,18 @@
     <ClInclude Include="Header Files\Inheritance\Student.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\Inheritance\Teacher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\Person.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\Inheritance\Student.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Inheritance\Teacher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
