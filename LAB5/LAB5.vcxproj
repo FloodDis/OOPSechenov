@@ -139,14 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Header Files\Inheritance\DemoInheritence.h" />
     <ClInclude Include="Header Files\Inheritance\Person.h" />
     <ClInclude Include="Header Files\Inheritance\Student.h" />
     <ClInclude Include="Header Files\Inheritance\Teacher.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Resource Files\Inheritance\DemoInheritence.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Person.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Student.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
+    <ClCompile Include="Resource Files\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

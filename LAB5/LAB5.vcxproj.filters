@@ -24,6 +24,9 @@
     <ClInclude Include="Header Files\Inheritance\Teacher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\Inheritance\DemoInheritence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\Person.cpp">
@@ -33,6 +36,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\Inheritance\Teacher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Inheritance\DemoInheritence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
