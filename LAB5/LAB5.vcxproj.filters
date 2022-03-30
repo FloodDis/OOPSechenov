@@ -39,6 +39,9 @@
     <ClInclude Include="Header Files\RefactoringBaseClass\Login.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\Polymorphism\Product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\Person.cpp">
@@ -66,6 +69,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\RefactoringBaseClass\Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Polymorphism\Product.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

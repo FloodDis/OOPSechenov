@@ -6,17 +6,17 @@ Teacher::Teacher() :Person()
 }
 
 Teacher::Teacher(string name, string surname, string middleName,
-	Post post) : Person(name, surname, middleName)
+	Posistion post) : Person(name, surname, middleName)
 {
 	this->SetPost(post);
 }
 
-void Teacher::SetPost(Post post)
+void Teacher::SetPost(Posistion post)
 {
-	_post = post;
+	_position = post;
 }
 
-Post Teacher::GetPost()
+Posistion Teacher::GetPost()
 {
-	return _post;
+	return _position;
 }

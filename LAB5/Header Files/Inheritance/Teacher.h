@@ -4,7 +4,7 @@
 /// <summary>
 /// Должность учителя
 /// </summary>
-enum Post
+enum Posistion
 {
 	/// <summary>
 	/// Лектор
@@ -27,7 +27,7 @@ private:
 	/// <summary>
 	/// Должность учителя
 	/// </summary>
-	Post _post;
+	Posistion _position;
 
 public: 
 
@@ -44,17 +44,17 @@ public:
 	/// <param name="middleName">Отчество</param>
 	/// <param name="post">Должность</param>
 	Teacher(string name, string surname, string middleName,
-		Post post);
+		Posistion post);
 
 	/// <summary>
-	/// Сеттер поля _post
+	/// Сеттер поля _position
 	/// </summary>
 	/// <param name="post">Должность</param>
-	void SetPost(Post post);
+	void SetPost(Posistion post);
 
 	/// <summary>
-	/// Геттер поля _post
+	/// Геттер поля _position
 	/// </summary>
 	/// <returns>Должность</returns>
-	Post GetPost();
+	Posistion GetPost();
 };
