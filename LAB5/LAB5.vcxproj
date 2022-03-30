@@ -143,6 +143,10 @@
     <ClInclude Include="Header Files\Inheritance\Person.h" />
     <ClInclude Include="Header Files\Inheritance\Student.h" />
     <ClInclude Include="Header Files\Inheritance\Teacher.h" />
+    <ClInclude Include="Header Files\RefactoringBaseClass\Login.h" />
+    <ClInclude Include="Header Files\RefactoringBaseClass\PaidUser.h" />
+    <ClInclude Include="Header Files\RefactoringBaseClass\Post.h" />
+    <ClInclude Include="Header Files\RefactoringBaseClass\User.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\DemoInheritence.cpp" />
@@ -150,6 +154,10 @@
     <ClCompile Include="Resource Files\Inheritance\Student.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
     <ClCompile Include="Resource Files\Main.cpp" />
+    <ClCompile Include="Resource Files\RefactoringBaseClass\Login.cpp" />
+    <ClCompile Include="Resource Files\RefactoringBaseClass\PaidUser.cpp" />
+    <ClCompile Include="Resource Files\RefactoringBaseClass\Post.cpp" />
+    <ClCompile Include="Resource Files\RefactoringBaseClass\User.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

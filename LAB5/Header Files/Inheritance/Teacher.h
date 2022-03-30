@@ -17,6 +17,9 @@ enum Post
 	Prañtician
 };
 
+/// <summary>
+/// Ó÷èòåëü
+/// </summary>
 class Teacher : public Person
 {
 private:
