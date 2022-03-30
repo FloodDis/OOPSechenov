@@ -45,6 +45,9 @@
     <ClInclude Include="Header Files\Polymorphism\DiscountBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\Polymorphism\PercentDiscount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\Person.cpp">
@@ -78,6 +81,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\Polymorphism\DiscountBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Files\Polymorphism\PercentDiscount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

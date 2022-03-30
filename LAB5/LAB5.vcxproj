@@ -144,6 +144,7 @@
     <ClInclude Include="Header Files\Inheritance\Student.h" />
     <ClInclude Include="Header Files\Inheritance\Teacher.h" />
     <ClInclude Include="Header Files\Polymorphism\DiscountBase.h" />
+    <ClInclude Include="Header Files\Polymorphism\PercentDiscount.h" />
     <ClInclude Include="Header Files\Polymorphism\Product.h" />
     <ClInclude Include="Header Files\RefactoringBaseClass\Login.h" />
     <ClInclude Include="Header Files\RefactoringBaseClass\PaidUser.h" />
@@ -157,6 +158,7 @@
     <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
     <ClCompile Include="Resource Files\Main.cpp" />
     <ClCompile Include="Resource Files\Polymorphism\DiscountBase.cpp" />
+    <ClCompile Include="Resource Files\Polymorphism\PercentDiscount.cpp" />
     <ClCompile Include="Resource Files\Polymorphism\Product.cpp" />
     <ClCompile Include="Resource Files\RefactoringBaseClass\Login.cpp" />
     <ClCompile Include="Resource Files\RefactoringBaseClass\PaidUser.cpp" />

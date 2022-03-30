@@ -8,7 +8,7 @@ Product::Product()
 Product::Product(string name, CategoryType categoryType, double cost)
 {
 	this->SetName(name);
-	this->SeyCategoryType(categoryType);
+	this->SetCategoryType(categoryType);
 	this->SetCost(cost);
 }
 
@@ -17,7 +17,7 @@ void Product::SetName(string name)
 	_name = name;
 }
 
-void Product::SeyCategoryType(CategoryType categoryType)
+void Product::SetCategoryType(CategoryType categoryType)
 {
 	_categoryType = categoryType;
 }

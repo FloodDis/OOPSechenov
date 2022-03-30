@@ -75,7 +75,7 @@ public:
 	/// Сеттер поля _categoryType
 	/// </summary>
 	/// <param name="categoryType">Категория товара</param>
-	void SeyCategoryType(CategoryType categoryType);
+	void SetCategoryType(CategoryType categoryType);
 
 	/// <summary>
 	/// Сеттер поля _cost

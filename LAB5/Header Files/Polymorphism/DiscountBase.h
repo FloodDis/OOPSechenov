@@ -54,7 +54,7 @@ public:
 	/// </summary>
 	/// <param name="product">Объект товара Product</param>
 	/// <returns>
-	/// Цену товара с учетом
+	/// Цена товара с учетом
 	/// действующей скидки
 	/// </returns>
 	double virtual Calculate(Product* product) = 0;
