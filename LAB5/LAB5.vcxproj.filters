@@ -42,6 +42,9 @@
     <ClInclude Include="Header Files\Polymorphism\Product.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\Polymorphism\DiscountBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Inheritance\Person.cpp">
