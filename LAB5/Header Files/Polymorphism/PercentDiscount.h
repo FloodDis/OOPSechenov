@@ -2,7 +2,7 @@
 #include "DiscountBase.h"
 
 /// <summary>
-/// Дочерний класс DiscountBase
+/// Скидка в процентах
 /// </summary>
 class PercentDiscount : public DiscountBase
 {
