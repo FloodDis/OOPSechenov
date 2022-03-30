@@ -156,6 +156,7 @@
     <ClCompile Include="Resource Files\Inheritance\Student.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
     <ClCompile Include="Resource Files\Main.cpp" />
+    <ClCompile Include="Resource Files\Polymorphism\DiscountBase.cpp" />
     <ClCompile Include="Resource Files\Polymorphism\Product.cpp" />
     <ClCompile Include="Resource Files\RefactoringBaseClass\Login.cpp" />
     <ClCompile Include="Resource Files\RefactoringBaseClass\PaidUser.cpp" />
