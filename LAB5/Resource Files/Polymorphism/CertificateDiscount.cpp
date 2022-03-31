@@ -26,6 +26,21 @@ CertificateDiscount::CertificateDiscount(CategoryType category, int amount)
 
 double CertificateDiscount::Calculate(Product* product)
 {
-	int saleCost = product->GetCost() - _amount;
+	double saleCost;
+	if (_amount > product->GetCost())
+	{
+		saleCost = 0;
+		_amount -= product->GetCost();
+	}
+	else if (_amount < product->GetCost())
+	{
+		saleCost = product->GetCost() - _amount;
+		this->SetAmount(0);
+	}
+	else if (_amount == product->GetCost())
+	{
+		saleCost = 0;
+		this->SetAmount(0);
+	}
 	return saleCost;
 }
