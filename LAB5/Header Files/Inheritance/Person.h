@@ -1,77 +1,77 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Человек
+/// Р§РµР»РѕРІРµРє
 /// </summary>
 class Person
 {
 private:
 
 	/// <summary>
-	/// Имя
+	/// РРјСЏ
 	/// </summary>
 	string _name;
 
 	/// <summary>
-	/// Фамилия
+	/// Р¤Р°РјРёР»РёСЏ
 	/// </summary>
 	string _surname;
 
 	/// <summary>
-	/// Отчество
+	/// РћС‚С‡РµСЃС‚РІРѕ
 	/// </summary>
 	string _middleName;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса Person
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Person
 	/// </summary>
 	Person();
 
 	/// <summary>
-	/// Конструктор класса Person
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Person
 	/// </summary>
-	/// <param name="name">Имя</param>
-	/// <param name="surname">Фамилия</param>
-	/// <param name="middleName">Отчество</param>
+	/// <param name="name">РРјСЏ</param>
+	/// <param name="surname">Р¤Р°РјРёР»РёСЏ</param>
+	/// <param name="middleName">РћС‚С‡РµСЃС‚РІРѕ</param>
 	Person(string name, string surname, string middleName);
 
 	/// <summary>
-	/// Сеттер поля _name
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <param name="name">Имя</param>
+	/// <param name="name">РРјСЏ</param>
 	void SetName(string name);
 
 	/// <summary>
-	/// Сеттер поля _surname
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _surname
 	/// </summary>
-	/// <param name="surname">Фамилия</param>
+	/// <param name="surname">Р¤Р°РјРёР»РёСЏ</param>
 	void SetSurname(string surname);
 
 	/// <summary>
-	/// Сеттер поля _middleName
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _middleName
 	/// </summary>
-	/// <param name="middleName">Отчество</param>
+	/// <param name="middleName">РћС‚С‡РµСЃС‚РІРѕ</param>
 	void SetMiddleName(string middleName);
 
 	/// <summary>
-	/// Геттер поля _name
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <returns>Имя</returns>
+	/// <returns>РРјСЏ</returns>
 	string GetName();
 
 	/// <summary>
-	/// Геттер поля _surname
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _surname
 	/// </summary>
-	/// <returns>Фамилия</returns>
+	/// <returns>Р¤Р°РјРёР»РёСЏ</returns>
 	string GetSurname();
 
 	/// <summary>
-	/// Геттер поля _middleName
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _middleName
 	/// </summary>
-	/// <returns>Отчество</returns>
+	/// <returns>РћС‚С‡РµСЃС‚РІРѕ</returns>
 	string GetMiddleName();
 };

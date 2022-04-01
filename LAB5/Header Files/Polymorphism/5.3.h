@@ -1,14 +1,14 @@
-#pragma once
+п»ї#pragma once
 #include "CertificateDiscount.h"
 #include "PercentDiscount.h"
 
 /// <summary>
-/// Функция вывода названия товара, цены товара
-/// до расчета со скидкой и цены товара после
-/// расчета со скидкой
+/// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РЅР°Р·РІР°РЅРёСЏ С‚РѕРІР°СЂР°, С†РµРЅС‹ С‚РѕРІР°СЂР°
+/// РґРѕ СЂР°СЃС‡РµС‚Р° СЃРѕ СЃРєРёРґРєРѕР№ Рё С†РµРЅС‹ С‚РѕРІР°СЂР° РїРѕСЃР»Рµ
+/// СЂР°СЃС‡РµС‚Р° СЃРѕ СЃРєРёРґРєРѕР№
 /// </summary>
-/// <param name="discount">Указатель на базовый класс</param>
-/// <param name="products">Массив продуктов</param>
-/// <param name="productsCount">Кол-во продуктов</param>
+/// <param name="discount">РЈРєР°Р·Р°С‚РµР»СЊ РЅР° Р±Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ</param>
+/// <param name="products">РњР°СЃСЃРёРІ РїСЂРѕРґСѓРєС‚РѕРІ</param>
+/// <param name="productsCount">РљРѕР»-РІРѕ РїСЂРѕРґСѓРєС‚РѕРІ</param>
 void ShowCheckWithDiscount(DiscountBase* discount, 
 	Product* products, int productsCount);

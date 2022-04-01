@@ -1,62 +1,62 @@
-#pragma once
+п»ї#pragma once
 #include "Person.h"
 
 /// <summary>
-/// Студент
+/// РЎС‚СѓРґРµРЅС‚
 /// </summary>
 class Student : public Person
 {
 private:
 
 	/// <summary>
-	/// Номер зачетной книжки
+	/// РќРѕРјРµСЂ Р·Р°С‡РµС‚РЅРѕР№ РєРЅРёР¶РєРё
 	/// </summary>
 	int _creditCardNumber;
 
 	/// <summary>
-	/// Год поступления
+	/// Р“РѕРґ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ
 	/// </summary>
 	int _yearOfAdmission;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса Student
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Student
 	/// </summary>
 	Student();
 
 	/// <summary>
-	/// Конструктор класса Student
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Student
 	/// </summary>
-	/// <param name="name">Имя</param>
-	/// <param name="surname">Фамилия</param>
-	/// <param name="middleName">Отчество</param>
-	/// <param name="creditCardNumber">Номер зачетной книжки</param>
-	/// <param name="yearOfAdmission">Год поступления</param>
+	/// <param name="name">РРјСЏ</param>
+	/// <param name="surname">Р¤Р°РјРёР»РёСЏ</param>
+	/// <param name="middleName">РћС‚С‡РµСЃС‚РІРѕ</param>
+	/// <param name="creditCardNumber">РќРѕРјРµСЂ Р·Р°С‡РµС‚РЅРѕР№ РєРЅРёР¶РєРё</param>
+	/// <param name="yearOfAdmission">Р“РѕРґ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ</param>
 	Student(string name, string surname, string middleName,
 		int creditCardNumber, int yearOfAdmission);
 
 	/// <summary>
-	/// Сеттер поля _creditCardNumber
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _creditCardNumber
 	/// </summary>
-	/// <param name="creditCardNumber">Номер зачетной книжки</param>
+	/// <param name="creditCardNumber">РќРѕРјРµСЂ Р·Р°С‡РµС‚РЅРѕР№ РєРЅРёР¶РєРё</param>
 	void SetCreditCardNumber(int creditCardNumber);
 
 	/// <summary>
-	/// Сеттер поля _yearOfAdmission
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _yearOfAdmission
 	/// </summary>
-	/// <param name="yearOfAdmission">Год поступления</param>
+	/// <param name="yearOfAdmission">Р“РѕРґ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ</param>
 	void SetYearOfAdmission(int yearOfAdmission);
 
 	/// <summary>
-	/// Геттер поля _creditCardNumber
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _creditCardNumber
 	/// </summary>
-	/// <returns>Номер зачетной книжки</returns>
+	/// <returns>РќРѕРјРµСЂ Р·Р°С‡РµС‚РЅРѕР№ РєРЅРёР¶РєРё</returns>
 	int GetCreditCardNumber();
 
 	/// <summary>
-	/// Геттер поля _yearOfAdmission
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _yearOfAdmission
 	/// </summary>
-	/// <returns>Год поступления</returns>
+	/// <returns>Р“РѕРґ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ</returns>
 	int GetYearOfAdmission();
 };

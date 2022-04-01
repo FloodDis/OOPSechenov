@@ -1,82 +1,82 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
-//////////////////////// User - обычный пользователь
+//////////////////////// User - РѕР±С‹С‡РЅС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ
 class User
 {
 private:
 
 	/// <summary>
-	/// Идентификационный номер
+	/// РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ
 	/// </summary>
 	int _id;
 
 	/// <summary>
-	/// Логин
+	/// Р›РѕРіРёРЅ
 	/// </summary>
 	string _login;
 
 	/// <summary>
-	/// Пароль
+	/// РџР°СЂРѕР»СЊ
 	/// </summary>
 	string _password;
 
 protected:
 
 	/// <summary>
-	/// Сеттер поля _id
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _id
 	/// </summary>
-	/// <param name="id">Идентификационный номер</param>
+	/// <param name="id">РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</param>
 	void SetId(int id);
 
 public:
 
 	/// <summary>
-	/// Сеттер поля _login
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _login
 	/// </summary>
-	/// <param name="login">Логин</param>
+	/// <param name="login">Р›РѕРіРёРЅ</param>
 	void SetLogin(string login);
 
 	/// <summary>
-	/// Сеттер поля _password
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _password
 	/// </summary>
-	/// <param name="password">Пароль</param>
+	/// <param name="password">РџР°СЂРѕР»СЊ</param>
 	void SetPassword(string password);
 
 	/// <summary>
-	/// Геттер поля _id
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _id
 	/// </summary>
-	/// <returns>Идентификационный номер</returns>
+	/// <returns>РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</returns>
 	int GetId();
 
 	/// <summary>
-	/// Геттер поля _login
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _login
 	/// </summary>
-	/// <returns>Логин</returns>
+	/// <returns>Р›РѕРіРёРЅ</returns>
 	string GetLogin();
 
 	/// <summary>
-	/// Геттер поля _password
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _password
 	/// </summary>
-	/// <returns>Пароль</returns>
+	/// <returns>РџР°СЂРѕР»СЊ</returns>
 	string GetPassword();
 
 	/// <summary>
-	/// Конструктор класса User
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° User
 	/// </summary>
-	/// <param name="id">Идентификационный номер</param>
-	/// <param name="login">Логин</param>
-	/// <param name="password">Пароль</param>
+	/// <param name="id">РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</param>
+	/// <param name="login">Р›РѕРіРёРЅ</param>
+	/// <param name="password">РџР°СЂРѕР»СЊ</param>
 	User(int id, string login, string password);
 
 	/// <summary>
-	/// Проверка вводимого пароля
+	/// РџСЂРѕРІРµСЂРєР° РІРІРѕРґРёРјРѕРіРѕ РїР°СЂРѕР»СЏ
 	/// </summary>
-	/// <param name="password">Пароль</param>
+	/// <param name="password">РџР°СЂРѕР»СЊ</param>
 	/// <returns>
-	/// true - пароль верен,
-	/// false - пароль не верен
+	/// true - РїР°СЂРѕР»СЊ РІРµСЂРµРЅ,
+	/// false - РїР°СЂРѕР»СЊ РЅРµ РІРµСЂРµРЅ
 	/// </returns>
 	bool IsCorrectPassword(string password);
 };

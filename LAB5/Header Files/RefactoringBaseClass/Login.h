@@ -1,19 +1,19 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "User.h"
 using namespace std;
 
 /// <summary>
-/// Функция поиска пользователя
-/// с введеными логином и паролем
+/// Р¤СѓРЅРєС†РёСЏ РїРѕРёСЃРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+/// СЃ РІРІРµРґРµРЅС‹РјРё Р»РѕРіРёРЅРѕРј Рё РїР°СЂРѕР»РµРј
 /// </summary>
-/// <param name="users">Массив пользователей</param>
-/// <param name="usersCount">Кол-во элементов в массиве</param>
-/// <param name="enteredLogin">Введенный логин</param>
-/// <param name="enteredPassword">Введенный пароль</param>
+/// <param name="users">РњР°СЃСЃРёРІ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№</param>
+/// <param name="usersCount">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
+/// <param name="enteredLogin">Р’РІРµРґРµРЅРЅС‹Р№ Р»РѕРіРёРЅ</param>
+/// <param name="enteredPassword">Р’РІРµРґРµРЅРЅС‹Р№ РїР°СЂРѕР»СЊ</param>
 /// <returns>
-/// Указатель на найденный элемент и
-/// nullptr, если элемент не найден
+/// РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РЅР°Р№РґРµРЅРЅС‹Р№ СЌР»РµРјРµРЅС‚ Рё
+/// nullptr, РµСЃР»Рё СЌР»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ
 /// </returns>
 User* Login(User** users, int usersCount, 
 	string enteredLogin, string enteredPassword);

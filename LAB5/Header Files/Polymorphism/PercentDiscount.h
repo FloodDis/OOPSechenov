@@ -1,51 +1,51 @@
-#pragma once
+п»ї#pragma once
 #include "DiscountBase.h"
 
 /// <summary>
-/// Скидка в процентах
+/// РЎРєРёРґРєР° РІ РїСЂРѕС†РµРЅС‚Р°С…
 /// </summary>
 class PercentDiscount : public DiscountBase
 {
 private:
 
 	/// <summary>
-	/// Скидка в процентах
+	/// РЎРєРёРґРєР° РІ РїСЂРѕС†РµРЅС‚Р°С…
 	/// </summary>
 	double _percent;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса PercentDiscount
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PercentDiscount
 	/// </summary>
 	/// <param name="category">
-	/// Категория товара, на который
-	/// действует скидка
+	/// РљР°С‚РµРіРѕСЂРёСЏ С‚РѕРІР°СЂР°, РЅР° РєРѕС‚РѕСЂС‹Р№
+	/// РґРµР№СЃС‚РІСѓРµС‚ СЃРєРёРґРєР°
 	/// </param>
-	/// <param name="percent">Скидка в процентах</param>
+	/// <param name="percent">РЎРєРёРґРєР° РІ РїСЂРѕС†РµРЅС‚Р°С…</param>
 	PercentDiscount(CategoryType category, double percent);
 
 	/// <summary>
-	/// Сеттер поля _percent
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _percent
 	/// </summary>
-	/// <param name="percent">Скидка в процентах</param>
+	/// <param name="percent">РЎРєРёРґРєР° РІ РїСЂРѕС†РµРЅС‚Р°С…</param>
 	void SetPercent(double percent);
 
 	/// <summary>
-	/// Геттер поля _percent
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _percent
 	/// </summary>
-	/// <returns>Скидка в процентах</returns>
+	/// <returns>РЎРєРёРґРєР° РІ РїСЂРѕС†РµРЅС‚Р°С…</returns>
 	double GetPercent();
 
 	/// <summary>
-	/// Функция, рассчитывающая
-	/// цену товара с учетом
-	/// действующей скидки
+	/// Р¤СѓРЅРєС†РёСЏ, СЂР°СЃСЃС‡РёС‚С‹РІР°СЋС‰Р°СЏ
+	/// С†РµРЅСѓ С‚РѕРІР°СЂР° СЃ СѓС‡РµС‚РѕРј
+	/// РґРµР№СЃС‚РІСѓСЋС‰РµР№ СЃРєРёРґРєРё
 	/// </summary>
-	/// <param name="product">Объект товара Product</param>
+	/// <param name="product">РћР±СЉРµРєС‚ С‚РѕРІР°СЂР° Product</param>
 	/// <returns>
-	/// Цена товара с учетом
-	/// действующей скидки
+	/// Р¦РµРЅР° С‚РѕРІР°СЂР° СЃ СѓС‡РµС‚РѕРј
+	/// РґРµР№СЃС‚РІСѓСЋС‰РµР№ СЃРєРёРґРєРё
 	/// </returns>
 	double Calculate(Product* product);
 };

@@ -1,60 +1,60 @@
-#pragma once
+п»ї#pragma once
 #include "Person.h"
 
 /// <summary>
-/// Должность учителя
+/// Р”РѕР»Р¶РЅРѕСЃС‚СЊ СѓС‡РёС‚РµР»СЏ
 /// </summary>
 enum Posistion
 {
 	/// <summary>
-	/// Лектор
+	/// Р›РµРєС‚РѕСЂ
 	/// </summary>
 	Lecturer = 1,
 
 	/// <summary>
-	/// Практик
+	/// РџСЂР°РєС‚РёРє
 	/// </summary>
-	Praсtician
+	PraСЃtician
 };
 
 /// <summary>
-/// Учитель
+/// РЈС‡РёС‚РµР»СЊ
 /// </summary>
 class Teacher : public Person
 {
 private:
 
 	/// <summary>
-	/// Должность учителя
+	/// Р”РѕР»Р¶РЅРѕСЃС‚СЊ СѓС‡РёС‚РµР»СЏ
 	/// </summary>
 	Posistion _position;
 
 public: 
 
 	/// <summary>
-	/// Конструктор класса Teacher
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Teacher
 	/// </summary>
 	Teacher();
 
 	/// <summary>
-	/// Конструктор класса Teacher
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Teacher
 	/// </summary>
-	/// <param name="name">Имя</param>
-	/// <param name="surname">Фамилия</param>
-	/// <param name="middleName">Отчество</param>
-	/// <param name="post">Должность</param>
+	/// <param name="name">РРјСЏ</param>
+	/// <param name="surname">Р¤Р°РјРёР»РёСЏ</param>
+	/// <param name="middleName">РћС‚С‡РµСЃС‚РІРѕ</param>
+	/// <param name="post">Р”РѕР»Р¶РЅРѕСЃС‚СЊ</param>
 	Teacher(string name, string surname, string middleName,
 		Posistion post);
 
 	/// <summary>
-	/// Сеттер поля _position
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _position
 	/// </summary>
-	/// <param name="post">Должность</param>
+	/// <param name="post">Р”РѕР»Р¶РЅРѕСЃС‚СЊ</param>
 	void SetPost(Posistion post);
 
 	/// <summary>
-	/// Геттер поля _position
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _position
 	/// </summary>
-	/// <returns>Должность</returns>
+	/// <returns>Р”РѕР»Р¶РЅРѕСЃС‚СЊ</returns>
 	Posistion GetPost();
 };

@@ -1,103 +1,103 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Тип товара
+/// РўРёРї С‚РѕРІР°СЂР°
 /// </summary>
 enum CategoryType
 {
 	/// <summary>
-	/// Продукты питания
+	/// РџСЂРѕРґСѓРєС‚С‹ РїРёС‚Р°РЅРёСЏ
 	/// </summary>
 	FoodProducts = 1,
 
 	/// <summary>
-	/// Бытовая химия
+	/// Р‘С‹С‚РѕРІР°СЏ С…РёРјРёСЏ
 	/// </summary>
 	HouseholdChemicals,
 
 	/// <summary>
-	/// Косметика
+	/// РљРѕСЃРјРµС‚РёРєР°
 	/// </summary>
 	Cosmetics,
 
 	/// <summary>
-	/// Автомобили
+	/// РђРІС‚РѕРјРѕР±РёР»Рё
 	/// </summary>
 	Cars
 };
 
 /// <summary>
-/// Товар
+/// РўРѕРІР°СЂ
 /// </summary>
 class Product
 {
 private:
 
 	/// <summary>
-	/// Название товара
+	/// РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°
 	/// </summary>
 	string _name;
 
 	/// <summary>
-	/// Категория товара
+	/// РљР°С‚РµРіРѕСЂРёСЏ С‚РѕРІР°СЂР°
 	/// </summary>
 	CategoryType _categoryType;
 
 	/// <summary>
-	/// Стоимость товара
+	/// РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°
 	/// </summary>
 	double _cost;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса Product
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Product
 	/// </summary>
 	Product();
 
 	/// <summary>
-	/// Конструктор класса Product
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Product
 	/// </summary>
-	/// <param name="name">Название товара</param>
-	/// <param name="categoryType">Категория товара</param>
-	/// <param name="cost">Стоимость товара</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°</param>
+	/// <param name="categoryType">РљР°С‚РµРіРѕСЂРёСЏ С‚РѕРІР°СЂР°</param>
+	/// <param name="cost">РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°</param>
 	Product(string name, CategoryType categoryType, double cost);
 
 	/// <summary>
-	/// Сеттер поля _name
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <param name="name">Название товара</param>
+	/// <param name="name">РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°</param>
 	void SetName(string name);
 
 	/// <summary>
-	/// Сеттер поля _categoryType
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _categoryType
 	/// </summary>
-	/// <param name="categoryType">Категория товара</param>
+	/// <param name="categoryType">РљР°С‚РµРіРѕСЂРёСЏ С‚РѕРІР°СЂР°</param>
 	void SetCategoryType(CategoryType categoryType);
 
 	/// <summary>
-	/// Сеттер поля _cost
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _cost
 	/// </summary>
-	/// <param name="cost">Стоимость товара</param>
+	/// <param name="cost">РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°</param>
 	void SetCost(double cost);
 
 	/// <summary>
-	/// Геттер поля _name
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _name
 	/// </summary>
-	/// <returns>Название товара</returns>
+	/// <returns>РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°</returns>
 	string GetName();
 
 	/// <summary>
-	/// Геттер поля _categoryType
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _categoryType
 	/// </summary>
-	/// <returns>Категория товара</returns>
+	/// <returns>РљР°С‚РµРіРѕСЂРёСЏ С‚РѕРІР°СЂР°</returns>
 	CategoryType GetCategoryType();
 
 	/// <summary>
-	/// Геттер поля _cost
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _cost
 	/// </summary>
-	/// <returns>Стоимость товара</returns>
+	/// <returns>РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°</returns>
 	double GetCost();
 };

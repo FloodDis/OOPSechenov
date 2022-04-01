@@ -1,50 +1,50 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
-//////////////////////// Post - пост в блоге пользователя с платным аккаунтом
+//////////////////////// Post - РїРѕСЃС‚ РІ Р±Р»РѕРіРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СЃ РїР»Р°С‚РЅС‹Рј Р°РєРєР°СѓРЅС‚РѕРј
 class Post
 {
 	/// <summary>
-	/// Название поста
+	/// РќР°Р·РІР°РЅРёРµ РїРѕСЃС‚Р°
 	/// </summary>
 	string _title;
 
 	/// <summary>
-	/// Текст поста
+	/// РўРµРєСЃС‚ РїРѕСЃС‚Р°
 	/// </summary>
 	string _text;
 
 public:
 
 	/// <summary>
-	/// Сеттер поля _title
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _title
 	/// </summary>
-	/// <param name="title">Название поста</param>
+	/// <param name="title">РќР°Р·РІР°РЅРёРµ РїРѕСЃС‚Р°</param>
 	void SetTitle(string title);
 
 	/// <summary>
-	/// Сеттер класса _text
+	/// РЎРµС‚С‚РµСЂ РєР»Р°СЃСЃР° _text
 	/// </summary>
-	/// <param name="text">Текст поста</param>
+	/// <param name="text">РўРµРєСЃС‚ РїРѕСЃС‚Р°</param>
 	void SetText(string text);
 
 	/// <summary>
-	/// Геттер поля _title
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _title
 	/// </summary>
-	/// <returns>Название поста</returns>
+	/// <returns>РќР°Р·РІР°РЅРёРµ РїРѕСЃС‚Р°</returns>
 	string GetTitle();
 
 	/// <summary>
-	/// Геттер поля _text
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _text
 	/// </summary>
-	/// <returns>Текст поста</returns>
+	/// <returns>РўРµРєСЃС‚ РїРѕСЃС‚Р°</returns>
 	string GetText();
 
 	/// <summary>
-	/// Конструктор класса Post
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Post
 	/// </summary>
-	/// <param name="title">Название поста</param>
-	/// <param name="text">Текст поста</param>
+	/// <param name="title">РќР°Р·РІР°РЅРёРµ РїРѕСЃС‚Р°</param>
+	/// <param name="text">РўРµРєСЃС‚ РїРѕСЃС‚Р°</param>
 	Post(string title, string text);
 };

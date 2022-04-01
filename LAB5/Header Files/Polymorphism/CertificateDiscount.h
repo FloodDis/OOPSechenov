@@ -1,53 +1,53 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "DiscountBase.h"
 using namespace std;
 
 /// <summary>
-/// Скидка с сертификатом
+/// РЎРєРёРґРєР° СЃ СЃРµСЂС‚РёС„РёРєР°С‚РѕРј
 /// </summary>
 class CertificateDiscount : public DiscountBase
 {
 private:
 
 	/// <summary>
-	/// Размер сертификата в рублях
+	/// Р Р°Р·РјРµСЂ СЃРµСЂС‚РёС„РёРєР°С‚Р° РІ СЂСѓР±Р»СЏС…
 	/// </summary>
 	int _amount;
 
 public:
 
 	/// <summary>
-	/// Сеттер поля _amount
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _amount
 	/// </summary>
-	/// <param name="amount">Размер сертификата в рублях</param>
+	/// <param name="amount">Р Р°Р·РјРµСЂ СЃРµСЂС‚РёС„РёРєР°С‚Р° РІ СЂСѓР±Р»СЏС…</param>
 	void SetAmount(int amount);
 
 	/// <summary>
-	/// Геттер поля _amount
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _amount
 	/// </summary>
-	/// <returns>Размер сертификата в рублях</returns>
+	/// <returns>Р Р°Р·РјРµСЂ СЃРµСЂС‚РёС„РёРєР°С‚Р° РІ СЂСѓР±Р»СЏС…</returns>
 	int GetAmount();
 
 	/// <summary>
-	/// Конструктор класса CertificateDiscount
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° CertificateDiscount
 	/// </summary>
 	/// <param name="category">
-	/// Категория товара, на который
-	/// действует скидка
+	/// РљР°С‚РµРіРѕСЂРёСЏ С‚РѕРІР°СЂР°, РЅР° РєРѕС‚РѕСЂС‹Р№
+	/// РґРµР№СЃС‚РІСѓРµС‚ СЃРєРёРґРєР°
 	/// </param>
-	/// <param name="amount">Размер сертификата в рублях</param>
+	/// <param name="amount">Р Р°Р·РјРµСЂ СЃРµСЂС‚РёС„РёРєР°С‚Р° РІ СЂСѓР±Р»СЏС…</param>
 	CertificateDiscount(CategoryType category, int amount);
 
 	/// <summary>
-	/// Функция, рассчитывающая
-	/// цену товара с учетом
-	/// действующей скидки
+	/// Р¤СѓРЅРєС†РёСЏ, СЂР°СЃСЃС‡РёС‚С‹РІР°СЋС‰Р°СЏ
+	/// С†РµРЅСѓ С‚РѕРІР°СЂР° СЃ СѓС‡РµС‚РѕРј
+	/// РґРµР№СЃС‚РІСѓСЋС‰РµР№ СЃРєРёРґРєРё
 	/// </summary>
-	/// <param name="product">Объект товара Product</param>
+	/// <param name="product">РћР±СЉРµРєС‚ С‚РѕРІР°СЂР° Product</param>
 	/// <returns>
-	/// Цена товара с учетом
-	/// действующей скидки
+	/// Р¦РµРЅР° С‚РѕРІР°СЂР° СЃ СѓС‡РµС‚РѕРј
+	/// РґРµР№СЃС‚РІСѓСЋС‰РµР№ СЃРєРёРґРєРё
 	/// </returns>
 	double Calculate(Product* product);
 };

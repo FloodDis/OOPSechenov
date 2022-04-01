@@ -1,58 +1,58 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "User.h"
 #include "Post.h"
 using namespace std;
 
-//////////////////////// Paid User - пользователь с платным аккаунтом
+//////////////////////// Paid User - РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ РїР»Р°С‚РЅС‹Рј Р°РєРєР°СѓРЅС‚РѕРј
 class PaidUser: public User
 {
 	/// <summary>
-	/// Массив постов 
+	/// РњР°СЃСЃРёРІ РїРѕСЃС‚РѕРІ 
 	/// </summary>
 	Post* _posts;
 
 	/// <summary>
-	/// Кол-во элементов в массиве
+	/// РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ
 	/// </summary>
 	int _postsCount;
 
 public:
 	
 	/// <summary>
-	/// Сеттер полей _posts и _postsCount
+	/// РЎРµС‚С‚РµСЂ РїРѕР»РµР№ _posts Рё _postsCount
 	/// </summary>
-	/// <param name="posts">Массив постов</param>
-	/// <param name="postsCount">Кол-во элементов в массиве</param>
+	/// <param name="posts">РњР°СЃСЃРёРІ РїРѕСЃС‚РѕРІ</param>
+	/// <param name="postsCount">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
 	void SetPosts(Post* posts, int postsCount);
 
 	/// <summary>
-	/// Геттер поля _posts
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _posts
 	/// </summary>
-	/// <returns>Массив постов</returns>
+	/// <returns>РњР°СЃСЃРёРІ РїРѕСЃС‚РѕРІ</returns>
 	Post* GetPosts();
 
 	/// <summary>
-	/// Геттер поля _postsCount
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _postsCount
 	/// </summary>
-	/// <returns>Кол-во элементов в массиве</returns>
+	/// <returns>РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</returns>
 	int GetPostsCount();
 
 	/// <summary>
-	/// Конструктор класса PaidUser
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PaidUser
 	/// </summary>
-	/// <param name="id">Идентификационный номер</param>
-	/// <param name="login">Логин</param>
-	/// <param name="password">Пароль</param>
-	/// <param name="posts">Массив постов</param>
-	/// <param name="postsCount">Кол-во элементов в массиве</param>
+	/// <param name="id">РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</param>
+	/// <param name="login">Р›РѕРіРёРЅ</param>
+	/// <param name="password">РџР°СЂРѕР»СЊ</param>
+	/// <param name="posts">РњР°СЃСЃРёРІ РїРѕСЃС‚РѕРІ</param>
+	/// <param name="postsCount">РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ</param>
 	PaidUser(int id, string login, string password, Post* posts, int postsCount);
 
 	/// <summary>
-	/// Конструктор класса PaidUser
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PaidUser
 	/// </summary>
-	/// <param name="id">Идентификационный номер</param>
-	/// <param name="login">Логин</param>
-	/// <param name="password">Пароль</param>
+	/// <param name="id">РРґРµРЅС‚РёС„РёРєР°С†РёРѕРЅРЅС‹Р№ РЅРѕРјРµСЂ</param>
+	/// <param name="login">Р›РѕРіРёРЅ</param>
+	/// <param name="password">РџР°СЂРѕР»СЊ</param>
 	PaidUser(int id, string login, string password);
 };
