@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Rectangle.h"
 #include "CollisionManager.h"
 #include "RingFix3.h"
@@ -10,26 +10,26 @@ class GeometricProgram
 public:
 
 	/// <summary>
-	/// Функция демонстрации
-	/// работы класса CollisionManager
+	/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+	/// СЂР°Р±РѕС‚С‹ РєР»Р°СЃСЃР° CollisionManager
 	/// </summary>
 	void DemoCollision();
 
 	/// <summary>
-	/// Функция демонстрации
-	/// работы структуры RingFix3
+	/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+	/// СЂР°Р±РѕС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂС‹ RingFix3
 	/// </summary>
 	void DemoRingFix3();
 
 	/// <summary>
-	/// Функция демонстрации
-	/// работы структуры Rectangle
+	/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+	/// СЂР°Р±РѕС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂС‹ Rectangle
 	/// </summary>
 	void DemoRectangle();
 };
 
 /// <summary>
-///	Функция вывода класса RectangleClass на экран
+///	Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РєР»Р°СЃСЃР° RectangleClass РЅР° СЌРєСЂР°РЅ
 /// </summary>
-/// <param name = "rectangle">Экземпляр класса RectangleClass</param>
+/// <param name = "rectangle">Р­РєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° RectangleClass</param>
 void WriteRectangleWithPointClass(Rectangle& rectangle);

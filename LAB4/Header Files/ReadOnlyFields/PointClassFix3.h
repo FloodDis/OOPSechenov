@@ -1,51 +1,51 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Точка
+/// РўРѕС‡РєР°
 /// </summary>
 class PointClassFix3
 {
 private:
 
 	/// <summary>
-	/// Координата X
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° X
 	/// </summary>
 	double _x;
 
 	/// <summary>
-	/// Координата Y
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° Y
 	/// </summary>
 	double _y;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса PointClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PointClass
 	/// </summary>
 	PointClassFix3();
 
 	/// <summary>
-	/// Конструктор класса PointClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PointClass
 	/// </summary>
-	/// <param name="x">Координата X</param>
-	/// <param name="y">Координата Y</param>
+	/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° X</param>
+	/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° Y</param>
 	PointClassFix3(double x, double y);
 
 	/// <summary>
-	/// Геттер поля _x
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _x
 	/// </summary>
 	/// <returns>
-	/// Координата X
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° X
 	/// </returns>
 	double GetX();
 
 	/// <summary>
-	/// Геттер поля _y
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _y
 	/// </summary>
 	/// <returns>
-	/// Координата Y
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° Y
 	/// </returns>
 	double GetY();
 };

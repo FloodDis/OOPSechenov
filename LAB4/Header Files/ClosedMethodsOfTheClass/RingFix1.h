@@ -1,98 +1,98 @@
-#pragma once
+п»ї#pragma once
 #include "PointClassFix2.h"
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Кольцо
+/// РљРѕР»СЊС†Рѕ
 /// </summary>
 class RingFix1
 {
 private:
 
 	/// <summary>
-	/// Внутренний радиус
+	/// Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ
 	/// </summary>
 	double _innerRadius;
 
 	/// <summary>
-	/// Внешний радиус
+	/// Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ
 	/// </summary>
 	double _outerRadius;
 
 	/// <summary>
-	/// Центр кольца
+	/// Р¦РµРЅС‚СЂ РєРѕР»СЊС†Р°
 	/// </summary>
 	PointClassFix2 _center;
 
 	/// <summary>
-	/// Функция проверки значения на
-	/// неотрицательность
+	/// Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё Р·РЅР°С‡РµРЅРёСЏ РЅР°
+	/// РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕСЃС‚СЊ
 	/// </summary>
-	/// <param name="value">Проверяемое значение</param>
+	/// <param name="value">РџСЂРѕРІРµСЂСЏРµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ</param>
 	void AssertOnPositiveValue(double value);
 
 	/// <summary>
-	/// Функция проверки значений радиусов
-	/// (внутренний должен быть меньше внешнего)
+	/// Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё Р·РЅР°С‡РµРЅРёР№ СЂР°РґРёСѓСЃРѕРІ
+	/// (РІРЅСѓС‚СЂРµРЅРЅРёР№ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ РІРЅРµС€РЅРµРіРѕ)
 	/// </summary>
-	/// <param name="innerRadius">Внутренний радиус</param>
-	/// <param name="outerRadius">Внешний радиус</param>
+	/// <param name="innerRadius">Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ</param>
+	/// <param name="outerRadius">Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ</param>
 	void AssertOnRightRadii(double innerRadius, double outerRadius);
 
 public:
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Ring
 	/// </summary>
 	RingFix1();
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Ring
 	/// </summary>
-	/// <param name="innerRadius">Внутрений радиус</param>
-	/// <param name="outerRadius">Внешний радиус</param>
-	/// <param name="xCenter">Координата центра X</param>
-	/// <param name="yCenter">Координата центра Y</param>
+	/// <param name="innerRadius">Р’РЅСѓС‚СЂРµРЅРёР№ СЂР°РґРёСѓСЃ</param>
+	/// <param name="outerRadius">Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ</param>
+	/// <param name="xCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+	/// <param name="yCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 	RingFix1(double innerRadius, double outerRadius,
 		double xCenter, double yCenter);
 
 	/// <summary>
-	/// Сеттер полей _innerRadius и _outerRadius
+	/// РЎРµС‚С‚РµСЂ РїРѕР»РµР№ _innerRadius Рё _outerRadius
 	/// </summary>
-	/// <param name="innerRadius">Внутренний радиус</param>
-	/// <param name="outerRadius">Внешний радиус</param>
+	/// <param name="innerRadius">Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ</param>
+	/// <param name="outerRadius">Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ</param>
 	void SetRadii(double innerRadius, double outerRadius);
 
 	/// <summary>
-	/// Сеттер поля Point
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Point
 	/// </summary>
-	/// <param name="xCenter">Координата центра X</param>
-	/// <param name="yCenter">Координата центра Y</param>
+	/// <param name="xCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+	/// <param name="yCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 	void SetCenter(double xCenter, double yCenter);
 
 	/// <summary>
-	/// Геттер поля _innerRadius
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _innerRadius
 	/// </summary>
-	/// <returns>Внутренний радиус</returns>
+	/// <returns>Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ</returns>
 	double GetInnerRadius();
 
 	/// <summary>
-	/// Геттер поля _outerRadius
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _outerRadius
 	/// </summary>
-	/// <returns>Внешний радиус</returns>
+	/// <returns>Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ</returns>
 	double GetOuterRadius();
 
 	/// <summary>
-	/// Геттер поля _center
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _center
 	/// </summary>
-	/// <returns>Центр кольца</returns>
+	/// <returns>Р¦РµРЅС‚СЂ РєРѕР»СЊС†Р°</returns>
 	PointClassFix2 GetCenter();
 
 	/// <summary>
-	/// Функция подсчета площади кольца
+	/// Р¤СѓРЅРєС†РёСЏ РїРѕРґСЃС‡РµС‚Р° РїР»РѕС‰Р°РґРё РєРѕР»СЊС†Р°
 	/// </summary>
-	/// <returns>Площадь кольца</returns>
+	/// <returns>РџР»РѕС‰Р°РґСЊ РєРѕР»СЊС†Р°</returns>
 	double GetArea();
 
 };

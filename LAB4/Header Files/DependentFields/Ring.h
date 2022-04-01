@@ -1,83 +1,83 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "PointClassFix1.h"
 using namespace std;
 
 /// <summary>
-/// Кольцо
+/// РљРѕР»СЊС†Рѕ
 /// </summary>
 class Ring
 {
 private:
 
 	/// <summary>
-	/// Внутренний радиус
+	/// Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ
 	/// </summary>
 	double _innerRadius;
 
 	/// <summary>
-	/// Внешний радиус
+	/// Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ
 	/// </summary>
 	double _outerRadius;
 
 	/// <summary>
-	/// Центр кольца
+	/// Р¦РµРЅС‚СЂ РєРѕР»СЊС†Р°
 	/// </summary>
 	PointClassFix1 _center;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Ring
 	/// </summary>
 	Ring();
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Ring
 	/// </summary>
-	/// <param name="innerRadius">Внутрений радиус</param>
-	/// <param name="outerRadius">Внешний радиус</param>
-	/// <param name="xCenter">Координата центра X</param>
-	/// <param name="yCenter">Координата центра Y</param>
+	/// <param name="innerRadius">Р’РЅСѓС‚СЂРµРЅРёР№ СЂР°РґРёСѓСЃ</param>
+	/// <param name="outerRadius">Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ</param>
+	/// <param name="xCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+	/// <param name="yCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 	Ring(double innerRadius, double outerRadius, 
 		double xCenter, double yCenter);
 
 	/// <summary>
-	/// Сеттер полей _innerRadius и _outerRadius
+	/// РЎРµС‚С‚РµСЂ РїРѕР»РµР№ _innerRadius Рё _outerRadius
 	/// </summary>
 	/// <param name="innerRadius"></param>
 	/// <param name="outerRadius"></param>
 	void SetRadii(double innerRadius, double outerRadius);
 
 	/// <summary>
-	/// Сеттер поля Point
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ Point
 	/// </summary>
-	/// <param name="xCenter">Координата центра X</param>
-	/// <param name="yCenter">Координата центра Y</param>
+	/// <param name="xCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° X</param>
+	/// <param name="yCenter">РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° Y</param>
 	void SetCenter(double xCenter, double yCenter);
 
 	/// <summary>
-	/// Геттер поля _innerRadius
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _innerRadius
 	/// </summary>
-	/// <returns>Внутренний радиус</returns>
+	/// <returns>Р’РЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ</returns>
 	double GetInnerRadius();
 
 	/// <summary>
-	/// Геттер поля _outerRadius
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _outerRadius
 	/// </summary>
-	/// <returns>Внешний радиус</returns>
+	/// <returns>Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ</returns>
 	double GetOuterRadius();
 
 	/// <summary>
-	/// Геттер поля _center
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _center
 	/// </summary>
-	/// <returns>Центр кольца</returns>
+	/// <returns>Р¦РµРЅС‚СЂ РєРѕР»СЊС†Р°</returns>
 	PointClassFix1 GetCenter();
 
 	/// <summary>
-	/// Функция подсчета площади кольца
+	/// Р¤СѓРЅРєС†РёСЏ РїРѕРґСЃС‡РµС‚Р° РїР»РѕС‰Р°РґРё РєРѕР»СЊС†Р°
 	/// </summary>
-	/// <returns>Площадь кольца</returns>
+	/// <returns>РџР»РѕС‰Р°РґСЊ РєРѕР»СЊС†Р°</returns>
 	double GetArea();
 
 };

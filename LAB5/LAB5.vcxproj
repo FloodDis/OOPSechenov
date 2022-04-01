@@ -143,6 +143,7 @@
     <ClInclude Include="Header Files\Inheritance\Person.h" />
     <ClInclude Include="Header Files\Inheritance\Student.h" />
     <ClInclude Include="Header Files\Inheritance\Teacher.h" />
+    <ClInclude Include="Header Files\Polymorphism\5.3.h" />
     <ClInclude Include="Header Files\Polymorphism\CertificateDiscount.h" />
     <ClInclude Include="Header Files\Polymorphism\DiscountBase.h" />
     <ClInclude Include="Header Files\Polymorphism\PercentDiscount.h" />

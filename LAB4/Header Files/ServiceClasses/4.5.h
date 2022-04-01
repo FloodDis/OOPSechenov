@@ -1,9 +1,9 @@
-#pragma once
+п»ї#pragma once
 #include "GeometricProgram.h"
 #include <iostream>
 
 /// <summary>
-/// Функция демонстрации класса
+/// Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё РєР»Р°СЃСЃР°
 /// GeometricProgram
 /// </summary>
 void DemoGeometricProgram();

@@ -1,8 +1,8 @@
-#pragma once
+п»ї#pragma once
 #include "RingFix1.h"
 
 /// <summary>
-///	Функция демонстрации
-/// работы класса Ring
+///	Р¤СѓРЅРєС†РёСЏ РґРµРјРѕРЅСЃС‚СЂР°С†РёРё
+/// СЂР°Р±РѕС‚С‹ РєР»Р°СЃСЃР° Ring
 /// </summary>
 void DemoRingFix1();

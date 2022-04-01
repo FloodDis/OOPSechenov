@@ -1,62 +1,62 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
 /// <summary>
-/// Точка
+/// РўРѕС‡РєР°
 /// </summary>
 class PointClassFix1
 {
 private:
 	/// <summary>
-	/// Координата X
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° X
 	/// </summary>
 	double _x;
 
 	/// <summary>
-	/// Координата Y
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° Y
 	/// </summary>
 	double _y;
 
 public:
 
 	/// <summary>
-	/// Конструктор класса PointClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PointClass
 	/// </summary>
 	PointClassFix1();
 
 	/// <summary>
-	/// Конструктор класса PointClass
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° PointClass
 	/// </summary>
-	/// <param name="x">Координата X</param>
-	/// <param name="y">Координата Y</param>
+	/// <param name="x">РљРѕРѕСЂРґРёРЅР°С‚Р° X</param>
+	/// <param name="y">РљРѕРѕСЂРґРёРЅР°С‚Р° Y</param>
 	PointClassFix1(double x, double y);
 
 	/// <summary>
-	/// Сеттер поля _x
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _x
 	/// </summary>
-	/// <param name="x">Значение координаты X</param>
+	/// <param name="x">Р—РЅР°С‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С‚С‹ X</param>
 	void SetX(double x);
 
 	/// <summary>
-	/// Сеттер поля _y
+	/// РЎРµС‚С‚РµСЂ РїРѕР»СЏ _y
 	/// </summary>
-	/// <param name="y">Значение координаты Y</param>
+	/// <param name="y">Р—РЅР°С‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С‚С‹ Y</param>
 	void SetY(double y);
 
 	/// <summary>
-	/// Геттер поля _x
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _x
 	/// </summary>
 	/// <returns>
-	/// Координата X
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° X
 	/// </returns>
 	double GetX();
 
 	/// <summary>
-	/// Геттер поля _y
+	/// Р“РµС‚С‚РµСЂ РїРѕР»СЏ _y
 	/// </summary>
 	/// <returns>
-	/// Координата Y
+	/// РљРѕРѕСЂРґРёРЅР°С‚Р° Y
 	/// </returns>
 	double GetY();
 };

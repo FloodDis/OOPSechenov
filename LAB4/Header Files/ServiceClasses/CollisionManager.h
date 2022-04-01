@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <math.h>
 #include "Rectangle.h"
@@ -10,26 +10,26 @@ static class CollisionManager
 public:
 
 	/// <summary>
-	/// Функция проверки коллизии
-	/// двух прямоугольников
+	/// Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё РєРѕР»Р»РёР·РёРё
+	/// РґРІСѓС… РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ
 	/// </summary>
-	/// <param name="rectangle1">Прямоугольник 1</param>
-	/// <param name="rectangle2">Прямоугольник 2</param>
+	/// <param name="rectangle1">РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє 1</param>
+	/// <param name="rectangle2">РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє 2</param>
 	/// <returns>
-	/// true - коллизия есть,
-	/// false - коллизии нет
+	/// true - РєРѕР»Р»РёР·РёСЏ РµСЃС‚СЊ,
+	/// false - РєРѕР»Р»РёР·РёРё РЅРµС‚
 	/// </returns>
 	static bool IsCollision(Rectangle& rectangle1, Rectangle& rectangle2);
 
 	/// <summary>
-	/// Функция проверки коллизии
-	/// двух колец
+	/// Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё РєРѕР»Р»РёР·РёРё
+	/// РґРІСѓС… РєРѕР»РµС†
 	/// </summary>
-	/// <param name="ring1">Кольцо 1</param>
-	/// <param name="ring2">Кольцо 2</param>
+	/// <param name="ring1">РљРѕР»СЊС†Рѕ 1</param>
+	/// <param name="ring2">РљРѕР»СЊС†Рѕ 2</param>
 	/// <returns>
-	/// ture - коллизия есть,
-	/// false - коллизии нет
+	/// ture - РєРѕР»Р»РёР·РёСЏ РµСЃС‚СЊ,
+	/// false - РєРѕР»Р»РёР·РёРё РЅРµС‚
 	/// </returns>
 	static bool IsCollision(RingFix3& ring1, RingFix3& ring2);
 
