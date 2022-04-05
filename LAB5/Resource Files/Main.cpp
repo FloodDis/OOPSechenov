@@ -28,6 +28,7 @@ void main()
 	ShowName(teacher);
 	delete teacher;
 
+	cout << "\n";
 	int userCount = 4;
 	User** users = new User * []
 	{
@@ -53,7 +54,8 @@ void main()
 
 	login = "systemEXE";
 	password = "UgfkDGmU";
-	User* loginedPaidUser = Login(paidUsers, paidUserCount, login, password);
+	User* loginedPaidUser = 
+		Login(paidUsers, paidUserCount, login, password);
 
 	cout << "Signed in as: " << loginedPaidUser->GetLogin() << '\n';
 
@@ -69,5 +71,6 @@ void main()
 	}
 	delete[] paidUsers;
 
+	cout << "\n";
 	DemoDiscount();
 }
