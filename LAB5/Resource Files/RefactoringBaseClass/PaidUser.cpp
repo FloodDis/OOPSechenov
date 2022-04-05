@@ -19,3 +19,9 @@ PaidUser::PaidUser(int id, string login, string password,
 {
 	SetPosts(posts, postsCount);
 }
+
+PaidUser::PaidUser(int id, string login, string password)
+	: User(id, login, password)
+{
+
+}

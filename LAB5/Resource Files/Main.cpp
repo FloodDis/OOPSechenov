@@ -28,35 +28,46 @@ void main()
 	ShowName(teacher);
 	delete teacher;
 
-	/*User** users = new User * []
+	int userCount = 4;
+	User** users = new User * []
 	{
 		new User(100000, "morkovka1995", "1995morkovka"),
-			new User(100001, "ilon_mask", "X æ A-12"),
+			new User(100001, "ilonMask", "XA12"),
 			new User(100002, "megazver", "password"),
 			new User(100003, "yogurt", "ksTPQzSu"),
-			new PaidUser(200000, "TheKnyazz", "JHPzPGFG"),
-			new PaidUser(200001, "system_exe", "UgfkDGmU"),
+	};
+	int paidUserCount = 4;
+	User** paidUsers = new User * []
+	{
+		new PaidUser(200000, "TheKnyazz", "JHPzPGFG"),
+			new PaidUser(200001, "systemEXE", "UgfkDGmU"),
 			new PaidUser(200002, "RazorQ", "TBgRnbCP"),
 			new PaidUser(200003, "schdub", "CetyQVID"),
 	};
+
 	string login = "megazver";
 	string password = "password";
-	User* loginedUser = Login(users, 4, login, password);
-	cout << "Signed in as: " << loginedUser->GetLogin() << endl;
-	login = "system_exe";
+	User* loginedUser = Login(users, userCount, login, password);
+
+	cout << "Signed in as: " << loginedUser->GetLogin() << '\n';
+
+	login = "systemEXE";
 	password = "UgfkDGmU";
-	User* loginedPaidUser = Login(users, 4, login, password);
-	cout << "Signed in as: " << loginedPaidUser->GetLogin() << endl;
-	for (int i = 0; i < 4; i++)
+	User* loginedPaidUser = Login(paidUsers, paidUserCount, login, password);
+
+	cout << "Signed in as: " << loginedPaidUser->GetLogin() << '\n';
+
+	for (int i = 0; i < userCount; i++)
 	{
 		delete users[i];
 	}
 	delete[] users;
-	for (int i = 0; i < 4; i++)
+
+	for (int i = 0; i < paidUserCount; i++)
 	{
-		delete users[i];
+		delete paidUsers[i];
 	}
-	delete[] users;*/
+	delete[] paidUsers;
 
 	DemoDiscount();
 }
