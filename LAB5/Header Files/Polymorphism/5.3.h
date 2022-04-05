@@ -12,3 +12,9 @@
 /// <param name="productsCount">Кол-во продуктов</param>
 void ShowCheckWithDiscount(DiscountBase* discount, 
 	Product* products, int productsCount);
+
+/// <summary>
+/// Функция демонстрации
+/// классов Discount
+/// </summary>
+void DemoDiscount();

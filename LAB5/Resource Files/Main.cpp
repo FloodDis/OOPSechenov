@@ -3,6 +3,7 @@
 #include "../Header Files/Inheritance/Student.h"
 #include "../Header Files/RefactoringBaseClass/PaidUser.h"
 #include "../Header Files/RefactoringBaseClass/Login.h"
+#include "../Header Files/Polymorphism/5.3.h"
 #include <iostream>
 using namespace std;
 
@@ -56,4 +57,6 @@ void main()
 		delete users[i];
 	}
 	delete[] users;*/
+
+	DemoDiscount();
 }

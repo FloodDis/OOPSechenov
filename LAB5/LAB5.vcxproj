@@ -159,6 +159,7 @@
     <ClCompile Include="Resource Files\Inheritance\Student.cpp" />
     <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
     <ClCompile Include="Resource Files\Main.cpp" />
+    <ClCompile Include="Resource Files\Polymorphism\5.3.cpp" />
     <ClCompile Include="Resource Files\Polymorphism\CertificateDiscount.cpp" />
     <ClCompile Include="Resource Files\Polymorphism\DiscountBase.cpp" />
     <ClCompile Include="Resource Files\Polymorphism\PercentDiscount.cpp" />

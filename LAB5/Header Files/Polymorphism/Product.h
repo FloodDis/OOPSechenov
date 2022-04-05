@@ -8,24 +8,24 @@ using namespace std;
 enum CategoryType
 {
 	/// <summary>
-	/// Продукты питания
+	/// Ноутбук
 	/// </summary>
-	FoodProducts = 1,
+	HP = 1,
 
 	/// <summary>
-	/// Бытовая химия
+	/// Мобильный телефон
 	/// </summary>
-	HouseholdChemicals,
+	Micromax,
 
 	/// <summary>
-	/// Косметика
+	/// Принетр
 	/// </summary>
-	Cosmetics,
+	Pantum,
 
 	/// <summary>
-	/// Автомобили
+	/// Телевизор
 	/// </summary>
-	Cars
+	TV
 };
 
 /// <summary>

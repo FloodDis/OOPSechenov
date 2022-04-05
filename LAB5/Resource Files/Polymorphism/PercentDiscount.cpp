@@ -26,6 +26,10 @@ double PercentDiscount::GetPercent()
 
 double PercentDiscount::Calculate(Product* product)
 {
+	if (product->GetCategoryType() != GetCategory())
+	{
+		return -1.0;
+	}
 	double saleCost = product->GetCost() * (100.0 - _percent) / 100.0;
 	return saleCost;
 }

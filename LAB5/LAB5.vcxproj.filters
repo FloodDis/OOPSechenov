@@ -95,5 +95,8 @@
     <ClCompile Include="Resource Files\Polymorphism\CertificateDiscount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Resource Files\Polymorphism\5.3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
