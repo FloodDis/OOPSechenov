@@ -33,6 +33,7 @@ void DemoReadBookFromConsole()
 	}
 }
 
+// TODO: утечка памяти в функции
 void DemoWriteBook()
 {
 	Book* book = new Book[3];
@@ -58,6 +59,7 @@ void DemoWriteBook()
 	}
 }
 
+// TODO: утечка памяти в функции
 void DemoFindBookByAuthor()
 {
 	Book* book = new Book[3];

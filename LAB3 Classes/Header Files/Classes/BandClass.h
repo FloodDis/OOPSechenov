@@ -37,6 +37,7 @@ public:
 	/// </summary>
 	BandClass();
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Конструктор класса BandClass
 	/// </summary>
@@ -46,12 +47,14 @@ public:
 	/// <param name="albumsCount">Кол-во альбомов</param>
 	BandClass(string name, string information, AlbumClass* albums, int albumsCount);
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Сеттер поля _name
 	/// </summary>
 	/// <param name="name">Название группы</param>
 	void SetName(string name);
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Сеттер поля _information
 	/// </summary>
@@ -70,12 +73,14 @@ public:
 	/// <param name="albumsCount">Кол-во альбомов</param>
 	void SetAlbumsCount(int albumsCount);
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Геттер поля _name
 	/// </summary>
 	/// <returns>Название музыкальной группы</returns>
 	string GetName();
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Геттер поля _information
 	/// </summary>
@@ -94,6 +99,7 @@ public:
 	/// <returns>Кол-во альбомов</returns>
 	int GetAlbumsCount();
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Метод поиска песни среди всех
 	/// альбомов группы

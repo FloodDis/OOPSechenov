@@ -31,6 +31,7 @@ void SetDepartureTime(Flight*& flight, Time departureTime)
 {
 	if (!IsArrivalTimeLater(flight->ArrivalTime, departureTime))
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
@@ -41,12 +42,14 @@ void SetArrivalTime(Flight*& flight, Time arrivalTime)
 {
 	if (!IsArrivalTimeLater(arrivalTime, flight->DepartureTime))
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
 	flight->ArrivalTime;
 }
 
+// TODO: по ссылкам
 bool IsArrivalTimeLater(Time arrivalTime, Time departureTime)
 {
 	if (arrivalTime.Year > departureTime.Year)

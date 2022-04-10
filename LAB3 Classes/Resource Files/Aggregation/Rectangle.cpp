@@ -4,6 +4,7 @@ Rectangle* MakeRectangle(double width, double length, double x, double y)
 {
 	if (width < 0 || length < 0)
 	{
+		// TODO: зачем в две строки? Исправить ВЕЗДЕ
 		exception error;
 		throw error;
 	}
@@ -34,6 +35,7 @@ void SetLength(Rectangle& rectangle, double length)
 	rectangle.Length = length;
 }
 
+// TODO: утечка памяти
 void SetCenter(Rectangle& rectangle, double x, double y)
 {
 	rectangle.Center = MakePoint(x, y);

@@ -9,11 +9,13 @@ AlbumClass::AlbumClass(string name, int yearRelease, SongClass* songs, int songs
 {
 	if (yearRelease < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
 	if (songsCount < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
@@ -32,6 +34,7 @@ void AlbumClass::SetYearRelease(int yearRelease)
 {
 	if (yearRelease < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
@@ -48,6 +51,7 @@ void AlbumClass::SetSongsCount(int songsCount)
 {
 	if (songsCount < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}

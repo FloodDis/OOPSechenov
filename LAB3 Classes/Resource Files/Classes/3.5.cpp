@@ -40,6 +40,8 @@ void DemoRectangleWithPointClass()
 
 void WriteFlightClass(FlightClass& flight)
 {
+	// TODO: сделать локальные переменные для времени отправки и прибытия, чтобы не обращаться к ним постоянно через переменную рейса
+	// TODO: сделать функцию для времени, которая формирует нужную строку, чтобы не дублировать код для времени отправки и прибытия
 	cout << "S" << flight.GetNumber() << " " << flight.GetDeparturePoint()
 		<< "-" << flight.GetDestinationPoint() << " Departure "
 		<< flight.GetDepartureTime().GetMonth() << "."

@@ -19,6 +19,7 @@ void SetYearOfRelease(Album& album, int yearOfRelease)
 {
 	if (yearOfRelease < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}

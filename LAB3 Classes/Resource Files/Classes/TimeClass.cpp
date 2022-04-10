@@ -2,6 +2,7 @@
 
 TimeClass::TimeClass(int year, int month, int day, int hour, int minutes)
 {
+	// TODO: избавиться от дублирования с проверками в сеттерах
 	if (year < 0)
 	{
 		exception error;

@@ -7,6 +7,7 @@ FlightClass::FlightClass(int number, string departurePoint,
 	TimeClass();
 	if (number < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
@@ -26,6 +27,7 @@ void FlightClass::SetNumber(int number)
 {
 	if (number < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
@@ -79,6 +81,7 @@ TimeClass FlightClass::GetArrivalTime()
 
 int FlightClass::GetFlightTimeMinutes()
 {
+	// TODO: избавиться от дублирования
 	long int arrivalTimeInMinutes = 0;
 	arrivalTimeInMinutes += _arrivalTime.GetYear() * 12 * 30 * 24 * 60;
 	arrivalTimeInMinutes += _arrivalTime.GetMonth() * 30 * 24 * 60;

@@ -36,7 +36,7 @@ private:
 	TimeClass _arrivalTime;
 
 public:
-
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Конструктор класса FlightClass
 	/// </summary>
@@ -59,12 +59,14 @@ public:
 	/// <param name="number">Идентификационный номер</param>
 	void SetNumber(int number);
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Сеттер поля _departurePoint
 	/// </summary>
 	/// <param name="departurePoint">Место отправления</param>
 	void SetDeparturePoint(string departurePoint);
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Сеттер поля _destinationPoint
 	/// </summary>
@@ -89,12 +91,14 @@ public:
 	/// <returns>Номер рейса</returns>
 	int GetNumber();
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Геттер поля _departurePoint
 	/// </summary>
 	/// <returns>Пункт отправления</returns>
 	string GetDeparturePoint();
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Геттер поля _destinationPoint
 	/// </summary>

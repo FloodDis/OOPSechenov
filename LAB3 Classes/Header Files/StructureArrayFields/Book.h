@@ -23,6 +23,7 @@ struct Book
 	/// </summary>
 	int PageCount;
 
+	// TODO: сделать хранение по указателю, а не массив фиксированного размера
 	/// <summary>
 	/// Авторы
 	/// </summary>

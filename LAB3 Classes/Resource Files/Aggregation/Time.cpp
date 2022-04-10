@@ -15,6 +15,7 @@ void SetYear(Time*& time, int year)
 {
 	if (year < 0)
 	{
+		// TODO: выкидывать просто строку неправильно! Исправить здесь и везде!
 		throw "Wrong data\n";
 	}
 	time->Year = year;

@@ -1,5 +1,6 @@
 #include "../../Header Files/OneToManyAggregation/3.4.h"
 
+// TODO: утечка памяти в функции
 void DemoBand()
 {
 	Band* band = new Band;

@@ -32,6 +32,7 @@ public:
 	/// </summary>
 	SongClass();
 
+	// TODO: строки передавать по ссылке
 	/// <summary>
 	/// Конструктор класса SongClass
 	/// </summary>
@@ -40,6 +41,7 @@ public:
 	/// <param name="genre">Жанр песни</param>
 	SongClass(string name, int duration, Genre genre);
 
+	// TODO: строки передавать по ссылке
 	/// <summary>
 	/// Сеттер поля _name
 	/// </summary>
@@ -58,6 +60,7 @@ public:
 	/// <param name="genre">Жанр песни</param>
 	void SetGenre(Genre genre);
 
+	// TODO: строки передавать по ссылке
 	/// <summary>
 	/// Геттер поля _name
 	/// </summary>

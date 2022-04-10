@@ -30,6 +30,7 @@ struct Album
 	int SongsCount;
 };
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Функция создания структуры
 /// Album
@@ -43,6 +44,7 @@ struct Album
 Album* MakeAlbum(string name, int yearOfRelease,
 	Song* songs, int songsCount);
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Сеттер поля Name
 /// структуры Album

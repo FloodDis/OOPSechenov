@@ -35,6 +35,7 @@ struct Flight
 	Time ArrivalTime;
 };
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 // Задание 3.3.8 (2-ая часть)
 /// <summary>
 /// Конструктор структуры Flight
@@ -51,6 +52,7 @@ struct Flight
 Flight* MakeFlight(int number, string departurePoint,
 	string destinationPoint, Time departureTime, Time arrivalTime);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
 /// <summary>
 /// Сеттер поля Number
 /// структуры Flight
@@ -59,6 +61,8 @@ Flight* MakeFlight(int number, string departurePoint,
 /// <param name="number">Номер рейса</param>
 void SetNumber(Flight*& flight, int number);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Сеттер поля DeparturePoint
 /// структуры Flight
@@ -67,6 +71,8 @@ void SetNumber(Flight*& flight, int number);
 /// <param name="departurePoint">Пункт отправления</param>
 void SetDeparturePoint(Flight*& flight, string departurePoint);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Сеттер поля DestinationPoint
 /// структуры Flight
@@ -75,6 +81,7 @@ void SetDeparturePoint(Flight*& flight, string departurePoint);
 /// <param name="destinationPoint">Пункт прибытия</param>
 void SetDestinationPoint(Flight*& flight, string destinationPoint);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
 /// <summary>
 /// Сеттер поля DepartureTime
 /// структуры Flight
@@ -83,6 +90,7 @@ void SetDestinationPoint(Flight*& flight, string destinationPoint);
 /// <param name="departureTime">Время отправления</param>
 void SetDepartureTime(Flight*& flight, Time departureTime);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
 /// <summary>
 /// Сеттер поля ArrivalTime
 /// структуры Flight

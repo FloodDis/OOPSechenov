@@ -29,6 +29,7 @@ struct Band
 	int AlbumsCount;
 };
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Функция создания структуры
 /// Band
@@ -43,6 +44,7 @@ struct Band
 Band* MakeBand(string name, string information,
 	Album* albums, int albumsCount);
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Сеттер поля Name
 /// структуры Band
@@ -51,6 +53,7 @@ Band* MakeBand(string name, string information,
 /// <param name = "name">Название группы</param>
 void SetNameBand(Band& band, string name);
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 /// <summary>
 /// Сеттер поля Information
 /// структуры Band
@@ -67,6 +70,7 @@ void SetInformation(Band& band, string information);
 /// <param name = "albums">Массив альбомов</param>
 void SetAlbums(Band& band, Album* albums);
 
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 // Задание 3.4.2
 /// <summary>
 /// Функция поиска песни среди всех песен

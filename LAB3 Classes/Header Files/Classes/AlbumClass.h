@@ -37,6 +37,7 @@ public:
 	/// </summary>
 	AlbumClass();
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Конструктор класса AlbumClass
 	/// </summary>
@@ -45,7 +46,8 @@ public:
 	/// <param name="songs">Массив песен</param>
 	/// <param name="songsCount">Кол-во песен в альбоме</param>
 	AlbumClass(string name, int yearRelease, SongClass* songs, int songsCount);
-
+	
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Сеттер поля _name
 	/// </summary>
@@ -70,6 +72,7 @@ public:
 	/// <param name="songsCount">Кол-во песен в альбоме</param>
 	void SetSongsCount(int songsCount);
 
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
 	/// <summary>
 	/// Геттер поля _name
 	/// </summary>

@@ -11,6 +11,7 @@ void ReadRouteFromConsole(Route& route)
 	cin >> number;
 	if (number < 0)
 	{
+		// TODO: бесполезное сообщение, не сообщающая о сути ошибки ничего. Исправить здесь и везде
 		throw exception("Wrong data!");
 	}
 	route.Number = number;

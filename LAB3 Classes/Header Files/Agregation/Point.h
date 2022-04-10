@@ -29,6 +29,7 @@ struct Point
 /// </returns>
 Point* MakePoint(double x, double y);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
 /// <summary>
 /// Сеттер для координаты X
 /// </summary>
@@ -36,6 +37,7 @@ Point* MakePoint(double x, double y);
 /// <param name="x">Координата X</param>
 void SetX(Point*& point, double x);
 
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
 /// <summary>
 /// Сеттер для координаты Y
 /// </summary>

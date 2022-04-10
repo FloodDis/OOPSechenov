@@ -26,6 +26,7 @@ struct Song
 	Genre Genre;
 };
 
+// TODO: строки передавать по ссылке
 /// <summary>
 /// Функция создания структуры
 /// Song
@@ -38,6 +39,7 @@ struct Song
 /// </returns>
 Song* MakeSong(string name, int duration, Genre genre);
 
+// TODO: строки передавать по ссылке
 /// <summary>
 /// Сеттер поля Name
 /// структуры Song

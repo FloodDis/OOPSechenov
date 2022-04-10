@@ -1,5 +1,6 @@
 #include "../../Header Files/Agregation/3.3.h"
 
+// TODO: утечка памяти
 void DemoRectangleWithPoint()
 {
 	srand(time(nullptr));
@@ -38,6 +39,7 @@ void WriteRectangleWithPoint(Rectangle& rectangle)
 		<< "; Width = " << rectangle.Width << "\n";
 }
 
+// TODO: утечка памяти в функции
 void DemoFlightWithTime()
 {
 	srand(time(nullptr));

@@ -9,6 +9,7 @@ BandClass::BandClass(string name, string information, AlbumClass* albums, int al
 {
 	if (albumsCount < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
@@ -37,6 +38,7 @@ void BandClass::SetAlbumsCount(int albumsCount)
 {
 	if (albumsCount < 0)
 	{
+		// TODO: зачем в две строки?
 		exception error;
 		throw error;
 	}
