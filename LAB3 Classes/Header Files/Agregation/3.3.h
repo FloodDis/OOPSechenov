@@ -1,10 +1,10 @@
 ﻿#pragma once
 #include <iostream>
 #include <exception>
-#include "Point.h"
-#include "Rectangle.h"
-#include "Time.h"
-#include "Flight.h"
+#include "../Agregation/Geometry/Point.h"
+#include "../Agregation/Geometry/Rectangle.h"
+#include "../Agregation/Airport/Time.h"
+#include "../Agregation/Airport/Flight.h"
 using namespace std;
 
 // Задание 3.3.3

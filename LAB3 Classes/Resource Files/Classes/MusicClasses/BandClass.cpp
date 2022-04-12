@@ -1,30 +1,25 @@
-#include "../../Header Files/Classes/BandClass.h"
+#include "../../../Header Files/Classes/MusicClasses/BandClass.h"
 
 BandClass::BandClass()
 {
 
 }
 
-BandClass::BandClass(string name, string information, AlbumClass* albums, int albumsCount)
+BandClass::BandClass(string& name, string& information,
+	AlbumClass* albums, int albumsCount)
 {
-	if (albumsCount < 0)
-	{
-		// TODO: зачем в две строки?
-		exception error;
-		throw error;
-	}
-	_name = name;
-	_information = information;
-	_albums = albums;
-	_albumsCount = albumsCount;
+	SetName(name);
+	SetInformation(information);
+	SetAlbums(albums);
+	SetAlbumsCount(albumsCount);
 }
 
-void BandClass::SetName(string name)
+void BandClass::SetName(string& name)
 {
 	_name = name;
 }
 
-void BandClass::SetInformation(string information)
+void BandClass::SetInformation(string& information)
 {
 	_information = information;
 }
@@ -38,19 +33,18 @@ void BandClass::SetAlbumsCount(int albumsCount)
 {
 	if (albumsCount < 0)
 	{
-		// TODO: зачем в две строки?
-		exception error;
-		throw error;
+		// TODO: зачем в две строки? +
+		throw exception("Albums count must be positive\n");
 	}
 	_albumsCount = albumsCount;
 }
 
-string BandClass::GetName()
+string& BandClass::GetName()
 {
 	return _name;
 }
 
-string BandClass::GetInformation()
+string& BandClass::GetInformation()
 {
 	return _information;
 }
@@ -65,7 +59,7 @@ int BandClass::GetAlbumsCount()
 	return _albumsCount;
 }
 
-SongClass* BandClass::FindSong(string songTitle)
+SongClass* BandClass::FindSong(string& songTitle)
 {
 	for (int i = 0; i < GetAlbumsCount(); i++)
 	{
@@ -119,7 +113,8 @@ SongClass* BandClass::GetAllSongs(int& allSongsCount)
 	return allSongs;
 }
 
-SongClass* BandClass::GetAllGenreSongs(Genre findingGenre, int& allSongsCount)
+SongClass* BandClass::GetAllGenreSongs(Genre findingGenre,
+	int& allSongsCount)
 {
 	allSongsCount = 0;
 	for (int i = 0; i < GetAlbumsCount(); i++)

@@ -29,18 +29,18 @@ struct Point
 /// </returns>
 Point* MakePoint(double x, double y);
 
-// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке? +
 /// <summary>
 /// Сеттер для координаты X
 /// </summary>
 /// <param name="point">Экземпляр структуры Point</param>
 /// <param name="x">Координата X</param>
-void SetX(Point*& point, double x);
+void SetX(Point& point, double x);
 
-// TODO: почему передается указатель по ссылке? Почему не просто по ссылке?
+// TODO: почему передается указатель по ссылке? Почему не просто по ссылке? +
 /// <summary>
 /// Сеттер для координаты Y
 /// </summary>
 /// <param name="point">Экземпляр структуры Point</param>
 /// <param name="y">Координата Y</param>
-void SetY(Point*& point, double y);
+void SetY(Point& point, double y);

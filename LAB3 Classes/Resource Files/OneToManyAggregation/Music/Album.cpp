@@ -1,6 +1,6 @@
-#include "../../Header Files/OneToManyAggregation/Album.h"
+#include "../../../Header Files/OneToManyAggregation/Music/Album.h"
 
-Album* MakeAlbum(string name, int yearOfRelease, Song* songs, int songsCount)
+Album* MakeAlbum(string& name, int yearOfRelease, Song* songs, int songsCount)
 {
 	Album* newAlbum = new Album;
 	newAlbum->Name = name;
@@ -10,7 +10,7 @@ Album* MakeAlbum(string name, int yearOfRelease, Song* songs, int songsCount)
 	return newAlbum;
 }
 
-void SetNameAlbum(Album& album, string name)
+void SetNameAlbum(Album& album, string& name)
 {
 	album.Name = name;
 }
@@ -19,9 +19,8 @@ void SetYearOfRelease(Album& album, int yearOfRelease)
 {
 	if (yearOfRelease < 0)
 	{
-		// TODO: зачем в две строки?
-		exception error;
-		throw error;
+		// TODO: зачем в две строки? +
+		throw exception("Year of release must be positive\n");
 	}
 	album.YearOfRelease = yearOfRelease;
 }

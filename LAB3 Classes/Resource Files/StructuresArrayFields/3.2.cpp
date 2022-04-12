@@ -33,7 +33,7 @@ void DemoReadBookFromConsole()
 	}
 }
 
-// TODO: утечка памяти в функции
+// TODO: утечка памяти в функции +
 void DemoWriteBook()
 {
 	Book* book = new Book[3];
@@ -57,9 +57,10 @@ void DemoWriteBook()
 	{
 		WriteBookToConsole(book[i]);
 	}
+	delete[] book;
 }
 
-// TODO: утечка памяти в функции
+// TODO: утечка памяти в функции +
 void DemoFindBookByAuthor()
 {
 	Book* book = new Book[3];
@@ -92,6 +93,7 @@ void DemoFindBookByAuthor()
 		cout << "Author's book: ";
 		WriteBookToConsole(book[index]);
 	}
+	delete[] book;
 }
 
 void DemoRoute()

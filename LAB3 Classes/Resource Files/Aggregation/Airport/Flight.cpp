@@ -1,7 +1,7 @@
-#include "../../Header Files/Agregation/Flight.h"
+#include "../../../Header Files/Agregation/Airport/Flight.h"
 
-Flight* MakeFlight(int number, string departurePoint,
-	string destinationPoint, Time departureTime, Time arrivalTime)
+Flight* MakeFlight(int number, string& departurePoint,
+	string& destinationPoint, Time departureTime, Time arrivalTime)
 {
 	Flight* newFlight = new Flight;
 	newFlight->Number = number;
@@ -12,45 +12,43 @@ Flight* MakeFlight(int number, string departurePoint,
 	return newFlight;
 }
 
-void SetNumber(Flight*& flight, int number)
+void SetNumber(Flight& flight, int number)
 {
-	flight->Number = number;
+	flight.Number = number;
 }
 
-void SetDeparturePoint(Flight*& flight, string departurePoint)
+void SetDeparturePoint(Flight& flight, string& departurePoint)
 {
-	flight->DeparturePoint = departurePoint;
+	flight.DeparturePoint = departurePoint;
 }
 
-void SetDestinationPoint(Flight*& flight, string destinationPoint)
+void SetDestinationPoint(Flight& flight, string& destinationPoint)
 {
-	flight->DestinationPoint = destinationPoint;
+	flight.DestinationPoint = destinationPoint;
 }
 
-void SetDepartureTime(Flight*& flight, Time departureTime)
+void SetDepartureTime(Flight& flight, Time departureTime)
 {
-	if (!IsArrivalTimeLater(flight->ArrivalTime, departureTime))
+	if (!IsArrivalTimeLater(flight.ArrivalTime, departureTime))
 	{
-		// TODO: зачем в две строки?
-		exception error;
-		throw error;
+		// TODO: зачем в две строки? +
+		throw exception();
 	}
-	flight->DepartureTime = departureTime;
+	flight.DepartureTime = departureTime;
 }
 
-void SetArrivalTime(Flight*& flight, Time arrivalTime)
+void SetArrivalTime(Flight& flight, Time arrivalTime)
 {
-	if (!IsArrivalTimeLater(arrivalTime, flight->DepartureTime))
+	if (!IsArrivalTimeLater(arrivalTime, flight.DepartureTime))
 	{
-		// TODO: зачем в две строки?
-		exception error;
-		throw error;
+		// TODO: зачем в две строки? +
+		throw exception();
 	}
-	flight->ArrivalTime;
+	flight.ArrivalTime;
 }
 
-// TODO: по ссылкам
-bool IsArrivalTimeLater(Time arrivalTime, Time departureTime)
+// TODO: по ссылкам +
+bool IsArrivalTimeLater(Time& arrivalTime, Time& departureTime)
 {
 	if (arrivalTime.Year > departureTime.Year)
 	{

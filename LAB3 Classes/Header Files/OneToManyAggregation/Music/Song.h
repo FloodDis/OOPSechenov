@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include <iostream>
-#include "../../Header Files/Classes/GenreEnum.h"
+#include "../../Classes/MusicClasses/GenreEnum.h"
 using namespace std;
 
 //Задание 3.4.1
@@ -26,7 +26,7 @@ struct Song
 	Genre Genre;
 };
 
-// TODO: строки передавать по ссылке
+// TODO: строки передавать по ссылке +
 /// <summary>
 /// Функция создания структуры
 /// Song
@@ -37,16 +37,16 @@ struct Song
 /// <returns>
 /// Указатель на инициализированную структуру Song
 /// </returns>
-Song* MakeSong(string name, int duration, Genre genre);
+Song* MakeSong(string& name, int duration, Genre genre);
 
-// TODO: строки передавать по ссылке
+// TODO: строки передавать по ссылке +
 /// <summary>
 /// Сеттер поля Name
 /// структуры Song
 /// </summary>
 /// <param name = "song">Экземпляр структуры Song</param>
 /// <param name = "name">Название</param>
-void SetNameSong(Song& song, string name);
+void SetNameSong(Song& song, string& name);
 
 /// <summary>
 /// Сеттер поля Duration

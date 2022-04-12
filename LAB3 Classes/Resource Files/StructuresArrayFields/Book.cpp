@@ -23,7 +23,7 @@ void ReadBookFromConsole(Book& book)
 	book.PageCount = pageCount;
 	cout << "Enter authors count: ";
 	cin >> authorsCount;
-	if (authorsCount < 0)
+	if (authorsCount < 0 || authorsCount > 10)
 	{
 		throw exception("Wrong data!");
 	}

@@ -40,18 +40,24 @@ void DemoRectangleWithPointClass()
 
 void WriteFlightClass(FlightClass& flight)
 {
-	// TODO: сделать локальные переменные для времени отправки и прибытия, чтобы не обращаться к ним постоянно через переменную рейса
-	// TODO: сделать функцию для времени, которая формирует нужную строку, чтобы не дублировать код для времени отправки и прибытия
+	// TODO: сделать локальные переменные для времени отправки и прибытия, чтобы не обращаться к ним постоянно через переменную рейса +
+	// TODO: сделать функцию для времени, которая формирует нужную строку, чтобы не дублировать код для времени отправки и прибытия +
+	TimeClass arrivalTime = flight.GetArrivalTime();
+	TimeClass departureTime = flight.GetDepartureTime();
 	cout << "S" << flight.GetNumber() << " " << flight.GetDeparturePoint()
-		<< "-" << flight.GetDestinationPoint() << " Departure "
-		<< flight.GetDepartureTime().GetMonth() << "."
-		<< flight.GetDepartureTime().GetDay() << " "
-		<< flight.GetDepartureTime().GetHour()
-		<< ":" << flight.GetDepartureTime().GetMinutes() << " Arrival "
-		<< flight.GetArrivalTime().GetMonth() << "."
-		<< flight.GetArrivalTime().GetDay() << " "
-		<< flight.GetArrivalTime().GetHour()
-		<< ":" << flight.GetArrivalTime().GetMinutes() << "\n";
+		<< "-" << flight.GetDestinationPoint() << " Departure ";
+	WriteTime(departureTime);
+	cout << " Arrival ";
+	WriteTime(arrivalTime);
+	cout << "\n";
+}
+
+void WriteTime(TimeClass time)
+{
+	cout << time.GetMonth() << "."
+		<< time.GetDay() << " "
+		<< time.GetHour()
+		<< ":" << time.GetMinutes();
 }
 
 void DemoFlightWithTimeClass()
@@ -82,18 +88,25 @@ void DemoBandClass()
 {
 	AlbumClass* albums = new AlbumClass[3];
 	SongClass* songs = new SongClass[4];
-	songs[0] = SongClass("Come Together", 4, Rock);
-	songs[1] = SongClass("Octopus's Garden", 3, Pop);
-	songs[2] = SongClass("Something", 3, Folk);
-	songs[3] = SongClass("Oh! Darling", 3, Rock);
+	string name = "Come Together";
+	songs[0] = SongClass(name, 4, Rock);
+	name = "Octopus's Garden";
+	songs[1] = SongClass(name, 3, Pop);
+	name = "Something";
+	songs[2] = SongClass(name, 3, Folk);
+	name = "Oh! Darling";
+	songs[3] = SongClass(name, 3, Rock);
 	for (int i = 0; i < 3; i++)
 	{
-		albums[i] = AlbumClass("Abbey Road", 1969, songs, 4);
+		name = "Abbey Road";
+		albums[i] = AlbumClass(name, 1969, songs, 4);
 	}
-	BandClass band = BandClass("The Beatles",
-		"British rock-group from Liverpool, founded in 1960",
-		albums, 3);
-	SongClass* resultSong = band.FindSong("Something");
+	name = "The Beatles";
+	string information =
+		"British rock-group from Liverpool, founded in 1960";
+	BandClass band = BandClass(name, information, albums, 3);
+	name = "The Beatles";
+	SongClass* resultSong = band.FindSong(name);
 	if (resultSong == nullptr)
 	{
 		cout << "Song isn't found\n";
@@ -104,7 +117,8 @@ void DemoBandClass()
 			<< resultSong->GetDuration()
 			<< " and genre " << resultSong->GetGenre() << "\n";
 	}
-	SongClass songToFind = SongClass("Something", 3, Folk);
+	name = "Something";
+	SongClass songToFind = SongClass(name, 3, Folk);
 	AlbumClass* resultAlbum = band.FindAlbum(&songToFind);
 	if (resultAlbum == nullptr)
 	{

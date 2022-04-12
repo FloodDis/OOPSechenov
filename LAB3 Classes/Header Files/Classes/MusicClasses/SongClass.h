@@ -32,21 +32,21 @@ public:
 	/// </summary>
 	SongClass();
 
-	// TODO: строки передавать по ссылке
+	// TODO: строки передавать по ссылке +
 	/// <summary>
 	/// Конструктор класса SongClass
 	/// </summary>
 	/// <param name="name">Название песни</param>
 	/// <param name="duration">Длительность в минутах</param>
 	/// <param name="genre">Жанр песни</param>
-	SongClass(string name, int duration, Genre genre);
+	SongClass(string& name, int duration, Genre genre);
 
-	// TODO: строки передавать по ссылке
+	// TODO: строки передавать по ссылке +
 	/// <summary>
 	/// Сеттер поля _name
 	/// </summary>
 	/// <param name="name">Название песни</param>
-	void SetName(string name);
+	void SetName(string& name);
 
 	/// <summary>
 	/// Сеттер поля _duration
@@ -60,12 +60,12 @@ public:
 	/// <param name="genre">Жанр песни</param>
 	void SetGenre(Genre genre);
 
-	// TODO: строки передавать по ссылке
+	// TODO: строки передавать по ссылке +
 	/// <summary>
 	/// Геттер поля _name
 	/// </summary>
 	/// <returns>Название песни</returns>
-	string GetName();
+	string& GetName();
 
 	/// <summary>
 	/// Геттер поля _duration

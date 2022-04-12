@@ -42,55 +42,55 @@
     <ClInclude Include="Header Files\Agregation\3.3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Agregation\Flight.h">
+    <ClInclude Include="Header Files\Agregation\Airport\Flight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Agregation\Point.h">
+    <ClInclude Include="Header Files\Agregation\Geometry\Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Agregation\Rectangle.h">
+    <ClInclude Include="Header Files\Agregation\Geometry\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Agregation\Time.h">
+    <ClInclude Include="Header Files\Agregation\Airport\Time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header Files\Classes\3.5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\AlbumClass.h">
+    <ClInclude Include="Header Files\Classes\MusicClasses\AlbumClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\BandClass.h">
+    <ClInclude Include="Header Files\Classes\MusicClasses\BandClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\FlightClass.h">
+    <ClInclude Include="Header Files\Classes\AirportClasses\FlightClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\GenreEnum.h">
+    <ClInclude Include="Header Files\Classes\MusicClasses\GenreEnum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\PointClass.h">
+    <ClInclude Include="Header Files\Classes\GeometryClasses\PointClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\RectangleClass.h">
+    <ClInclude Include="Header Files\Classes\GeometryClasses\RectangleClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\SongClass.h">
+    <ClInclude Include="Header Files\Classes\MusicClasses\SongClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Classes\TimeClass.h">
+    <ClInclude Include="Header Files\Classes\AirportClasses\TimeClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header Files\OneToManyAggregation\3.4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\OneToManyAggregation\Album.h">
+    <ClInclude Include="Header Files\OneToManyAggregation\Music\Album.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\OneToManyAggregation\Band.h">
+    <ClInclude Include="Header Files\OneToManyAggregation\Music\Band.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\OneToManyAggregation\Song.h">
+    <ClInclude Include="Header Files\OneToManyAggregation\Music\Song.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header Files\StructureArrayFields\3.2.h">
@@ -110,52 +110,52 @@
     <ClCompile Include="Resource Files\Aggregation\3.3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Aggregation\Flight.cpp">
+    <ClCompile Include="Resource Files\Aggregation\Airport\Flight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Aggregation\Point.cpp">
+    <ClCompile Include="Resource Files\Aggregation\Geometry\Point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Aggregation\Rectangle.cpp">
+    <ClCompile Include="Resource Files\Aggregation\Geometry\Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Aggregation\Time.cpp">
+    <ClCompile Include="Resource Files\Aggregation\Airport\Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\Classes\3.5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\AlbumClass.cpp">
+    <ClCompile Include="Resource Files\Classes\MusicClasses\AlbumClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\BandClass.cpp">
+    <ClCompile Include="Resource Files\Classes\MusicClasses\BandClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\FlightClass.cpp">
+    <ClCompile Include="Resource Files\Classes\AirportClasses\FlightClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\PointClass.cpp">
+    <ClCompile Include="Resource Files\Classes\GeometryClasses\PointClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\RectangleClass.cpp">
+    <ClCompile Include="Resource Files\Classes\GeometryClasses\RectangleClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\SongClass.cpp">
+    <ClCompile Include="Resource Files\Classes\MusicClasses\SongClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Classes\TimeClass.cpp">
+    <ClCompile Include="Resource Files\Classes\AirportClasses\TimeClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\OneToManyAggregation\3.4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\OneToManyAggregation\Album.cpp">
+    <ClCompile Include="Resource Files\OneToManyAggregation\Music\Album.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\OneToManyAggregation\Band.cpp">
+    <ClCompile Include="Resource Files\OneToManyAggregation\Music\Band.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\OneToManyAggregation\Song.cpp">
+    <ClCompile Include="Resource Files\OneToManyAggregation\Music\Song.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resource Files\StructuresArrayFields\3.2.cpp">

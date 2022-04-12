@@ -1,6 +1,6 @@
-#include "../../Header Files/OneToManyAggregation/Band.h"
+#include "../../../Header Files/OneToManyAggregation/Music/Band.h"
 
-Band* MakeBand(string name, string information,
+Band* MakeBand(string& name, string& information,
 	Album* albums, int albumsCount)
 {
 	Band* newBand = new Band;
@@ -11,12 +11,12 @@ Band* MakeBand(string name, string information,
 	return newBand;
 }
 
-void SetNameBand(Band& band, string name)
+void SetNameBand(Band& band, string& name)
 {
 	band.Name = name;
 }
 
-void SetInformation(Band& band, string information)
+void SetInformation(Band& band, string& information)
 {
 	band.Information = information;
 }
@@ -26,7 +26,7 @@ void SetAlbums(Band& band, Album* albums)
 	band.Albums = albums;
 }
 
-Song* FindSong(Band& band, string songTitle)
+Song* FindSong(Band& band, string& songTitle)
 {
 	for (int i = 0; i < band.AlbumsCount; i++)
 	{

@@ -1,11 +1,11 @@
 ﻿#pragma once
-#include "PointClass.h"
-#include "RectangleClass.h"
-#include "TimeClass.h"
-#include "FlightClass.h"
-#include "SongClass.h"
-#include "AlbumClass.h"
-#include "BandClass.h"
+#include "../Classes/GeometryClasses/PointClass.h"
+#include "../Classes/GeometryClasses/RectangleClass.h"
+#include "../Classes/AirportClasses/TimeClass.h"
+#include "../Classes/AirportClasses/FlightClass.h"
+#include "../Classes/MusicClasses/SongClass.h"
+#include "../Classes/MusicClasses/AlbumClass.h"
+#include "../Classes/MusicClasses/BandClass.h"
 using namespace std;
 
 // Задание 3.5.2
@@ -30,6 +30,12 @@ void DemoFlightWithTimeClass();
 /// </summary>
 /// <param name = "flight">Экземпляр класса FlightClass</param>
 void WriteFlightClass(FlightClass& flight);
+
+/// <summary>
+/// Функция вывода времени 
+/// </summary>
+/// <param name="time">Время отправления</param>
+void WriteTime(TimeClass time);
 
 /// <summary>
 ///	Функция демонстрации класса BandClass

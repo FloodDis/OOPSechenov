@@ -49,47 +49,47 @@ struct Time
 /// </returns>
 Time* MakeTime(int year, int month, int day, int hour, int minutes);
 
-// TODO: зачем указатель на ссылку? Почему не просто ссылка?
+// TODO: зачем указатель на ссылку? Почему не просто ссылка? +
 /// <summary>
 /// Сеттер поля Year
 /// структуры Time
 /// </summary>
 /// <param name="time">Экземпляр структуры Time</param>
 /// <param name="year">Год</param>
-void SetYear(Time*& time, int year);
+void SetYear(Time& time, int year);
 
-// TODO: зачем указатель на ссылку? Почему не просто ссылка?
+// TODO: зачем указатель на ссылку? Почему не просто ссылка? +
 /// <summary>
 /// Сеттер поля Month
 /// структуры Time
 /// </summary>
 /// <param name="time">Экземпляр структуры Time</param>
 /// <param name="month">Месяц</param>
-void SetMonth(Time*& time, int month);
+void SetMonth(Time& time, int month);
 
-// TODO: зачем указатель на ссылку? Почему не просто ссылка?
+// TODO: зачем указатель на ссылку? Почему не просто ссылка? +
 /// <summary>
 /// Сеттер поля Day
 /// структуры Time
 /// </summary>
 /// <param name="time">Экземпляр структуры Time</param>
 /// <param name="day">День</param>
-void SetDay(Time*& time, int day);
+void SetDay(Time& time, int day);
 
-// TODO: зачем указатель на ссылку? Почему не просто ссылка?
+// TODO: зачем указатель на ссылку? Почему не просто ссылка? +
 /// <summary>
 /// Сеттер поля Hour
 /// структуры Time
 /// </summary>
 /// <param name="time">Экземпляр структуры Time</param>
 /// <param name="hour">Часы</param>
-void SetHour(Time*& time, int hour);
+void SetHour(Time& time, int hour);
 
-// TODO: зачем указатель на ссылку? Почему не просто ссылка?
+// TODO: зачем указатель на ссылку? Почему не просто ссылка? +
 /// <summary>
 /// Сеттер поля Minutes
 /// структуры Time
 /// </summary>
 /// <param name="time">Экземпляр структуры Time</param>
 /// <param name="minutes">Минуты</param>
-void SetMinutes(Time*& time, int minutes);
+void SetMinutes(Time& time, int minutes);

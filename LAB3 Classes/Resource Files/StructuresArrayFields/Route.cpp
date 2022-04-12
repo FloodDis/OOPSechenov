@@ -11,8 +11,8 @@ void ReadRouteFromConsole(Route& route)
 	cin >> number;
 	if (number < 0)
 	{
-		// TODO: бесполезное сообщение, не сообщающая о сути ошибки ничего. Исправить здесь и везде
-		throw exception("Wrong data!");
+		// TODO: бесполезное сообщение, не сообщающая о сути ошибки ничего. Исправить здесь и везде +
+		throw exception("Number must be positive");
 	}
 	route.Number = number;
 
@@ -20,7 +20,7 @@ void ReadRouteFromConsole(Route& route)
 	cin >> averageDuration;
 	if (averageDuration < 0)
 	{
-		throw exception("Wrong data!");
+		throw exception("Duration must be positive");
 	}
 	route.AverageDuration = averageDuration;
 
@@ -28,7 +28,7 @@ void ReadRouteFromConsole(Route& route)
 	cin >> frequency;
 	if (frequency < 0)
 	{
-		throw exception("Wrong data!");
+		throw exception("Frequency must be positive");
 	}
 	route.Frequency = frequency;
 
@@ -36,7 +36,7 @@ void ReadRouteFromConsole(Route& route)
 	cin >> stopsCount;
 	if (stopsCount < 0)
 	{
-		throw exception("Wrong data!");
+		throw exception("Stops count must be positive");
 	}
 	route.StopsCount = stopsCount;
 	route.Stops = new string[stopsCount];

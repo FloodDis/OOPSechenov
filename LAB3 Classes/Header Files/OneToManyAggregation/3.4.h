@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "Band.h"
+#include "../../Header Files/OneToManyAggregation/Music/Band.h"
 using namespace std;
 
 // Задание 3.4.5

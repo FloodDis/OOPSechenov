@@ -1,6 +1,6 @@
 #include "../../Header Files/Agregation/3.3.h"
 
-// TODO: утечка памяти
+// TODO: утечка памяти +
 void DemoRectangleWithPoint()
 {
 	srand(time(nullptr));
@@ -28,6 +28,10 @@ void DemoRectangleWithPoint()
 	}
 	cout << "Xcenter = " << xCenter / 5
 		<< "; Ycenter = " << yCenter / 5 << "\n";
+	for (int i = 0; i < 5; i++)
+	{
+		delete array[i].Center;
+	}
 	delete[] array;
 }
 
@@ -39,17 +43,22 @@ void WriteRectangleWithPoint(Rectangle& rectangle)
 		<< "; Width = " << rectangle.Width << "\n";
 }
 
-// TODO: утечка памяти в функции
+// TODO: утечка памяти в функции +
 void DemoFlightWithTime()
 {
 	srand(time(nullptr));
 	Flight* array = new Flight[5];
 	for (int i = 0; i < 5; i++)
 	{
-		Time arrivalTime = *MakeTime(1998, 10, 25, 10, 15);
-		Time departureTime = *MakeTime(1998, 10, 24, 15, 23);
+		string departurePoint = "Tomsk";
+		string destinationPoint = "Moscow";
+		Time* arrivalTime = MakeTime(1998, 10, 25, 10, 15);
+		Time* departureTime = MakeTime(1998, 10, 24, 15, 23);
 		array[i] = *MakeFlight
-		(rand() % 1000, "Tomsk", "Moscow", departureTime, arrivalTime);
+		(rand() % 1000, departurePoint, destinationPoint,
+			*departureTime, *arrivalTime);
+		delete departureTime;
+		delete arrivalTime;
 	}
 	for (int i = 0; i < 5; i++)
 	{
@@ -61,6 +70,8 @@ void DemoFlightWithTime()
 			<< GetFlightTimeMinutes(array[i])
 			<< " minutes\n";
 	}
+
+	delete[] array;
 }
 
 void WriteFlight(Flight& flight)

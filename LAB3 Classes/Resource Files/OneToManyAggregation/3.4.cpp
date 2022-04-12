@@ -6,18 +6,25 @@ void DemoBand()
 	Band* band = new Band;
 	Album* albums = new Album[3];
 	Song* songs = new Song[4];
-	songs[0] = *MakeSong("Come Together", 4, Rock);
-	songs[1] = *MakeSong("Octopus's Garden", 3, Pop);
-	songs[2] = *MakeSong("Something", 3, Folk);
-	songs[3] = *MakeSong("Oh! Darling", 3, Rock);
+	string name = "Come Together";
+	songs[0] = *MakeSong(name, 4, Rock);
+	name = "Octopus's Garden";
+	songs[1] = *MakeSong(name, 3, Pop);
+	name = "Something";
+	songs[2] = *MakeSong(name, 3, Folk);
+	name = "Oh! Darling";
+	songs[3] = *MakeSong(name, 3, Rock);
 	for (int i = 0; i < 3; i++)
 	{
-		albums[i] = *MakeAlbum("Abbey Road", 1969, songs, 4);
+		name = "Abbey Road";
+		albums[i] = *MakeAlbum(name, 1969, songs, 4);
 	}
-	band = MakeBand("The Beatles",
-		"British rock-group from Liverpool, founded in 1960",
-		albums, 3);
-	Song* resultSong = FindSong(*band, "Something");
+	name = "The Beatles";
+	string information =
+		"British rock-group from Liverpool, founded in 1960";
+	band = MakeBand(name, information, albums, 3);
+	name = "Something";
+	Song* resultSong = FindSong(*band, name);
 	if (resultSong == nullptr)
 	{
 		cout << "Song isn't found\n";
@@ -28,7 +35,7 @@ void DemoBand()
 			<< resultSong->Duration
 			<< " and genre " << resultSong->Genre << "\n";
 	}
-	Song* songToFind = MakeSong("Something", 3, Folk);
+	Song* songToFind = MakeSong(name, 3, Folk);
 	Album* resultAlbum = FindAlbum(*band, songToFind);
 	if (resultAlbum == nullptr)
 	{

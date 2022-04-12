@@ -1,4 +1,4 @@
-#include "../../Header Files/Classes/RectangleClass.h"
+#include "../../../Header Files/Classes/GeometryClasses/RectangleClass.h"
 
 RectangleClass::RectangleClass()
 {
@@ -8,8 +8,8 @@ RectangleClass::RectangleClass()
 RectangleClass::RectangleClass(double width, 
 	double length, double x, double y)
 {
-	_width = width;
-	_length = length;
+	SetWidth(width);
+	SetLength(length);
 	_center->SetX(x);
 	_center->SetY(y);
 }
@@ -18,8 +18,7 @@ void RectangleClass::SetWidth(double width)
 {
 	if (width < 0)
 	{
-		exception error;
-		throw error;
+		throw exception("Width must be positive\n");
 	}
 	_width = width;
 }
@@ -28,8 +27,7 @@ void RectangleClass::SetLength(double length)
 {
 	if (length < 0)
 	{
-		exception error;
-		throw error;
+		throw exception("Length must be positive\n");
 	}
 	_length = length;
 }

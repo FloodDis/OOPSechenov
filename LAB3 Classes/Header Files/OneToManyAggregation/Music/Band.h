@@ -29,7 +29,7 @@ struct Band
 	int AlbumsCount;
 };
 
-// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 /// <summary>
 /// Функция создания структуры
 /// Band
@@ -41,26 +41,26 @@ struct Band
 /// <returns>
 /// Указатель на инициализированную структуру Band
 /// </returns>
-Band* MakeBand(string name, string information,
+Band* MakeBand(string& name, string& information,
 	Album* albums, int albumsCount);
 
-// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 /// <summary>
 /// Сеттер поля Name
 /// структуры Band
 /// </summary>
 /// <param name = "band">Экземпляр структуры Band</param>
 /// <param name = "name">Название группы</param>
-void SetNameBand(Band& band, string name);
+void SetNameBand(Band& band, string& name);
 
-// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 /// <summary>
 /// Сеттер поля Information
 /// структуры Band
 /// </summary>
 /// <param name = "band">Экземпляр структуры Band</param>
 /// <param name = "information">Информация о группе</param>
-void SetInformation(Band& band, string information);
+void SetInformation(Band& band, string& information);
 
 /// <summary>
 /// Сеттер поля Albums
@@ -70,7 +70,7 @@ void SetInformation(Band& band, string information);
 /// <param name = "albums">Массив альбомов</param>
 void SetAlbums(Band& band, Album* albums);
 
-// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 // Задание 3.4.2
 /// <summary>
 /// Функция поиска песни среди всех песен
@@ -83,7 +83,7 @@ void SetAlbums(Band& band, Album* albums);
 /// дискографии,
 /// nullptr - если элемент не найден
 /// </returns>
-Song* FindSong(Band& band, string songTitle);
+Song* FindSong(Band& band, string& songTitle);
 
 // Задание 3.4.3
 /// <summary>

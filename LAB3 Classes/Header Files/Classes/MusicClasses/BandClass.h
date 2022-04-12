@@ -37,7 +37,7 @@ public:
 	/// </summary>
 	BandClass();
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Конструктор класса BandClass
 	/// </summary>
@@ -45,21 +45,21 @@ public:
 	/// <param name="information">Информация о группе</param>
 	/// <param name="albums">Массив альбомов</param>
 	/// <param name="albumsCount">Кол-во альбомов</param>
-	BandClass(string name, string information, AlbumClass* albums, int albumsCount);
+	BandClass(string& name, string& information, AlbumClass* albums, int albumsCount);
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Сеттер поля _name
 	/// </summary>
 	/// <param name="name">Название группы</param>
-	void SetName(string name);
+	void SetName(string& name);
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Сеттер поля _information
 	/// </summary>
 	/// <param name="information">Информация о группе</param>
-	void SetInformation(string information);
+	void SetInformation(string& information);
 
 	/// <summary>
 	/// Сеттер поля _albums
@@ -73,19 +73,19 @@ public:
 	/// <param name="albumsCount">Кол-во альбомов</param>
 	void SetAlbumsCount(int albumsCount);
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Геттер поля _name
 	/// </summary>
 	/// <returns>Название музыкальной группы</returns>
-	string GetName();
+	string& GetName();
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Геттер поля _information
 	/// </summary>
 	/// <returns>Информация о группе</returns>
-	string GetInformation();
+	string& GetInformation();
 
 	/// <summary>
 	/// Геттер поля _albums
@@ -99,7 +99,7 @@ public:
 	/// <returns>Кол-во альбомов</returns>
 	int GetAlbumsCount();
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Метод поиска песни среди всех
 	/// альбомов группы
@@ -109,7 +109,7 @@ public:
 	/// Указатель на найденную песню или
 	/// nullptr, если песня не найдена
 	/// </returns>
-	SongClass* FindSong(string songTitle);
+	SongClass* FindSong(string& songTitle);
 
 	/// <summary>
 	/// Метод поиска альбома по песне

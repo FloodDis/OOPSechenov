@@ -1,12 +1,11 @@
-#include "../../Header Files/Agregation/Rectangle.h"
+#include "../../../Header Files/Agregation/Geometry/Rectangle.h"
 
 Rectangle* MakeRectangle(double width, double length, double x, double y)
 {
 	if (width < 0 || length < 0)
 	{
-		// TODO: зачем в две строки? Исправить ВЕЗДЕ
-		exception error;
-		throw error;
+		// TODO: зачем в две строки? Исправить ВЕЗДЕ +
+		throw exception("Width and length must be positive\n");
 	}
 	Rectangle* rectangle = new Rectangle;
 	rectangle->Length = length;
@@ -19,8 +18,7 @@ void SetWidth(Rectangle& rectangle, double width)
 {
 	if (width < 0)
 	{
-		exception error;
-		throw error;
+		throw exception("Width must be positive\n");
 	}
 	rectangle.Width = width;
 }
@@ -29,8 +27,7 @@ void SetLength(Rectangle& rectangle, double length)
 {
 	if (length < 0)
 	{
-		exception error;
-		throw error;
+		throw exception("Length must be positive\n");
 	}
 	rectangle.Length = length;
 }

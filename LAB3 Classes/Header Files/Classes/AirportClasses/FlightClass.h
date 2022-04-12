@@ -35,8 +35,15 @@ private:
 	/// </summary>
 	TimeClass _arrivalTime;
 
+	/// <summary>
+	/// Функция подсчета времени в минутах
+	/// </summary>
+	/// <param name="time">Экземпляр структуры TimeClass</param>
+	/// <returns>Время в минутах</returns>
+	long int GetTimeInMinutes(TimeClass time);
+
 public:
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Конструктор класса FlightClass
 	/// </summary>
@@ -45,7 +52,7 @@ public:
 	/// <param name="destinationPoint">Место прибытия</param>
 	/// <param name="departureTime">Время отправления</param>
 	/// <param name="arrivalTime">Время прибытия</param>
-	FlightClass(int number, string departurePoint, string destinationPoint,
+	FlightClass(int number, string& departurePoint, string& destinationPoint,
 		TimeClass departureTime, TimeClass arrivalTime);
 
 	/// <summary>
@@ -59,19 +66,19 @@ public:
 	/// <param name="number">Идентификационный номер</param>
 	void SetNumber(int number);
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Сеттер поля _departurePoint
 	/// </summary>
 	/// <param name="departurePoint">Место отправления</param>
-	void SetDeparturePoint(string departurePoint);
+	void SetDeparturePoint(string& departurePoint);
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Сеттер поля _destinationPoint
 	/// </summary>
 	/// <param name="destinationPoint">Место прибытия</param>
-	void SetDestinationPoint(string destinationPoint);
+	void SetDestinationPoint(string& destinationPoint);
 
 	/// <summary>
 	/// Сеттер поля _departureTime
@@ -91,19 +98,19 @@ public:
 	/// <returns>Номер рейса</returns>
 	int GetNumber();
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Геттер поля _departurePoint
 	/// </summary>
 	/// <returns>Пункт отправления</returns>
-	string GetDeparturePoint();
+	string& GetDeparturePoint();
 
-	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться
+	// TODO: строки в функции передавать по ссылке, иначе они каждый раз будут копироваться +
 	/// <summary>
 	/// Геттер поля _destinationPoint
 	/// </summary>
 	/// <returns>Пункт прибытия</returns>
-	string GetDestinationPoint();
+	string& GetDestinationPoint();
 
 	/// <summary>
 	/// Геттер поля _departureTime

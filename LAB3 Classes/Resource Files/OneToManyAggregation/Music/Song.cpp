@@ -1,6 +1,6 @@
-#include "../../Header Files/OneToManyAggregation/Song.h"
+#include "../../../Header Files/OneToManyAggregation/Music/Song.h"
 
-Song* MakeSong(string name, int duration, Genre genre)
+Song* MakeSong(string& name, int duration, Genre genre)
 {
 	Song* newSong = new Song;
 	newSong->Duration = duration;
@@ -9,7 +9,7 @@ Song* MakeSong(string name, int duration, Genre genre)
 	return newSong;
 }
 
-void SetNameSong(Song& song, string name)
+void SetNameSong(Song& song, string& name)
 {
 	song.Name = name;
 }
@@ -18,8 +18,7 @@ void SetDuration(Song& song, int duration)
 {
 	if (duration < 0)
 	{
-		exception error;
-		throw error;
+		throw exception("Duration must be positive\n");
 	}
 	song.Duration = duration;
 }
