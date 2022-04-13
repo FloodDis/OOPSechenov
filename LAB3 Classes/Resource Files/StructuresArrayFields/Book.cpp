@@ -11,21 +11,22 @@ void ReadBookFromConsole(Book& book)
 	cin >> releaseYear;
 	if (releaseYear < 0)
 	{
-		throw exception("Wrong data!");
+		throw exception("Release must be positive\n");
 	}
 	book.ReleaseYear = releaseYear;
 	cout << "Enter page count: ";
 	cin >> pageCount;
 	if (pageCount < 0 || pageCount > 2022)
 	{
-		throw exception("Wrong data!");
+		throw exception
+		("Page count must be positive and less than 2022\n");
 	}
 	book.PageCount = pageCount;
 	cout << "Enter authors count: ";
 	cin >> authorsCount;
 	if (authorsCount < 0 || authorsCount > 10)
 	{
-		throw exception("Wrong data!");
+		throw exception("Authors must be positive and less than 10\n");
 	}
 	book.AuthorCount = authorsCount;
 	for (int i = 0; i < book.AuthorCount; i++)
@@ -64,7 +65,6 @@ int FindBookByAuthor(Book* books, int booksCount, string author)
 				return i;
 			}
 		}
-
 	}
 	return -1;
 }

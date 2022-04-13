@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include <iostream>
-#include "PointClassFix1.h"
+#include "../../Header Files/DependentFields/Point.h"
+#include "../ServiceClasses/DoubleValidator.h"
 using namespace std;
 
 /// <summary>
@@ -23,30 +24,48 @@ private:
 	/// <summary>
 	/// Центр кольца
 	/// </summary>
-	PointClassFix1 _center;
+	Point _center;
+
+	/// <summary>
+	/// Кол-во созданных объектов RingFix2
+	/// </summary>
+	static int _allRingsCount;
+
+	/// <summary>
+	/// Функция проверки значений радиусов
+	/// (внутренний должен быть меньше внешнего)
+	/// </summary>
+	/// <param name="innerRadius">Внутренний радиус</param>
+	/// <param name="outerRadius">Внешний радиус</param>
+	void AssertOnRightRadii(double innerRadius, double outerRadius);
 
 public:
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// Конструктор класса RingFix2
 	/// </summary>
 	Ring();
 
 	/// <summary>
-	/// Конструктор класса Ring
+	/// Конструктор класса RingFix2
 	/// </summary>
 	/// <param name="innerRadius">Внутрений радиус</param>
 	/// <param name="outerRadius">Внешний радиус</param>
 	/// <param name="xCenter">Координата центра X</param>
 	/// <param name="yCenter">Координата центра Y</param>
-	Ring(double innerRadius, double outerRadius, 
+	Ring(double innerRadius, double outerRadius,
 		double xCenter, double yCenter);
+
+	/// <summary>
+	/// Деструктор класса RingFix2
+	/// </summary>
+	~Ring();
 
 	/// <summary>
 	/// Сеттер полей _innerRadius и _outerRadius
 	/// </summary>
-	/// <param name="innerRadius"></param>
-	/// <param name="outerRadius"></param>
+	/// <param name="innerRadius">Внутренний радиус</param>
+	/// <param name="outerRadius">Внешний радиус</param>
 	void SetRadii(double innerRadius, double outerRadius);
 
 	/// <summary>
@@ -72,7 +91,7 @@ public:
 	/// Геттер поля _center
 	/// </summary>
 	/// <returns>Центр кольца</returns>
-	PointClassFix1 GetCenter();
+	Point GetCenter();
 
 	/// <summary>
 	/// Функция подсчета площади кольца
@@ -80,4 +99,9 @@ public:
 	/// <returns>Площадь кольца</returns>
 	double GetArea();
 
+	/// <summary>
+	/// Геттер поля _allRingsCount
+	/// </summary>
+	/// <returns>Кол-во созданных</returns>
+	static int GetAllRingsCount();
 };

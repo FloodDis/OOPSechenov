@@ -1,12 +1,12 @@
 ﻿#pragma once
 #include <iostream>
-#include "SongClassFix.h"
+#include "Song.h"
 using namespace std;
 
 /// <summary>
 /// Альбом
 /// </summary>
-class AlbumClassFix
+class Album
 {
 private:
 
@@ -23,7 +23,7 @@ private:
 	/// <summary>
 	/// Массив песен в альбоме
 	/// </summary>
-	SongClassFix* _songs;
+	Song* _songs;
 
 	/// <summary>
 	/// Кол-во песен в альбоме
@@ -33,19 +33,19 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса AlbumClassFix
+	/// Конструктор класса Album
 	/// </summary>
-	AlbumClassFix();
+	Album();
 
 	/// <summary>
-	/// Конструктор класса AlbumClassFix
+	/// Конструктор класса Album
 	/// </summary>
 	/// <param name="name">Название альбома</param>
 	/// <param name="yearOfRelease">Год выпуска</param>
 	/// <param name="songs">Массив песен</param>
 	/// <param name="songsCount">Кол-во песен в альбоме</param>
-	AlbumClassFix(string name, int yearRelease,
-		SongClassFix* songs, int songsCount);
+	Album(string name, int yearRelease,
+		Song* songs, int songsCount);
 
 	/// <summary>
 	/// Сеттер поля _name
@@ -64,7 +64,7 @@ public:
 	/// </summary>
 	/// <param name="songs">Массив песен в албоме</param>
 	/// <param name="songsCount">Кол-во песен</param>
-	void SetSongs(SongClassFix* songs, int songsCount);
+	void SetSongs(Song* songs, int songsCount);
 
 	/// <summary>
 	/// Геттер поля _name
@@ -82,7 +82,7 @@ public:
 	/// Геттер поля _songs
 	/// </summary>
 	/// <returns>Массив песен в альбоме</returns>
-	SongClassFix* GetSongs();
+	Song* GetSongs();
 
 	/// <summary>
 	/// Геттер поля _songsCount

@@ -1,12 +1,12 @@
-#include "../../Header Files/DependentFields/BandClassFix.h"
+#include "../../Header Files/DependentFields/Band.h"
 
-BandClassFix::BandClassFix()
+Band::Band()
 {
 
 }
 
-BandClassFix::BandClassFix(string name, string information,
-	AlbumClassFix* albums, int albumsCount)
+Band::Band(string name, string information,
+	Album* albums, int albumsCount)
 {
 	if (albumsCount < 0)
 	{
@@ -18,17 +18,17 @@ BandClassFix::BandClassFix(string name, string information,
 	_albums = albums;
 }
 
-void BandClassFix::SetName(string name)
+void Band::SetName(string name)
 {
 	_name = name;
 }
 
-void BandClassFix::SetInformation(string information)
+void Band::SetInformation(string information)
 {
 	_information = information;
 }
 
-void BandClassFix::SetAlbums(AlbumClassFix* albums, int albumsCount)
+void Band::SetAlbums(Album* albums, int albumsCount)
 {
 	if (albumsCount < 0)
 	{
@@ -38,27 +38,27 @@ void BandClassFix::SetAlbums(AlbumClassFix* albums, int albumsCount)
 	_albums = albums;
 }
 
-string BandClassFix::GetName()
+string Band::GetName()
 {
 	return _name;
 }
 
-string BandClassFix::GetInformation()
+string Band::GetInformation()
 {
 	return _information;
 }
 
-AlbumClassFix* BandClassFix::GetAlbums()
+Album* Band::GetAlbums()
 {
 	return _albums;
 }
 
-int BandClassFix::GetAlbumsCount()
+int Band::GetAlbumsCount()
 {
 	return _albumsCount;
 }
 
-SongClassFix* BandClassFix::FindSong(string songTitle)
+Song* Band::FindSong(string songTitle)
 {
 	for (int i = 0; i < GetAlbumsCount(); i++)
 	{
@@ -73,7 +73,7 @@ SongClassFix* BandClassFix::FindSong(string songTitle)
 	return nullptr;
 }
 
-AlbumClassFix* BandClassFix::FindAlbum(SongClassFix* song)
+Album* Band::FindAlbum(Song* song)
 {
 	for (int i = 0; i < GetAlbumsCount(); i++)
 	{
@@ -92,14 +92,14 @@ AlbumClassFix* BandClassFix::FindAlbum(SongClassFix* song)
 	return nullptr;
 }
 
-SongClassFix* BandClassFix::GetAllSongs(int& allSongsCount)
+Song* Band::GetAllSongs(int& allSongsCount)
 {
 	allSongsCount = 0;
 	for (int i = 0; i < GetAlbumsCount(); i++)
 	{
 		allSongsCount += GetAlbums()[i].GetSongsCount();
 	}
-	SongClassFix* allSongs = new SongClassFix[allSongsCount];
+	Song* allSongs = new Song[allSongsCount];
 	int allSongsIndex = 0;
 	for (int i = 0; i < GetAlbumsCount(); i++)
 	{
@@ -112,7 +112,7 @@ SongClassFix* BandClassFix::GetAllSongs(int& allSongsCount)
 	return allSongs;
 }
 
-SongClassFix* BandClassFix::GetAllGenreSongs(Genre findingGenre,
+Song* Band::GetAllGenreSongs(Genre findingGenre,
 	int& allSongsCount)
 {
 	allSongsCount = 0;
@@ -120,7 +120,7 @@ SongClassFix* BandClassFix::GetAllGenreSongs(Genre findingGenre,
 	{
 		allSongsCount += GetAlbums()[i].GetSongsCount();
 	}
-	SongClassFix* allSongs = new SongClassFix[allSongsCount];
+	Song* allSongs = new Song[allSongsCount];
 	int allSongsIndex = 0;
 	for (int i = 0; i < GetAlbumsCount(); i++)
 	{

@@ -55,7 +55,7 @@ void TimeClass::SetMinutes(int minutes)
 {
 	if (minutes < 0 || minutes>59)
 	{
-		throw exception("Minutes must be positive\n");
+		throw exception("Minutes must be positive and less than 60\n");
 	}
 	_minutes = minutes;
 }

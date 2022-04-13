@@ -6,7 +6,7 @@ using namespace std;
 /// <summary>
 /// Песня
 /// </summary>
-class SongClassFix
+class Song
 {
 private:
 
@@ -28,17 +28,17 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса SongClassFix
+	/// Конструктор класса Song
 	/// </summary>
-	SongClassFix();
+	Song();
 
 	/// <summary>
-	/// Конструктор класса SongClassFix
+	/// Конструктор класса Song
 	/// </summary>
 	/// <param name="name">Название песни</param>
 	/// <param name="duration">Длительность в минутах</param>
 	/// <param name="genre">Жанр песни</param>
-	SongClassFix(string name, int duration, Genre genre);
+	Song(string name, int duration, Genre genre);
 
 	/// <summary>
 	/// Сеттер поля _name

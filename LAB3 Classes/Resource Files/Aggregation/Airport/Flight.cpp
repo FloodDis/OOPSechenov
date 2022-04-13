@@ -32,7 +32,8 @@ void SetDepartureTime(Flight& flight, Time departureTime)
 	if (!IsArrivalTimeLater(flight.ArrivalTime, departureTime))
 	{
 		// TODO: зачем в две строки? +
-		throw exception();
+		throw
+			exception("Arrival time must be greater than departure time\n");
 	}
 	flight.DepartureTime = departureTime;
 }
@@ -42,7 +43,8 @@ void SetArrivalTime(Flight& flight, Time arrivalTime)
 	if (!IsArrivalTimeLater(arrivalTime, flight.DepartureTime))
 	{
 		// TODO: зачем в две строки? +
-		throw exception();
+		throw 
+			exception("Arrival time must be greater than departure time\n");
 	}
 	flight.ArrivalTime;
 }
@@ -73,22 +75,21 @@ bool IsArrivalTimeLater(Time& arrivalTime, Time& departureTime)
 	return false;
 }
 
+long int GetTimeInMinutes(Time& time)
+{
+	long int timeInMinutes = 0;
+	timeInMinutes += time.Year * 12 * 30 * 24 * 60;
+	timeInMinutes += time.Month * 30 * 24 * 60;
+	timeInMinutes += time.Day * 24 * 60;
+	timeInMinutes += time.Hour * 60;
+	timeInMinutes += time.Minutes;
+	return timeInMinutes;
+}
+
 int GetFlightTimeMinutes(Flight& flight)
 {
-	long int arrivalTimeInMinutes = 0;
-	arrivalTimeInMinutes += flight.ArrivalTime.Year * 12 * 30 * 24 * 60;
-	arrivalTimeInMinutes += flight.ArrivalTime.Month * 30 * 24 * 60;
-	arrivalTimeInMinutes += flight.ArrivalTime.Day * 24 * 60;
-	arrivalTimeInMinutes += flight.ArrivalTime.Hour * 60;
-	arrivalTimeInMinutes += flight.ArrivalTime.Minutes;
-
-	long int departureTimeInMinutes = 0;
-	departureTimeInMinutes += flight.DepartureTime.Year * 12 * 30 * 24 * 60;
-	departureTimeInMinutes += flight.DepartureTime.Month * 30 * 24 * 60;
-	departureTimeInMinutes += flight.DepartureTime.Day * 24 * 60;
-	departureTimeInMinutes += flight.DepartureTime.Hour * 60;
-	departureTimeInMinutes += flight.DepartureTime.Minutes;
-
+	long int arrivalTimeInMinutes = GetTimeInMinutes(flight.ArrivalTime);
+	long int departureTimeInMinutes = GetTimeInMinutes(flight.DepartureTime);
 	int flightDuration = arrivalTimeInMinutes - departureTimeInMinutes;
 	return flightDuration;
 }

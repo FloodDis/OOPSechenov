@@ -2,7 +2,7 @@
 #include <iostream>
 #include <math.h>
 #include "Rectangle.h"
-#include "RingFix3.h"
+#include "../DependentFields/Ring.h"
 using namespace std;
 
 static class CollisionManager
@@ -31,6 +31,6 @@ public:
 	/// ture - коллизия есть,
 	/// false - коллизии нет
 	/// </returns>
-	static bool IsCollision(RingFix3& ring1, RingFix3& ring2);
+	static bool IsCollision(Ring& ring1, Ring& ring2);
 
 };

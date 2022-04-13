@@ -1,12 +1,12 @@
-#include "../../Header Files/DependentFields/AlbumClassFix.h"
+#include "../../Header Files/DependentFields/Album.h"
 
-AlbumClassFix::AlbumClassFix()
+Album::Album()
 {
 
 }
 
-AlbumClassFix::AlbumClassFix(string name, int yearRelease,
-	SongClassFix* songs, int songsCount)
+Album::Album(string name, int yearRelease,
+	Song* songs, int songsCount)
 {
 	if (yearRelease < 0)
 	{
@@ -22,12 +22,12 @@ AlbumClassFix::AlbumClassFix(string name, int yearRelease,
 	_songsCount = songsCount;
 }
 
-void AlbumClassFix::SetName(string name)
+void Album::SetName(string name)
 {
 	_name = name;
 }
 
-void AlbumClassFix::SetYearRelease(int yearRelease)
+void Album::SetYearRelease(int yearRelease)
 {
 	if (yearRelease < 0)
 	{
@@ -36,7 +36,7 @@ void AlbumClassFix::SetYearRelease(int yearRelease)
 	_yearRelease = yearRelease;
 }
 
-void AlbumClassFix::SetSongs(SongClassFix* songs, int songsCount)
+void Album::SetSongs(Song* songs, int songsCount)
 {
 	if (songsCount < 0)
 	{
@@ -46,22 +46,22 @@ void AlbumClassFix::SetSongs(SongClassFix* songs, int songsCount)
 	_songsCount = songsCount;
 }
 
-string AlbumClassFix::GetName()
+string Album::GetName()
 {
 	return _name;
 }
 
-int AlbumClassFix::GetYearRelease()
+int Album::GetYearRelease()
 {
 	return _yearRelease;
 }
 
-SongClassFix* AlbumClassFix::GetSongs()
+Song* Album::GetSongs()
 {
 	return _songs;
 }
 
-int AlbumClassFix::GetSongsCount()
+int Album::GetSongsCount()
 {
 	return _songsCount;
 }

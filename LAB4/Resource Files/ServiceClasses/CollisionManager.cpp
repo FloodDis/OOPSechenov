@@ -18,7 +18,7 @@ bool CollisionManager::IsCollision(Rectangle& rectangle1,
 	return false;
 }
 
-bool CollisionManager::IsCollision(RingFix3& ring1, RingFix3& ring2)
+bool CollisionManager::IsCollision(Ring& ring1, Ring& ring2)
 {
 	double dX = ring1.GetCenter().GetX() - ring2.GetCenter().GetX();
 	double dY = ring1.GetCenter().GetY() - ring2.GetCenter().GetY();

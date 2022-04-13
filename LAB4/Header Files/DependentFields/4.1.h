@@ -1,17 +1,6 @@
-﻿#pragma once
-#include "BandClassFix.h"
-#include "Ring.h"
-#include "../../Header Files/DependentFields/GenreEnum.h"
+#pragma once
 #include <iostream>
+#include "Band.h"
+using namespace std;
 
-/// <summary>
-///	Функция демонстрации
-/// работы класса BandClassFix
-/// </summary>
-void DemoBandClassFix();
-
-/// <summary>
-///	Функция демонстрации
-/// работы класса Ring
-/// </summary>
-void DemoRing();
+void DemoBand();

@@ -5,7 +5,7 @@ using namespace std;
 /// <summary>
 /// Точка
 /// </summary>
-class PointClassFix3
+class Point
 {
 private:
 
@@ -24,14 +24,14 @@ public:
 	/// <summary>
 	/// Конструктор класса PointClass
 	/// </summary>
-	PointClassFix3();
+	Point();
 
 	/// <summary>
 	/// Конструктор класса PointClass
 	/// </summary>
 	/// <param name="x">Координата X</param>
 	/// <param name="y">Координата Y</param>
-	PointClassFix3(double x, double y);
+	Point(double x, double y);
 
 	/// <summary>
 	/// Геттер поля _x

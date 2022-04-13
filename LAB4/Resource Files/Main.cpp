@@ -1,33 +1,60 @@
 #include <iostream>
 #include "../Header Files/DependentFields/4.1.h"
-#include "../Header Files/ClosedMethodsOfTheClass/4.2.h"
-#include "../Header Files/StaticFieldsAndMethodsOfTheClass/4.4.h"
-#include "../Header Files/ServiceClasses/4.5.h"
+#include "../Header Files/ServiceClasses/GeometricProgram.h"
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "ru");
 
-	cout << "Задания 4.1.1 - 4.1.3:\n";
-	DemoBandClassFix();
+	cout << "Демонстрация исправленных классов Album и Band:\n";
+	DemoBand();
 
-	cout << "\nЗадание 4.1.4 - 4.1.6:\n";
-	DemoRing();
+	enum Demo
+	{
+		RingDemo = 1,
+		CollisionDemo,
+		RectangleDemo,
+		Exit
+	};
+	GeometricProgram program;
 
-	cout << "\nЗадания 4.2.1 - 4.2.3:\n";
-	DemoRingFix1();
+	cout << "Enter 1 to run ring demo.\n";
+	cout << "Enter 2 to run collision demo.\n";
+	cout << "Enter 3 to run rectangle demo.\n";
+	cout << "Enter 4 to close program.\n";
 
-	cout << "\nЗадания 4.4.1 - 4.4.7:\n";
-	DemoRingFix2();
-
-	cout << "\nЗадания 4.5.1 - 4.5.3:\n";
-	GeometricProgram geometricProgram;
-	geometricProgram.DemoRingFix3();
-
-	cout << "\nЗадания 4.5.4, 4.5.5:\n";
-	geometricProgram.DemoCollision();
-
-	cout << "\n Задание 4.5.6, 4.5.7:\n";
-	DemoGeometricProgram();
+	int prompt = 0;
+	while (true)
+	{
+		cout << "\nEnter command: ";
+		cin >> prompt;
+		cout << '\n';
+		switch (prompt)
+		{
+			case RingDemo:
+			{
+				program.DemoRing();
+				break;
+			}
+			case CollisionDemo:
+			{
+				program.DemoCollision();
+				break;
+			}
+			case RectangleDemo:
+			{
+				program.DemoRectangle();
+				break;
+			}
+			case Exit:
+			{
+				return;
+			}
+			default:
+			{
+				break;
+			}
+		}
+	}
 }

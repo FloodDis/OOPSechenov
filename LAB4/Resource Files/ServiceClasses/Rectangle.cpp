@@ -2,7 +2,7 @@
 
 Rectangle::Rectangle()
 {
-	
+
 }
 Rectangle::Rectangle(double width, double length, double x, double y)
 {
@@ -25,7 +25,7 @@ void Rectangle::SetLength(double length)
 
 void Rectangle::SetCenter(double x, double y)
 {
-	_center = PointClassFix3(x, y);
+	_center = Point(x, y);
 }
 
 double Rectangle::GetWidth()
@@ -38,7 +38,7 @@ double Rectangle::GetLength()
 	return _length;
 }
 
-PointClassFix3 Rectangle::GetCenter()
+Point Rectangle::GetCenter()
 {
 	return _center;
 }

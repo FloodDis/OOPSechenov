@@ -121,3 +121,12 @@ bool IsArrivalTimeLater(Time& arrivalTime, Time& departureTime);
 /// Длительность полета в минутах
 /// </returns>
 int GetFlightTimeMinutes(Flight& flight);
+
+/// <summary>
+/// Функция получения момента времени в минутах
+/// </summary>
+/// <param name ="time">Экземпляр структуры Time</param>
+/// <returns>
+/// Момент времени в минутах
+/// </returns>
+long int GetTimeInMinutes(Time& time);

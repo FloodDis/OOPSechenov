@@ -8,7 +8,7 @@ FlightClass::FlightClass(int number, string& departurePoint,
 	if (number < 0)
 	{
 		// TODO: зачем в две строки? +
-		throw exception();
+		throw exception("Number must be positive\n");
 	}
 	_number = number;
 	_departurePoint = departurePoint;
@@ -27,7 +27,7 @@ void FlightClass::SetNumber(int number)
 	if (number < 0)
 	{
 		// TODO: зачем в две строки? +
-		throw exception();
+		throw exception("Number must be positive\n");
 	}
 	_number = number;
 }

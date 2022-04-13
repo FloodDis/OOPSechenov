@@ -1,11 +1,11 @@
 ﻿#pragma once
 #include <iostream>
-#include "../../Header Files/ReadOnlyFields/PointClassFix3.h"
+#include "../../Header Files/DependentFields/Point.h"
 #include "../ServiceClasses/DoubleValidator.h"
 using namespace std;
 
 /// <summary>
-/// Прямоугольник
+/// Прямоугольник 
 /// </summary>
 class Rectangle
 {
@@ -24,7 +24,7 @@ private:
 	/// Точка центра
 	/// прямоугольника
 	/// </summary>
-	PointClassFix3 _center;
+	Point _center;
 
 public:
 
@@ -83,5 +83,5 @@ public:
 	/// <returns>
 	/// Центр прямоугольника
 	/// </returns>
-	PointClassFix3 GetCenter();
+	Point GetCenter();
 };

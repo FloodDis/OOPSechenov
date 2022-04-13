@@ -1,12 +1,12 @@
 ﻿#pragma once
 #include <iostream>
-#include "AlbumClassFix.h"
+#include "Album.h"
 using namespace std;
 
 /// <summary>
 /// Музыкальная группа
 /// </summary>
-class BandClassFix
+class Band
 {
 private:
 
@@ -23,7 +23,7 @@ private:
 	/// <summary>
 	/// Массив альбомов
 	/// </summary>
-	AlbumClassFix* _albums;
+	Album* _albums;
 
 	/// <summary>
 	/// Кол-во альбомов
@@ -33,19 +33,19 @@ private:
 public:
 
 	/// <summary>
-	/// Конструктор класса BandClassFix
+	/// Конструктор класса Band
 	/// </summary>
-	BandClassFix();
+	Band();
 
 	/// <summary>
-	/// Конструктор класса BandClassFix
+	/// Конструктор класса Band
 	/// </summary>
 	/// <param name="name">Название группы</param>
 	/// <param name="information">Информация о группе</param>
 	/// <param name="albums">Массив альбомов</param>
 	/// <param name="albumsCount">Кол-во альбомов</param>
-	BandClassFix(string name, string information,
-		AlbumClassFix* albums, int albumsCount);
+	Band(string name, string information,
+		Album* albums, int albumsCount);
 
 	/// <summary>
 	/// Сеттер поля _name
@@ -63,7 +63,7 @@ public:
 	/// Сеттер поля _albums
 	/// </summary>
 	/// <param name="albums">Массив альбомов группы</param>
-	void SetAlbums(AlbumClassFix* albums, int albumsCount);
+	void SetAlbums(Album* albums, int albumsCount);
 
 	/// <summary>
 	/// Геттер поля _name
@@ -81,7 +81,7 @@ public:
 	/// Геттер поля _albums
 	/// </summary>
 	/// <returns>Массив альбомов</returns>
-	AlbumClassFix* GetAlbums();
+	Album* GetAlbums();
 
 	/// <summary>
 	/// Геттер поля _albumsCount
@@ -95,7 +95,7 @@ public:
 	/// </summary>
 	/// <param name="songTitle">Название песни</param>
 	/// <returns>Экземпляр структуры Song</returns>
-	SongClassFix* FindSong(string songTitle);
+	Song* FindSong(string songTitle);
 
 	/// <summary>
 	/// Метод поиска альбома по песне
@@ -103,7 +103,7 @@ public:
 	/// </summary>
 	/// <param name="song">Структура Song</param>
 	/// <returns>Экземпляр структуры Album</returns>
-	AlbumClassFix* FindAlbum(SongClassFix* song);
+	Album* FindAlbum(Song* song);
 
 	/// <summary>
 	/// Метод получения массива всех песен
@@ -111,7 +111,7 @@ public:
 	/// </summary>
 	/// <param name="allSongsCount">Кол-во всех песен</param>
 	/// <returns>Массив всех песен группы</returns>
-	SongClassFix* GetAllSongs(int& allSongsCount);
+	Song* GetAllSongs(int& allSongsCount);
 
 	/// <summary>
 	/// Метод получения массива всех
@@ -125,5 +125,5 @@ public:
 	/// Массив всех песен группы определенного
 	/// жанра
 	/// </returns>
-	SongClassFix* GetAllGenreSongs(Genre findingGenre, int& allSongsCount);
+	Song* GetAllGenreSongs(Genre findingGenre, int& allSongsCount);
 };

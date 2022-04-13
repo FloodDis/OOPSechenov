@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "Rectangle.h"
 #include "CollisionManager.h"
-#include "RingFix3.h"
+#include "../DependentFields/Ring.h"
 #include <iostream>
 using namespace std;
 
@@ -17,9 +17,9 @@ public:
 
 	/// <summary>
 	/// Функция демонстрации
-	/// работы структуры RingFix3
+	/// работы структуры Ring
 	/// </summary>
-	void DemoRingFix3();
+	void DemoRing();
 
 	/// <summary>
 	/// Функция демонстрации
