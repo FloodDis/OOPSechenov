@@ -1,4 +1,4 @@
-#include "../../Header Files/DependentFields/Album.h"
+#include "../../../Header Files/DependentFields/Music/Album.h"
 
 Album::Album()
 {
@@ -8,18 +8,9 @@ Album::Album()
 Album::Album(string name, int yearRelease,
 	Song* songs, int songsCount)
 {
-	if (yearRelease < 0)
-	{
-		throw "Year of release must be greater than 0\n";
-	}
-	if (songsCount < 0)
-	{
-		throw "Songs count must be greater than 0\n";
-	}
-	_name = name;
-	_yearRelease = yearRelease;
-	_songs = songs;
-	_songsCount = songsCount;
+	SetName(name);
+	SetYearRelease(yearRelease);
+	SetSongs(songs, songsCount);
 }
 
 void Album::SetName(string name)

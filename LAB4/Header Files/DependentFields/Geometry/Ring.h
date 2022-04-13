@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <iostream>
-#include "../../Header Files/DependentFields/Point.h"
-#include "../ServiceClasses/DoubleValidator.h"
+#include "../../../Header Files/DependentFields/Geometry/Point.h"
+#include "../../ServiceClasses/DoubleValidator.h"
 using namespace std;
 
 /// <summary>

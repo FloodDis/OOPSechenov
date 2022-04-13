@@ -1,4 +1,4 @@
-#include "../../Header Files/DependentFields/Song.h"
+#include "../../../Header Files/DependentFields/Music/Song.h"
 
 Song::Song()
 {
@@ -7,13 +7,9 @@ Song::Song()
 
 Song::Song(string name, int duration, Genre genre)
 {
-	if (duration < 0)
-	{
-		throw "Duration must be greater than 0\n";
-	}
-	_name = name;
-	_duration = duration;
-	_genre = genre;
+	SetName(name);
+	SetDuration(duration);
+	SetGenre(genre);
 }
 
 void Song::SetName(string name)

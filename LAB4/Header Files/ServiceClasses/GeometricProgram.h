@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "Rectangle.h"
 #include "CollisionManager.h"
-#include "../DependentFields/Ring.h"
+#include "../../Header Files/DependentFields/Geometry/Ring.h"
 #include <iostream>
 using namespace std;
 

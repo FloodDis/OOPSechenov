@@ -1,4 +1,4 @@
-#include "../../Header Files/DependentFields/Ring.h"
+#include "../../../Header Files/DependentFields/Geometry/Ring.h"
 
 int Ring::_allRingsCount = 0;
 

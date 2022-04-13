@@ -1,4 +1,4 @@
-#include "../../Header Files/DependentFields/Point.h"
+#include "../../../Header Files/DependentFields/Geometry/Point.h"
 
 Point::Point()
 {

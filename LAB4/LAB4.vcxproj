@@ -20,12 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\DependentFields\4.1.h" />
-    <ClInclude Include="Header Files\DependentFields\Album.h" />
-    <ClInclude Include="Header Files\DependentFields\Band.h" />
-    <ClInclude Include="Header Files\DependentFields\GenreEnum.h" />
-    <ClInclude Include="Header Files\DependentFields\Ring.h" />
-    <ClInclude Include="Header Files\DependentFields\Song.h" />
-    <ClInclude Include="Header Files\DependentFields\Point.h" />
+    <ClInclude Include="Header Files\DependentFields\Music\Album.h" />
+    <ClInclude Include="Header Files\DependentFields\Music\Band.h" />
+    <ClInclude Include="Header Files\DependentFields\Music\GenreEnum.h" />
+    <ClInclude Include="Header Files\DependentFields\Geometry\Ring.h" />
+    <ClInclude Include="Header Files\DependentFields\Music\Song.h" />
+    <ClInclude Include="Header Files\DependentFields\Geometry\Point.h" />
     <ClInclude Include="Header Files\ServiceClasses\CollisionManager.h" />
     <ClInclude Include="Header Files\ServiceClasses\DoubleValidator.h" />
     <ClInclude Include="Header Files\ServiceClasses\GeometricProgram.h" />
@@ -33,15 +33,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resource Files\Dependent Fields\4.1.cpp" />
-    <ClCompile Include="Resource Files\Dependent Fields\Album.cpp" />
-    <ClCompile Include="Resource Files\Dependent Fields\Band.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\Music\Album.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\Music\Band.cpp" />
     <ClCompile Include="Resource Files\Main.cpp" />
-    <ClCompile Include="Resource Files\Dependent Fields\Song.cpp" />
-    <ClCompile Include="Resource Files\Dependent Fields\Point.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\Music\Song.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\Geometry\Point.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\CollisionManager.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\DoubleValidator.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\GeometricProgram.cpp" />
-    <ClCompile Include="Resource Files\Dependent Fields\Ring.cpp" />
+    <ClCompile Include="Resource Files\Dependent Fields\Geometry\Ring.cpp" />
     <ClCompile Include="Resource Files\ServiceClasses\Rectangle.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
