@@ -15,222 +15,81 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2.2.1.1.cpp">
+    <ClCompile Include="Resource Files\Exceptions\Sort.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="2.2.1.2.cpp">
+    <ClCompile Include="Resource Files\Structs\Circle.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="2.2.2.1.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="Resource Files\Structs\Film.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2.2.2.2.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="Resource Files\Structs\Flight.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2.2.3.1.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="Resource Files\Structs\Rectangle.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2.2.3.2.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="Resource Files\Structs\WrongPointers.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2.2.3.3.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.4.1.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.4.2.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.4.3.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.4.4.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.5.1.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.5.2.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.5.3.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.5.4.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.5.5.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.5.6.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.6.1.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.6.2.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.6.3.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.7.1.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.7.2.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.7.3.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.1.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.2.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.3.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.4.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.5.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.6.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.7.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.8.8.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.9.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="Resource Files\Enumeration\DemoEnums.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="2.2.1.1.h">
+    <ClInclude Include="Header Files\Exceptions\Sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.1.2.h">
+    <ClInclude Include="Header Files\Structs\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.2.1.h">
+    <ClInclude Include="Header Files\Structs\Flight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.2.2.h">
+    <ClInclude Include="Header Files\Structs\Film.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.3.1.h">
+    <ClInclude Include="Header Files\Structs\Time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.3.2.h">
+    <ClInclude Include="Header Files\Structs\PhoneContact.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.3.3.h">
+    <ClInclude Include="Header Files\Structs\Song.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.4.1.h">
+    <ClInclude Include="Header Files\Structs\Subject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.4.2.h">
+    <ClInclude Include="Header Files\Structs\Circle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Rectangle.h">
+    <ClInclude Include="Header Files\Structs\WrongPointers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Flight.h">
+    <ClInclude Include="Header Files\Enumeration\Color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Film.h">
+    <ClInclude Include="Header Files\Enumeration\DemoEnums.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Time.h">
+    <ClInclude Include="Header Files\Enumeration\Education.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PhoneContact.h">
+    <ClInclude Include="Header Files\Enumeration\Genre.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Song.h">
+    <ClInclude Include="Header Files\Enumeration\SmartphoneManufacturer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Subject.h">
+    <ClInclude Include="Header Files\Enumeration\WeekDay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2.2.4.3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.4.4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.5.1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.5.2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.5.3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.5.4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.5.5.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.5.6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.6.1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.6.2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.6.3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.7.1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.7.2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.7.3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.5.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.7.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.8.8.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="2.2.9.h">
+    <ClInclude Include="Header Files\Enumeration\Season.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

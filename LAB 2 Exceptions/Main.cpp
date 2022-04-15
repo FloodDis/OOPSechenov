@@ -1,132 +1,132 @@
-﻿#include "2.2.1.1.h"
-#include "2.2.1.2.h"
-#include "2.2.2.1.h"
-#include "2.2.2.2.h"
-#include "2.2.3.1.h"
-#include "2.2.3.2.h"
-#include "2.2.3.3.h"
-#include "2.2.4.1.h"
-#include "2.2.4.2.h"
-#include "2.2.4.3.h"
-#include "2.2.5.1.h"
-#include "2.2.5.2.h"
-#include "2.2.5.3.h"
-#include "2.2.5.4.h"
-#include "2.2.5.5.h"
-#include "2.2.5.6.h"
-#include "2.2.6.1.h"
-#include "2.2.6.2.h"
-#include "2.2.6.3.h"
-#include "2.2.7.1.h"
-#include "2.2.7.2.h"
-#include "2.2.7.3.h"
-#include "2.2.8.1.h"
-#include "2.2.8.2.h"
-#include "2.2.8.3.h"
-#include "2.2.8.4.h"
-#include "2.2.8.5.h"
-#include "2.2.8.6.h"
-#include "2.2.8.7.h"
-#include "2.2.8.8.h"
-#include "2.2.9.h"
-#include <iostream>
-using namespace std;
+﻿#include <iostream>
+
+#include "Header Files/Structs/Circle.h"
+#include "Header Files/Structs/Flight.h"
+#include "Header Files/Structs/Film.h"
+#include "Header Files/Structs/Rectangle.h"
+#include "Header Files/Enumeration/DemoEnums.h"
 
 void main()
 {
-	setlocale(LC_ALL, "ru");
+	/// <summary>
+	/// Демонстрация структур
+	/// </summary>
+	enum Demo
+	{
+		/// <summary>
+		/// Круг
+		/// </summary>
+		Circle = 1,
 
-	cout << "Результат работы сортировки(2.2.1.1):\n";
-	DemoSort();
-	cout << "\n";
+		/// <summary>
+		/// Рейс
+		/// </summary>
+		Flight,
 
-	cout << "Результат работы сортировки с обработкой исключений(2.2.1.2):\n";
-	DemoSortException();
+		/// <summary>
+		/// Фильм
+		/// </summary>
+		Film,
 
-	cout << "\nЗадание 2.2.2.1:\n\n";
-	DemoStructures1();
+		/// <summary>
+		/// Прямоугольник
+		/// </summary>
+		Rectangle,
 
-	cout << "\nЗадание 2.2.2.2:\n\n";
-	DemoStructures2();
+		/// <summary>
+		/// Перечисления
+		/// </summary>
+		Enums,
 
-	cout << "\nЗадание 2.2.3.1:\n\n";
-	DemoStructures3();
+		/// <summary>
+		/// Выход
+		/// </summary>
+		Exit
+	};
 
-	cout << "\nЗадание 2.2.3.2:\n\n";
-	DemoStructures4();
+	cout << "Enter 1 to run circle demo.\n";
+	cout << "Enter 2 to run flight demo.\n";
+	cout << "Enter 3 to run movie demo.\n";
+	cout << "Enter 4 to run rectangle demo.\n";
+	cout << "Enter 5 to run enums demo.\n";
+	cout << "Enter 6 to close program.\n";
 
-	cout << "\nЗадание 2.2.3.3:\n\n";
-	DemoStructures5();
-
-	cout << "\nЗадание 2.2.4.1:\n\n";
-	DemoRectanglePointer();
-
-	cout << "\nЗадание 2.2.4.2:\n\n";
-	DemoRectangleDoublePointer();
-
-	cout << "\nЗадание 2.2.4.3:\n\n";
-	DemoDoublePointer();
-
-	cout << "\nЗадание 2.2.5.1\n\n";
-	DemoWriteRectangle();
-
-	cout << "\nЗадание 2.2.5.2\n\n";
-	DemoReadRectangle();
-
-	cout << "\nЗадание 2.2.5.3\n\n";
-	DemoReadAndWriteRectangles();
-
-	cout << "\nЗадание 2.2.5.4\n\n";
-	DemoExchange();
-
-	cout << "\nЗадание 2.2.5.5\n\n";
-	DemoFindRectangle();
-
-	cout << "\nЗадание 2.2.5.6\n\n";
-	DemoFindMaxRectangle();
-
-	cout << "\nЗадание 2.2.6.1\n\n";
-	DemoDynamicFlights();
-
-	cout << "\nЗадание 2.2.6.2\n\n";
-	DemoDynamicFlight();
-
-	cout << "\nЗадание 2.2.6.3\n\n";
-	DemoFindShortest();
-
-	cout << "\nЗадание 2.2.7.1\n\n";
-	DemoCircle();
-
-	cout << "\nЗадание 2.2.7.2\n\n";
-	DemoMakeStructures();
-
-	cout << "\nЗадание 2.2.7.3\n\n";
-	DemoCopyStructures();
-
-	cout << "\nЗадание 2.2.8.1\n\n";
-	DemoEnums1();
-
-	cout << "\nЗадание 2.2.8.2\n\n";
-	DemoEnums2();
-
-	cout << "\nЗадание 2.2.8.3\n\n";
-	DemoEnums3();
-
-	cout << "\nЗадание 2.2.8.4\n\n";
-	DemoEnums4();
-
-	cout << "\nЗадание 2.2.8.5\n\n";
-	DemoWriteColor();
-
-	cout << "\nЗадание 2.2.8.6\n\n";
-	DemoReadColor();
-
-	cout << "\nЗадание 2.2.8.7\n\n";
-	DemoCountRed();
-
-	cout << "\nЗадание 2.2.8.8\n\n";
-	DemoCountColor();
-
-	cout << "\nЗадание 2.2.9.1, 2.2.9.2, 2.2.9.3, 2.2.9.4, 2.2.9.5\n\n";
-	DemoMovieWithGenre();
+	int prompt = 0;
+	while (true)
+	{
+		cout << "\nEnter command: ";
+		cin >> prompt;
+		cout << '\n';
+		switch (prompt)
+		{
+			case Circle:
+			{
+				try
+				{
+					DemoCircle();
+				}
+				catch (const exception& e)
+				{
+					cout << e.what() << "\n";
+				}
+				break;
+			}
+			case Flight:
+			{
+				try
+				{
+					DemoFlight();
+				}
+				catch (const exception& e)
+				{
+					cout << e.what() << "\n";
+				}
+				break;
+			}
+			case Film:
+			{
+				try
+				{
+					DemoFilm();
+				}
+				catch (const exception& e)
+				{
+					cout << e.what() << "\n";
+				}
+				break;
+			}
+			case Rectangle:
+			{
+				try
+				{
+					DemoRectangle();
+				}
+				catch (const exception& e)
+				{
+					cout << e.what() << "\n";
+				}
+				break;
+			}
+			case Enums:
+			{
+				try
+				{
+					DemoEnums();
+				}
+				catch (const exception& e)
+				{
+					cout << e.what() << "\n";
+				}
+				break;
+			}
+			case Exit:
+			{
+				return;
+			}
+			default:
+			{
+				break;
+			}
+		}
+	}
 }
