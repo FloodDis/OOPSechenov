@@ -4,11 +4,11 @@ void CertificateDiscount::SetAmount(int amount)
 {
 	if (amount < 0)
 	{
-		throw "Amount must be positive\n";
+		throw exception("Amount must be positive\n");
 	}
 	if (amount > 10000)
 	{
-		throw "Amount must be less than 10000\n";
+		throw exception("Amount must be less than 10000\n");
 	}
 	_amount = amount;
 }

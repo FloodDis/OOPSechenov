@@ -10,11 +10,11 @@ void PercentDiscount::SetPercent(double percent)
 {
 	if (percent < 0)
 	{
-		throw "Percent must be positive\n";
+		throw exception("Percent must be positive\n");
 	}
 	if (percent > 100)
 	{
-		throw "Percent must be less than 100";
+		throw exception("Percent must be less than 100");
 	}
 	_percent = percent;
 }

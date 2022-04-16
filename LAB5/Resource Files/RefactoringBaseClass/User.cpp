@@ -13,11 +13,20 @@ void User::SetPassword(string password)
 	_password = password;
 }
 
-int User::GetId() { return _id; }
+int User::GetId() 
+{
+	return _id;
+}
 
-string User::GetLogin() { return _login; }
+string User::GetLogin() 
+{
+	return _login;
+}
 
-string User::GetPassword() { return _password; }
+string User::GetPassword() 
+{
+	return _password; 
+}
 
 User::User(int id, string login, string password)
 {

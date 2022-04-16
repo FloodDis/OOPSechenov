@@ -59,4 +59,6 @@ void DemoDiscount()
 
 	DiscountBase* discount = new PercentDiscount(TV, 25.0);
 	ShowCheckWithDiscount(discount, products, 4);
+	delete[] products;
+	delete discount;
 }

@@ -17,7 +17,7 @@ void Student::SetCreditCardNumber(int creditCardNumber)
 {
 	if (creditCardNumber < 0)
 	{
-		throw "Credit card number must be positive\n";
+		throw exception("Credit card number must be positive\n");
 	}
 	_creditCardNumber = creditCardNumber;
 }
@@ -26,7 +26,7 @@ void Student::SetYearOfAdmission(int yearOfAdmission)
 {
 	if (yearOfAdmission < 0)
 	{
-		throw "Year of admission must be positive\n";
+		throw exception("Year of admission must be positive\n");
 	}
 	_yearOfAdmission = yearOfAdmission;
 }

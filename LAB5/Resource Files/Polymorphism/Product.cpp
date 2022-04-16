@@ -26,7 +26,7 @@ void Product::SetCost(double cost)
 {
 	if (cost < 0 || cost > 100000)
 	{
-		throw "Wrong cost\n";
+		throw exception("Cost must be positive and less than 100000\n");
 	}
 	_cost = cost;
 }
