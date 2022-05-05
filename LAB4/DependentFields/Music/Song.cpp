@@ -1,4 +1,4 @@
-#include "../../../Header Files/DependentFields/Music/Song.h"
+#include "Song.h"
 
 Song::Song()
 {

@@ -1,4 +1,4 @@
-#include "../../Header Files/ServiceClasses/Rectangle.h"
+#include "Rectangle.h"
 
 Rectangle::Rectangle()
 {

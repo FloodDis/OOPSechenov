@@ -1,4 +1,4 @@
-#include "../../../Header Files/DependentFields/Music/Band.h"
+#include "Band.h"
 
 Band::Band()
 {

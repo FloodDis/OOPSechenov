@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../Header Files/DependentFields/4.1.h"
-#include "../Header Files/ServiceClasses/GeometricProgram.h"
+#include "DependentFields/4.1.h"
+#include "ServiceClasses/GeometricProgram.h"
 using namespace std;
 
 void main()

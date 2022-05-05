@@ -1,4 +1,4 @@
-#include "../../../Header Files/DependentFields/Music/Album.h"
+#include "Album.h"
 
 Album::Album()
 {

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <math.h>
 #include "Rectangle.h"
-#include "../../Header Files/DependentFields/Geometry/Ring.h"
+#include "../DependentFields/Geometry/Ring.h"
 using namespace std;
 
 static class CollisionManager

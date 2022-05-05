@@ -21,72 +21,72 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\DependentFields\Music\Album.h">
+    <ClInclude Include="DependentFields\Music\Album.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\Music\Band.h">
+    <ClInclude Include="DependentFields\Music\Band.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\Music\GenreEnum.h">
+    <ClInclude Include="DependentFields\Music\GenreEnum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\Music\Song.h">
+    <ClInclude Include="DependentFields\Music\Song.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\Geometry\Point.h">
+    <ClInclude Include="DependentFields\Geometry\Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\ServiceClasses\DoubleValidator.h">
+    <ClInclude Include="ServiceClasses\DoubleValidator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\ServiceClasses\Rectangle.h">
+    <ClInclude Include="ServiceClasses\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\ServiceClasses\CollisionManager.h">
+    <ClInclude Include="ServiceClasses\CollisionManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\ServiceClasses\GeometricProgram.h">
+    <ClInclude Include="ServiceClasses\GeometricProgram.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\Geometry\Ring.h">
+    <ClInclude Include="DependentFields\Geometry\Ring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DependentFields\4.1.h">
+    <ClInclude Include="DependentFields\4.1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Resource Files\Dependent Fields\4.1.cpp">
+    <ClCompile Include="DependentFields\4.1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Dependent Fields\Music\Album.cpp">
+    <ClCompile Include="DependentFields\Music\Album.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\ServiceClasses\DoubleValidator.cpp">
+    <ClCompile Include="ServiceClasses\DoubleValidator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\ServiceClasses\CollisionManager.cpp">
+    <ClCompile Include="ServiceClasses\CollisionManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\ServiceClasses\GeometricProgram.cpp">
+    <ClCompile Include="ServiceClasses\GeometricProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Dependent Fields\Music\Band.cpp">
+    <ClCompile Include="DependentFields\Music\Band.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Dependent Fields\Music\Song.cpp">
+    <ClCompile Include="DependentFields\Music\Song.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Dependent Fields\Geometry\Point.cpp">
+    <ClCompile Include="DependentFields\Geometry\Point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Dependent Fields\Geometry\Ring.cpp">
+    <ClCompile Include="DependentFields\Geometry\Ring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\ServiceClasses\Rectangle.cpp">
+    <ClCompile Include="ServiceClasses\Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

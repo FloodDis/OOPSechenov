@@ -1,4 +1,4 @@
-#include "../../Header Files/ServiceClasses/DoubleValidator.h"
+#include "DoubleValidator.h"
 
 bool DoubleValidator::IsValuePositive(double value)
 {

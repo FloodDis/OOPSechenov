@@ -1,4 +1,4 @@
-#include "../../Header Files/ServiceClasses/CollisionManager.h"
+#include "CollisionManager.h"
 
 bool CollisionManager::IsCollision(Rectangle& rectangle1,
 	Rectangle& rectangle2)
