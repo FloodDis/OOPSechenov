@@ -1,4 +1,4 @@
-#include "../../Header Files/Inheritance/Person.h"
+#include "Person.h"
 
 Person::Person()
 {

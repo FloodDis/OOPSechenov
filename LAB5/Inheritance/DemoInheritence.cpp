@@ -1,4 +1,4 @@
-#include "../../Header Files/Inheritance/DemoInheritence.h"
+#include "DemoInheritence.h"
 
 void ShowName(Person* person)
 {

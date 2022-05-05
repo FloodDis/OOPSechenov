@@ -1,4 +1,4 @@
-#include "../../Header Files/RefactoringBaseClass/Post.h"
+#include "Post.h"
 
 void Post::SetTitle(string title)
 {

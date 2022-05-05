@@ -1,4 +1,4 @@
-#include "../../Header Files/Inheritance/Student.h"
+#include "Student.h"
 
 Student::Student() : Person()
 {

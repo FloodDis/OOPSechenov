@@ -1,4 +1,4 @@
-#include "../../Header Files/Polymorphism/5.3.h"
+#include "5.3.h"
 
 void ShowCheckWithDiscount(DiscountBase* discount,
 	Product* products, int productsCount)

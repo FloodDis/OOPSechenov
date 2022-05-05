@@ -1,4 +1,4 @@
-#include "../../Header Files/Polymorphism/CertificateDiscount.h"
+#include "CertificateDiscount.h"
 
 void CertificateDiscount::SetAmount(int amount)
 {

@@ -1,4 +1,4 @@
-#include "../../Header Files/Polymorphism/PercentDiscount.h"
+#include "PercentDiscount.h"
 
 PercentDiscount::PercentDiscount(CategoryType category, double percent) :
 	DiscountBase(category)

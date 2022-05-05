@@ -139,35 +139,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\Inheritance\DemoInheritence.h" />
-    <ClInclude Include="Header Files\Inheritance\Person.h" />
-    <ClInclude Include="Header Files\Inheritance\Student.h" />
-    <ClInclude Include="Header Files\Inheritance\Teacher.h" />
-    <ClInclude Include="Header Files\Polymorphism\5.3.h" />
-    <ClInclude Include="Header Files\Polymorphism\CertificateDiscount.h" />
-    <ClInclude Include="Header Files\Polymorphism\DiscountBase.h" />
-    <ClInclude Include="Header Files\Polymorphism\PercentDiscount.h" />
-    <ClInclude Include="Header Files\Polymorphism\Product.h" />
-    <ClInclude Include="Header Files\RefactoringBaseClass\Login.h" />
-    <ClInclude Include="Header Files\RefactoringBaseClass\PaidUser.h" />
-    <ClInclude Include="Header Files\RefactoringBaseClass\Post.h" />
-    <ClInclude Include="Header Files\RefactoringBaseClass\User.h" />
+    <ClInclude Include="Inheritance\DemoInheritence.h" />
+    <ClInclude Include="Inheritance\Person.h" />
+    <ClInclude Include="Inheritance\Student.h" />
+    <ClInclude Include="Inheritance\Teacher.h" />
+    <ClInclude Include="Polymorphism\5.3.h" />
+    <ClInclude Include="Polymorphism\CertificateDiscount.h" />
+    <ClInclude Include="Polymorphism\DiscountBase.h" />
+    <ClInclude Include="Polymorphism\PercentDiscount.h" />
+    <ClInclude Include="Polymorphism\Product.h" />
+    <ClInclude Include="RefactoringBaseClass\Login.h" />
+    <ClInclude Include="RefactoringBaseClass\PaidUser.h" />
+    <ClInclude Include="RefactoringBaseClass\Post.h" />
+    <ClInclude Include="RefactoringBaseClass\User.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Resource Files\Inheritance\DemoInheritence.cpp" />
-    <ClCompile Include="Resource Files\Inheritance\Person.cpp" />
-    <ClCompile Include="Resource Files\Inheritance\Student.cpp" />
-    <ClCompile Include="Resource Files\Inheritance\Teacher.cpp" />
-    <ClCompile Include="Resource Files\Main.cpp" />
-    <ClCompile Include="Resource Files\Polymorphism\5.3.cpp" />
-    <ClCompile Include="Resource Files\Polymorphism\CertificateDiscount.cpp" />
-    <ClCompile Include="Resource Files\Polymorphism\DiscountBase.cpp" />
-    <ClCompile Include="Resource Files\Polymorphism\PercentDiscount.cpp" />
-    <ClCompile Include="Resource Files\Polymorphism\Product.cpp" />
-    <ClCompile Include="Resource Files\RefactoringBaseClass\Login.cpp" />
-    <ClCompile Include="Resource Files\RefactoringBaseClass\PaidUser.cpp" />
-    <ClCompile Include="Resource Files\RefactoringBaseClass\Post.cpp" />
-    <ClCompile Include="Resource Files\RefactoringBaseClass\User.cpp" />
+    <ClCompile Include="Inheritance\DemoInheritence.cpp" />
+    <ClCompile Include="Inheritance\Person.cpp" />
+    <ClCompile Include="Inheritance\Student.cpp" />
+    <ClCompile Include="Inheritance\Teacher.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Polymorphism\5.3.cpp" />
+    <ClCompile Include="Polymorphism\CertificateDiscount.cpp" />
+    <ClCompile Include="Polymorphism\DiscountBase.cpp" />
+    <ClCompile Include="Polymorphism\PercentDiscount.cpp" />
+    <ClCompile Include="Polymorphism\Product.cpp" />
+    <ClCompile Include="RefactoringBaseClass\Login.cpp" />
+    <ClCompile Include="RefactoringBaseClass\PaidUser.cpp" />
+    <ClCompile Include="RefactoringBaseClass\Post.cpp" />
+    <ClCompile Include="RefactoringBaseClass\User.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

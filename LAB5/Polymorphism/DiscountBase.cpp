@@ -1,4 +1,4 @@
-#include "../../Header Files/Polymorphism/DiscountBase.h"
+#include "DiscountBase.h"
 
 void DiscountBase::SetCategory(CategoryType category)
 {

@@ -1,4 +1,4 @@
-#include "../../Header Files/RefactoringBaseClass/PaidUser.h"
+#include "PaidUser.h"
 
 void PaidUser::SetPosts(Post* posts, int postsCount)
 {

@@ -1,9 +1,9 @@
-﻿#include "../Header Files/Inheritance/Teacher.h"
-#include "../Header Files/Inheritance/DemoInheritence.h"
-#include "../Header Files/Inheritance/Student.h"
-#include "../Header Files/RefactoringBaseClass/PaidUser.h"
-#include "../Header Files/RefactoringBaseClass/Login.h"
-#include "../Header Files/Polymorphism/5.3.h"
+﻿#include "Inheritance/Teacher.h"
+#include "Inheritance/DemoInheritence.h"
+#include "Inheritance/Student.h"
+#include "RefactoringBaseClass/PaidUser.h"
+#include "RefactoringBaseClass/Login.h"
+#include "Polymorphism/5.3.h"
 #include <iostream>
 using namespace std;
 
