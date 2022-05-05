@@ -15,81 +15,81 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Resource Files\Exceptions\Sort.cpp">
+    <ClCompile Include="Exceptions\Sort.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Structs\Circle.cpp">
+    <ClCompile Include="Structs\Circle.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Structs\Film.cpp">
+    <ClCompile Include="Structs\Film.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Structs\Flight.cpp">
+    <ClCompile Include="Structs\Flight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Structs\Rectangle.cpp">
+    <ClCompile Include="Structs\Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Structs\WrongPointers.cpp">
+    <ClCompile Include="Structs\WrongPointers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource Files\Enumeration\DemoEnums.cpp">
+    <ClCompile Include="Enumeration\DemoEnums.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\Exceptions\Sort.h">
+    <ClInclude Include="Exceptions\Sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Rectangle.h">
+    <ClInclude Include="Structs\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Flight.h">
+    <ClInclude Include="Structs\Flight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Film.h">
+    <ClInclude Include="Structs\Film.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Time.h">
+    <ClInclude Include="Structs\Time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\PhoneContact.h">
+    <ClInclude Include="Structs\PhoneContact.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Song.h">
+    <ClInclude Include="Structs\Song.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Subject.h">
+    <ClInclude Include="Structs\Subject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\Circle.h">
+    <ClInclude Include="Structs\Circle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Structs\WrongPointers.h">
+    <ClInclude Include="Structs\WrongPointers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\Color.h">
+    <ClInclude Include="Enumeration\Color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\DemoEnums.h">
+    <ClInclude Include="Enumeration\DemoEnums.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\Education.h">
+    <ClInclude Include="Enumeration\Education.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\Genre.h">
+    <ClInclude Include="Enumeration\Genre.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\SmartphoneManufacturer.h">
+    <ClInclude Include="Enumeration\SmartphoneManufacturer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\WeekDay.h">
+    <ClInclude Include="Enumeration\WeekDay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Enumeration\Season.h">
+    <ClInclude Include="Enumeration\Season.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

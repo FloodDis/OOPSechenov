@@ -1,4 +1,4 @@
-#include "../../Header Files/Structs/Rectangle.h"
+#include "Rectangle.h"
 
 void DemoRectangle()
 {

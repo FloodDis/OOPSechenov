@@ -1,4 +1,4 @@
-#include "../../Header Files/Exceptions/Sort.h"
+#include "Sort.h"
 
 void Sort(double* values, int count)
 {

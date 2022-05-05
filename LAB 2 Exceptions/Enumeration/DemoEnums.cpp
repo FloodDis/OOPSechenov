@@ -1,4 +1,4 @@
-#include "../../Header Files/Enumeration/DemoEnums.h"
+#include "DemoEnums.h"
 
 void DemoEnums()
 {

@@ -1,10 +1,10 @@
-#include "../../Header Files/Structs/WrongPointers.h"
+#include "WrongPointers.h"
 
 void WrongPointers()
 {
 	Flight flight;
 	flight.Departure = "London";
-	flight.Destination = "Moscov";
+	flight.Destination = "Moscow";
 	flight.MinutesFlightTime = 100;
 
 	Film film;

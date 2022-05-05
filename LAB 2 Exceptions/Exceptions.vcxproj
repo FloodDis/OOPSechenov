@@ -140,33 +140,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Resource Files\Enumeration\DemoEnums.cpp" />
-    <ClCompile Include="Resource Files\Exceptions\Sort.cpp" />
-    <ClCompile Include="Resource Files\Structs\Circle.cpp" />
+    <ClCompile Include="Enumeration\DemoEnums.cpp" />
+    <ClCompile Include="Exceptions\Sort.cpp" />
+    <ClCompile Include="Structs\Circle.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Resource Files\Structs\Film.cpp" />
-    <ClCompile Include="Resource Files\Structs\Flight.cpp" />
-    <ClCompile Include="Resource Files\Structs\Rectangle.cpp" />
-    <ClCompile Include="Resource Files\Structs\WrongPointers.cpp" />
+    <ClCompile Include="Structs\Film.cpp" />
+    <ClCompile Include="Structs\Flight.cpp" />
+    <ClCompile Include="Structs\Rectangle.cpp" />
+    <ClCompile Include="Structs\WrongPointers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\Enumeration\Color.h" />
-    <ClInclude Include="Header Files\Enumeration\DemoEnums.h" />
-    <ClInclude Include="Header Files\Enumeration\Education.h" />
-    <ClInclude Include="Header Files\Enumeration\Genre.h" />
-    <ClInclude Include="Header Files\Enumeration\Season.h" />
-    <ClInclude Include="Header Files\Enumeration\SmartphoneManufacturer.h" />
-    <ClInclude Include="Header Files\Enumeration\WeekDay.h" />
-    <ClInclude Include="Header Files\Exceptions\Sort.h" />
-    <ClInclude Include="Header Files\Structs\Circle.h" />
-    <ClInclude Include="Header Files\Structs\Film.h" />
-    <ClInclude Include="Header Files\Structs\Flight.h" />
-    <ClInclude Include="Header Files\Structs\PhoneContact.h" />
-    <ClInclude Include="Header Files\Structs\Rectangle.h" />
-    <ClInclude Include="Header Files\Structs\Song.h" />
-    <ClInclude Include="Header Files\Structs\Subject.h" />
-    <ClInclude Include="Header Files\Structs\Time.h" />
-    <ClInclude Include="Header Files\Structs\WrongPointers.h" />
+    <ClInclude Include="Enumeration\Color.h" />
+    <ClInclude Include="Enumeration\DemoEnums.h" />
+    <ClInclude Include="Enumeration\Education.h" />
+    <ClInclude Include="Enumeration\Genre.h" />
+    <ClInclude Include="Enumeration\Season.h" />
+    <ClInclude Include="Enumeration\SmartphoneManufacturer.h" />
+    <ClInclude Include="Enumeration\WeekDay.h" />
+    <ClInclude Include="Exceptions\Sort.h" />
+    <ClInclude Include="Structs\Circle.h" />
+    <ClInclude Include="Structs\Film.h" />
+    <ClInclude Include="Structs\Flight.h" />
+    <ClInclude Include="Structs\PhoneContact.h" />
+    <ClInclude Include="Structs\Rectangle.h" />
+    <ClInclude Include="Structs\Song.h" />
+    <ClInclude Include="Structs\Subject.h" />
+    <ClInclude Include="Structs\Time.h" />
+    <ClInclude Include="Structs\WrongPointers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

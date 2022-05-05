@@ -1,4 +1,4 @@
-#include "../../Header Files/Structs/Flight.h"
+#include "Flight.h"
 
 void DemoFlight()
 {

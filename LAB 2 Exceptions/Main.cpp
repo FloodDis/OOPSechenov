@@ -1,10 +1,10 @@
 ﻿#include <iostream>
 
-#include "Header Files/Structs/Circle.h"
-#include "Header Files/Structs/Flight.h"
-#include "Header Files/Structs/Film.h"
-#include "Header Files/Structs/Rectangle.h"
-#include "Header Files/Enumeration/DemoEnums.h"
+#include "Structs/Circle.h"
+#include "Structs/Flight.h"
+#include "Structs/Film.h"
+#include "Structs/Rectangle.h"
+#include "Enumeration/DemoEnums.h"
 
 void main()
 {

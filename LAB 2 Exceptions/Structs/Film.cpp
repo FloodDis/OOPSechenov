@@ -1,4 +1,4 @@
-#include "../../Header Files/Structs/Film.h"
+#include "Film.h"
 
 Film* MakeFilm(string& title, string& genre, int year, double rate)
 {
@@ -12,11 +12,11 @@ Film* MakeFilm(string& title, string& genre, int year, double rate)
 
 Film* CopyFilm(Film& film)
 {
-	//std::cout << &movie << '\n';
+	//cout << &movie << '\n';
 	Film* copiedFilm = new Film();
-	//std::cout << copiedMovie << '\n';
+	//cout << copiedMovie << '\n';
 	*copiedFilm = film;
-	//std::cout << copiedMovie << '\n';
+	//cout << copiedMovie << '\n';
 	return copiedFilm;
 }
 
@@ -51,8 +51,8 @@ void DemoFilm()
 
 void WriteFilm(Film& film)
 {
-	std::cout << "Title: " << film.Title << '\n';
-	std::cout << "Genre: " << film.Genre << '\n';
-	std::cout << "Release Year: " << film.ReleaseYear << '\n';
-	std::cout << "Rating: " << film.Rating << '\n';
+	cout << "Title: " << film.Title << '\n';
+	cout << "Genre: " << film.Genre << '\n';
+	cout << "Release Year: " << film.ReleaseYear << '\n';
+	cout << "Rating: " << film.Rating << '\n';
 }
