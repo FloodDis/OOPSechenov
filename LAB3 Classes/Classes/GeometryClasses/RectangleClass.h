@@ -23,7 +23,7 @@ private:
 	/// Точка центра
 	/// прямоугольника
 	/// </summary>
-	PointClass* _center;
+	PointClass _center;
 
 public:
 
@@ -82,5 +82,5 @@ public:
 	/// <returns>
 	/// Центр прямоугольника
 	/// </returns>
-	PointClass* GetCenter();
+	PointClass GetCenter();
 };

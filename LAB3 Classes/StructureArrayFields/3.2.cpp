@@ -3,6 +3,8 @@
 void DemoBook()
 {
 	Book book;
+	book.AuthorCount = 2;
+	book.Authors = new string[2];
 	book.Name = "Sword of destiny";
 	book.Authors[0] = "Andrzej Sapkowski";
 	book.Authors[1] = "David French";
@@ -13,6 +15,8 @@ void DemoBook()
 	cout << "Book " << book.Name << " was publsihed in "
 		<< book.ReleaseYear << " and has authors: "
 		<< book.Authors[0] << ", " << book.Authors[1] << "\n\n";
+
+	delete[] book.Authors;
 }
 
 void DemoReadBookFromConsole()
@@ -26,11 +30,12 @@ void DemoReadBookFromConsole()
 			ReadBookFromConsole(book);
 			tryAgain = false;
 		}
-		catch (exception error)
+		catch (exception& error)
 		{
-			cout << "Wrong data!";
+			cout << error.what();
 		}
 	}
+	delete[] book.Authors;
 }
 
 // TODO: утечка памяти в функции +

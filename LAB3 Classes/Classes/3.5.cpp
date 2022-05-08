@@ -4,8 +4,8 @@ void WriteRectangleWithPointClass(RectangleClass rectangle)
 {
 	cout << "Rectangle has length " << rectangle.GetLength()
 		<< ", width " << rectangle.GetWidth() << " and center ("
-		<< rectangle.GetCenter()->GetX() << ";"
-		<< rectangle.GetCenter()->GetY() << ")\n";
+		<< rectangle.GetCenter().GetX() << ";"
+		<< rectangle.GetCenter().GetY() << ")\n";
 }
 
 void DemoRectangleWithPointClass()
@@ -30,11 +30,12 @@ void DemoRectangleWithPointClass()
 	double yCenter = 0;
 	for (int i = 0; i < 5; i++)
 	{
-		xCenter += array[i].GetCenter()->GetX();
-		yCenter += array[i].GetCenter()->GetY();
+		xCenter += array[i].GetCenter().GetX();
+		yCenter += array[i].GetCenter().GetY();
 	}
 	cout << "Xcenter = " << xCenter / 5
 		<< "; Ycenter = " << yCenter / 5 << "\n";
+
 	delete[] array;
 }
 
@@ -69,8 +70,10 @@ void DemoFlightWithTimeClass()
 		int randValue = rand() % 1000;
 		TimeClass arrivalTime(1998, 10, 25, 10, 15);
 		TimeClass departureTime(1998, 10, 24, 15, 23);
+		string deparutePoint = "Tomsk";
+		string destinationPoint = "Moscow";
 		FlightClass flight
-		(randValue, "Tomsk", "Moscow", departureTime, arrivalTime);
+		(randValue, deparutePoint, destinationPoint, departureTime, arrivalTime);
 		array[i] = flight;
 	}
 	for (int i = 0; i < 5; i++)

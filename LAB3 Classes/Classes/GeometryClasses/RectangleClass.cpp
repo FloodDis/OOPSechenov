@@ -2,7 +2,7 @@
 
 RectangleClass::RectangleClass()
 {
-
+	
 }
 
 RectangleClass::RectangleClass(double width, 
@@ -10,8 +10,8 @@ RectangleClass::RectangleClass(double width,
 {
 	SetWidth(width);
 	SetLength(length);
-	_center->SetX(x);
-	_center->SetY(y);
+	_center.SetX(x);
+	_center.SetY(y);
 }
 
 void RectangleClass::SetWidth(double width)
@@ -34,8 +34,8 @@ void RectangleClass::SetLength(double length)
 
 void RectangleClass::SetCenter(double x, double y)
 {
-	_center->SetX(x);
-	_center->SetY(y);
+	_center.SetX(x);
+	_center.SetY(y);
 }
 
 double RectangleClass::GetWidth()
@@ -48,7 +48,7 @@ double RectangleClass::GetLength()
 	return _length;
 }
 
-PointClass* RectangleClass::GetCenter()
+PointClass RectangleClass::GetCenter()
 {
 	return _center;
 }

@@ -9,26 +9,28 @@ void ReadBookFromConsole(Book& book)
 	cin >> book.Name;
 	cout << "Enter year of the release: ";
 	cin >> releaseYear;
-	if (releaseYear < 0)
+	if (releaseYear < 0|| releaseYear>2022)
 	{
-		throw exception("Release must be positive\n");
+		throw exception
+		("Release year must be positive and less than 2022\n");
 	}
 	book.ReleaseYear = releaseYear;
 	cout << "Enter page count: ";
 	cin >> pageCount;
-	if (pageCount < 0 || pageCount > 2022)
+	if (pageCount < 0)
 	{
 		throw exception
-		("Page count must be positive and less than 2022\n");
+		("Page count must be positive\n");
 	}
 	book.PageCount = pageCount;
 	cout << "Enter authors count: ";
 	cin >> authorsCount;
-	if (authorsCount < 0 || authorsCount > 10)
+	if (authorsCount < 0)
 	{
-		throw exception("Authors must be positive and less than 10\n");
+		throw exception("Authors must be positive\n");
 	}
 	book.AuthorCount = authorsCount;
+	book.Authors = new string[book.AuthorCount];
 	for (int i = 0; i < book.AuthorCount; i++)
 	{
 		cout << "Enter author ¹" << i + 1 << ": ";

@@ -176,6 +176,7 @@
     <ClCompile Include="Classes\GeometryClasses\RectangleClass.cpp" />
     <ClCompile Include="Classes\MusicClasses\SongClass.cpp" />
     <ClCompile Include="Classes\AirportClasses\TimeClass.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="OneToManyAggregation\3.4.cpp" />
     <ClCompile Include="OneToManyAggregation\Music\Album.cpp" />
     <ClCompile Include="OneToManyAggregation\Music\Band.cpp" />
